@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://v86y8bcqht14"]
+
+[ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="1_ivljr"]
+[ext_resource type="Script" path="res://Scripts/SceneCharacter.gd" id="2_bb458"]
+
+[node name="SceneCharacter" type="TextureButton" node_paths=PackedStringArray("text_label")]
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 131.0
+offset_bottom = 133.0
+texture_normal = ExtResource("1_ivljr")
+texture_pressed = ExtResource("1_ivljr")
+texture_hover = ExtResource("1_ivljr")
+script = ExtResource("2_bb458")
+text_label = NodePath("RichTextLabel")
+metadata/_edit_group_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 112.0
+offset_right = 122.0
+offset_bottom = 140.0
+text = "Name"

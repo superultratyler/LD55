@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LD55"
-run/main_scene="res://Scenes/test.tscn"
+run/main_scene="res://Scenes/Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,11 +22,9 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Character_Test": "res://Dialogic/Character_Test.dch",
-"Dialogic/Character_Test": "res://LD55/Dialogic/Character_Test.dch"
+"Character_Test": "res://Dialogic/Character_Test.dch"
 }
 directories/dtl_directory={
-"Dialogic/TestTimeline": "res://LD55/Dialogic/TestTimeline.dtl",
 "TestTimeline": "res://Dialogic/TestTimeline.dtl"
 }
 layout/style_list=["res://Dialogic/CustomStyle.tres"]
