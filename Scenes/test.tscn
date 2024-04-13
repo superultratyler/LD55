@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5hetjh0msmdc"]
+[gd_scene load_steps=6 format=3 uid="uid://b5hetjh0msmdc"]
 
 [ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="1_v5pck"]
 [ext_resource type="Script" path="res://Scripts/Test.gd" id="1_vowwj"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="3_x0ayd"]
+[ext_resource type="Script" path="res://Scripts/DialogicTimelineButton.gd" id="4_vs7b5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iicxx"]
 size = Vector2(64, 64)
@@ -27,3 +28,22 @@ texture = ExtResource("1_v5pck")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("RectangleShape2D_iicxx")
+
+[node name="TestDialogicButton" type="TextureButton" parent="."]
+offset_left = 208.0
+offset_top = 135.0
+offset_right = 336.0
+offset_bottom = 263.0
+texture_normal = ExtResource("1_v5pck")
+texture_pressed = ExtResource("1_v5pck")
+texture_hover = ExtResource("1_v5pck")
+script = ExtResource("4_vs7b5")
+timeline_name = "TestTimeline"
+metadata/_edit_group_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TestDialogicButton"]
+offset_left = 26.0
+offset_top = 112.0
+offset_right = 110.0
+offset_bottom = 140.0
+text = "CLICK ME"

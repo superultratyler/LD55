@@ -22,9 +22,11 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Character_Test": "res://Dialogic/Character_Test.dch"
+"Character_Test": "res://Dialogic/Character_Test.dch",
+"Dialogic/Character_Test": "res://LD55/Dialogic/Character_Test.dch"
 }
 directories/dtl_directory={
+"Dialogic/TestTimeline": "res://LD55/Dialogic/TestTimeline.dtl",
 "TestTimeline": "res://Dialogic/TestTimeline.dtl"
 }
 layout/style_list=["res://Dialogic/CustomStyle.tres"]

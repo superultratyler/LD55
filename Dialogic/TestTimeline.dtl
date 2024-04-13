@@ -11,7 +11,7 @@ Character_Test (Default): Whatever what about this?
 	- Correct
 		HOT DAMN YOU'RE ON FIRE
 	- WRONG
-		set {angry_witch} = true
+		set {angry_test} = true
 		I knew you weren't "the one".
-if {angry_witch} == true:
+if {angry_test} == true:
 	I'm angry at you!
