@@ -53,7 +53,7 @@ text/autopauses={}
 
 [display]
 
-window/size/viewport_width=600
+window/size/viewport_width=960
 window/size/viewport_height=600
 window/stretch/mode="canvas_items"
 
