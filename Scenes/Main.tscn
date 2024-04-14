@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5hetjh0msmdc"]
+[gd_scene load_steps=7 format=3 uid="uid://b5hetjh0msmdc"]
 
 [ext_resource type="Script" path="res://Scripts/Test.gd" id="1_bi0b8"]
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="2_65rxd"]
 [ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="3_mkjxt"]
+[ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/tempbg.png" id="4_074ug"]
 [ext_resource type="PackedScene" uid="uid://v86y8bcqht14" path="res://Scenes/SceneCharacter.tscn" id="4_hx0pc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iicxx"]
@@ -25,106 +26,105 @@ texture = ExtResource("3_mkjxt")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("RectangleShape2D_iicxx")
 
-[node name="SceneCharacte_King" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 422.0
-offset_top = 426.0
-offset_right = 550.0
-offset_bottom = 554.0
-character_name = "King"
-timeline_name = "Timeline_King"
-
-[node name="SceneCharacter_Queen" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 44.0
-offset_top = 236.0
-offset_right = 172.0
-offset_bottom = 364.0
-character_name = "Queen"
-timeline_name = "Timeline_Queen"
+[node name="TextureRect_Background" type="TextureRect" parent="."]
+offset_right = 960.0
+offset_bottom = 600.0
+texture = ExtResource("4_074ug")
+expand_mode = 2
 
 [node name="SceneCharacter_Farmer" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 220.0
-offset_top = 240.0
-offset_right = 348.0
-offset_bottom = 368.0
+offset_left = 200.0
+offset_top = 11.0
+offset_right = 328.0
+offset_bottom = 139.0
 character_name = "Farmer"
 timeline_name = "Timeline_Farmer"
 
 [node name="SceneCharacter_Hero" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 637.0
-offset_top = 424.0
-offset_right = 765.0
-offset_bottom = 552.0
+offset_left = 430.0
+offset_top = 17.0
+offset_right = 558.0
+offset_bottom = 145.0
 character_name = "Hero"
 timeline_name = "Timeline_Hero"
 
 [node name="SceneCharacter_Guard" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 187.0
-offset_top = 438.0
-offset_right = 315.0
-offset_bottom = 566.0
+offset_left = 494.0
+offset_top = 141.0
+offset_right = 622.0
+offset_bottom = 269.0
 character_name = "Guard"
 timeline_name = "Timeline_Guard"
 
 [node name="SceneCharacter_WitchesCat" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 791.0
-offset_top = 76.0
-offset_right = 919.0
-offset_bottom = 204.0
+offset_left = 32.0
+offset_top = 276.0
+offset_right = 160.0
+offset_bottom = 404.0
 character_name = "Witches Cat"
 timeline_name = "Timeline_WitchesCat"
 
 [node name="SceneCharacter_Wildman" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 762.0
-offset_top = 241.0
-offset_right = 890.0
-offset_bottom = 369.0
+offset_left = 572.0
+offset_top = 9.0
+offset_right = 700.0
+offset_bottom = 137.0
 character_name = "Wildman"
 timeline_name = "Timeline_Wildman"
 
 [node name="SceneCharacter_Witch" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 567.0
-offset_top = 225.0
-offset_right = 695.0
-offset_bottom = 353.0
+offset_left = 305.0
+offset_top = 139.0
+offset_right = 433.0
+offset_bottom = 267.0
 character_name = "Witch"
 timeline_name = "Timeline_Witch"
 
 [node name="SceneCharacter_Barkeep" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 387.0
-offset_top = 231.0
-offset_right = 515.0
-offset_bottom = 359.0
+offset_left = 150.0
+offset_top = 146.0
+offset_right = 278.0
+offset_bottom = 274.0
 character_name = "Barkeep"
 timeline_name = "Timeline_Barkeep"
 
 [node name="SceneCharacter_WizardsImp" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 631.0
-offset_top = 59.0
-offset_right = 759.0
-offset_bottom = 187.0
+offset_left = 731.0
+offset_top = 24.0
+offset_right = 859.0
+offset_bottom = 152.0
 character_name = "Wizard's Imp"
 timeline_name = "Timeline_WizardsImp"
 
 [node name="SceneCharacter_Wizard" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 461.0
-offset_top = 44.0
-offset_right = 589.0
-offset_bottom = 172.0
+offset_left = 625.0
+offset_top = 154.0
+offset_right = 753.0
+offset_bottom = 282.0
 character_name = "Wizard"
 timeline_name = "Timeline_Wizard"
 
 [node name="SceneCharacter_Skeleton" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 306.0
-offset_top = 46.0
-offset_right = 434.0
-offset_bottom = 174.0
+offset_left = 752.0
+offset_top = 184.0
+offset_right = 880.0
+offset_bottom = 312.0
 character_name = "Skeleton"
 timeline_name = "Timeline_Skeleton"
 
 [node name="SceneCharacter_LittleGirl" parent="." instance=ExtResource("4_hx0pc")]
-offset_left = 99.0
-offset_top = 41.0
-offset_right = 227.0
-offset_bottom = 169.0
+offset_left = 244.0
+offset_top = 279.0
+offset_right = 372.0
+offset_bottom = 407.0
 character_name = "Little Girl"
 timeline_name = "Timeline_LittleGirl"
+
+[node name="SceneCharacter_Ghost" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("4_hx0pc")]
+offset_left = 23.0
+offset_top = 69.0
+offset_right = 151.0
+offset_bottom = 197.0
+character_name = "Skeleton"
+timeline_name = "Timeline_Skeleton"
+text_label = NodePath("../SceneCharacter_Skeleton/RichTextLabel")
