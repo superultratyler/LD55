@@ -3,6 +3,7 @@ extends TextureButton
 @export var character_name = "Default Name"
 @export var timeline_name = ""
 @export var text_label: RichTextLabel
+@export var audio_barks : Array[AudioStreamOggVorbis]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,8 +24,15 @@ func _pressed():
 	# Check if the Timeline exists
 	var timeline = DialogicResourceUtil.get_timeline_resource(timeline_name)
 	if timeline == null:
-		print("[Dialogic] No timeline exists with the name" + timeline_name)
+		print("[Scene Character] No timeline exists with the name " + timeline_name)
 		return
 	
 	# Start the Timeline if it exists
 	Dialogic.start(timeline_name)
+	
+	# Play AudioStream
+	if audio_barks.size() > 0:
+		var random_index = randi() % audio_barks.size()
+		var audio = audio_barks[random_index]
+		Main.AUDIO_STREAM_GLOBAL.stream = audio
+		Main.AUDIO_STREAM_GLOBAL.play(0)
