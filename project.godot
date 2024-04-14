@@ -22,10 +22,34 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"Character_Test": "res://Dialogic/Character_Test.dch"
+"Character_Barkeep": "res://Dialogic/Characters/Character_Barkeep.dch",
+"Character_Farmer": "res://Dialogic/Characters/Character_Farmer.dch",
+"Character_Ghost": "res://Dialogic/Characters/Character_Ghost.dch",
+"Character_Guard": "res://Dialogic/Characters/Character_Guard.dch",
+"Character_Hero": "res://Dialogic/Characters/Character_Hero.dch",
+"Character_LittleGirl": "res://Dialogic/Characters/Character_LittleGirl.dch",
+"Character_Skeleton": "res://Dialogic/Characters/Character_Skeleton.dch",
+"Character_Test": "res://Dialogic/Characters/Character_Test.dch",
+"Character_Wildman": "res://Dialogic/Characters/Character_Wildman.dch",
+"Character_Witch": "res://Dialogic/Characters/Character_Witch.dch",
+"Character_WitchesCat": "res://Dialogic/Characters/Character_WitchesCat.dch",
+"Character_Wizard": "res://Dialogic/Characters/Character_Wizard.dch",
+"Character_WizardsImp": "res://Dialogic/Characters/Character_WizardsImp.dch"
 }
 directories/dtl_directory={
-"TestTimeline": "res://Dialogic/TestTimeline.dtl"
+"Timeline_Barkeep": "res://Dialogic/Timelines/Timeline_Barkeep.dtl",
+"Timeline_Farmer": "res://Dialogic/Timelines/Timeline_Farmer.dtl",
+"Timeline_Ghost": "res://Dialogic/Timelines/Timeline_Ghost.dtl",
+"Timeline_Guard": "res://Dialogic/Timelines/Timeline_Guard.dtl",
+"Timeline_Hero": "res://Dialogic/Timelines/Timeline_Hero.dtl",
+"Timeline_LittleGirl": "res://Dialogic/Timelines/Timeline_LittleGirl.dtl",
+"Timeline_Skeleton": "res://Dialogic/Timelines/Timeline_Skeleton.dtl",
+"Timeline_Test": "res://Dialogic/Timelines/Timeline_Test.dtl",
+"Timeline_Wildman": "res://Dialogic/Timelines/Timeline_Wildman.dtl",
+"Timeline_Witch": "res://Dialogic/Timelines/Timeline_Witch.dtl",
+"Timeline_WitchesCat": "res://Dialogic/Timelines/Timeline_WitchesCat.dtl",
+"Timeline_Wizard": "res://Dialogic/Timelines/Timeline_Wizard.dtl",
+"Timeline_WizardsImp": "res://Dialogic/Timelines/Timeline_WizardsImp.dtl"
 }
 layout/style_list=["res://Dialogic/CustomStyle.tres"]
 layout/default_style="res://Dialogic/CustomStyle.tres"
