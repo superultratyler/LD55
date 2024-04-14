@@ -1,2 +1,56 @@
 join Character_Ghost 1
-Boo! I'm a ghost!
+Character_Ghost: I'm Willard the chandler that's a candlestick maker for the butchers and bakers among you. Or I was until I met my untimely demise at the hands of that Bloogo.
+- Tell me about yesterday...
+	I was working on my fantastic candles *all day*, it's what I do. Then at dusk I played cards with the wizard and his imp. I lost fair and square, it happens. They won some candles and a bottled pixie, so what?
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Ghost: She's never liked me. Says I charge too much for candles, she uses more candles than anyone why would I cut her a deal!? She makes enough money off those baked potatoes!
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Ghost: He hates that no one likes his turnips. The ritual was in ***his*** turnip field, I'd bet he had something to do with all this! Either way he should go to jail for smelling terrible with that Wilton's Wonder Wax all the time.
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Ghost: Yes that's me what of it? I made candles, everyone needs candles.
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Ghost: He says he did it. Makes sense to me, wizards love summoning they do it all the time. Look at his imp for instance, he probably summoned that. Even the imp says he did it!
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Ghost: A fine job he did! If we had proper security in this town perhaps I'd still be alive! And...our sweet, dear princess would be too...Where was he during all of this anyway?
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Ghost: A tragedy of the highest magnitude...Ohhh fairest maiden, The shining example of a princess. If only you became a ghost like me...together...forever...
+		jump Townsfolk
+	- King - Kurtis
+		Character_Ghost: Arrogant. He should have stepped down long ago and let our infallible princess reign, then none of this would have happened!
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		jump Others
+	- Hero - Alexander
+		Character_Ghost: An outsider, we can't trust them! I heard his silver dagger was found at the ritual site. There's not many silver daggers floating around.
+		jump Others
+		Character_Ghost: Her...a wretched little cretin, like all children. Except me when I was a child, I was different.
+	- Imp - Pimmelstix
+		A helpful little creature indeed, seems to be telling the truth if you ask me.
+		jump Others
+	- Skeleton - ???
+		Character_Ghost: Ehmmm, hmm...another victim of the disaster I suppose. His bone structure implies he was ***very*** handsome.
+		
+		jump Others
+	- Wildman - Doohk
+		Character_Ghost: The father of that girl...one wonders how he found a wife. Even more feral and flea ridden than his daughter. I see him and that witch frolic through the woods.
+		jump Others
+	- Witch - Rosina
+		Character_Ghost: I heard she turns people into newts! Don't trust a word she says!...Or her cat!
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

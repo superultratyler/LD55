@@ -1,2 +1,58 @@
 join Character_Skeleton 1
-These bones weren't made for summoning!
+It stares at you blankly
+- Tell me about yesterday...
+	Character_Skeleton: rattle
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Skeleton: rattle rattle
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Skeleton: rattle
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Skeleton: It nods
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Skeleton: rattle
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Skeleton: bone noises
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Skeleton: It holds it's hands close to it's face in an adoring fashion. 
+		jump Townsfolk
+	- King - Kurtis
+		Character_Skeleton: It rattles angrily.
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Skeleton: rattle
+		jump Others
+	- Hero - Alexander
+		Character_Skeleton: <Empty Text Event>
+		jump Others
+	- Imp - Pimmelstix
+		Character_Skeleton: rattle
+		jump Others
+	- Skeleton - ???
+		Character_Skeleton: rattle
+		jump Others
+	- Wildman - Doohk
+		Character_Skeleton: rattle
+		jump Others
+	- Witch - Rosina
+		Character_Skeleton: rattle
+		jump Others
+	- Cat - Bramble
+		Character_Skeleton: rattle
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

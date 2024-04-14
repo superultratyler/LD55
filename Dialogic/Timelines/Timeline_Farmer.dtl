@@ -1,2 +1,56 @@
 join Character_Farmer 1
-I'm the Farmer!
+The names Herbert. I farm the best turnips and don't you ever let anyone tell you different.
+- Tell me about yesterday...
+	Character_Farmer: During the day I played some cards with that Alexander, did pretty well. Course at night a Booglo was summoned in my field, ruining my turnips. I'd bet that tavern keeper Harriet had something to do with this, couldn't live knowing my delicious turnips are better than her baked potatoes.
+
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Farmer: She doesn't buy my turnips. She would rather buy **potatoes** from the neighboring town. What goes better with an ale than a fresh turnip? Everyone's always eating those potatoes instead of my turnips. They don't know what they're missing.
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Farmer: Mmmmhmmm, been farming turnips my whole life. 
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Farmer: I know they found some freaky candles at the ritual site and no one could make candles like that but him.
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Farmer: He claims he summoned that Imp but I happen to know it's a curse he put on himself by *accident.* That's what he gets trying to meddle with magical stuff.
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Farmer: Pffft! Only cared about those royals. You won't see him sticking his neck out to save my turnips! No one respects my turnips. He did let me know about Wilton's Wonder Wax, it's gonna help my aching back some day.
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Farmer: I'm just a simple farmer but I'm not so sure that princess had the best intentions. Maybe it's for the best.
+		jump Townsfolk
+	- King - Kurtis
+		Character_Farmer: We'll have another king telling us what to do before long.
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Farmer: Lives out in the wilds with her father, they're a wild bunch. I let them use my barn...when the *weather* turns bad.
+		jump Others
+	- Hero - Alexander
+		Character_Farmer: Another fool to go along with the rest in this town. He came here to slay the beast werewolf. The werewolf never did harm my turnips, and it ate plenty of rabbits. You know what those rabbits eat? That's right, my turnips. I say leave it alone.
+		jump Others
+	- Imp - Pimmelstix
+		Character_Farmer: Lying little bugger. All day long it's flying around pranking and prodding and picking on everyone. 
+		jump Others
+	- Skeleton - ???
+		Character_Farmer: Does he look sorta familiar to you?
+		jump Others
+	- Wildman - Doohk
+		Character_Farmer: He loves my turnips. I let him use my barn. That's about it.
+		jump Others
+	- Witch - Rosina
+		Character_Farmer: Couldn't help me at all, what are those potions even good for?
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

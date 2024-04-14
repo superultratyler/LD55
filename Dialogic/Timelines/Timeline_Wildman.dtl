@@ -1,2 +1,59 @@
 join Character_Wildman 1
-Oooga booogga! I'm WWIIILD.
+Character_Wildman: DOOHK! 
+- Tell me about yesterday...
+	Character_Wildman: He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands. He then gestures big chomping teeth with his hands and flails his arms about.
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Wildman: He nods "HUAH"
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Wildman: He nods "Garumb".
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Wildman: GUH GUH BOO. He gestures angrily. He flaps his arms. 
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Wildman: He pokes at his head "BUG BUG".
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Wildman: He holds his nose and waves his hand
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Wildman: He stares at you blankly.
+		jump Townsfolk
+	- King - Kurtis
+		Character_Wildman: He shrugs.
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Wildman: He smiles broadly "MA LEEPA".
+		jump Others
+	- Hero - Alexander
+		Character_Wildman: He gets angry and shakes his head and makes a stabbing motion. "NUH! BAARAA! GUH GUH NUH!"
+		jump Others
+	- Imp - Pimmelstix
+		Character_Wildman: "NUH" he makes a swatting motion.
+		jump Others
+	- Skeleton - ???
+		Character_Wildman: he shakes his head \
+"ARRAA".
+		jump Others
+	- Wildman - Doohk
+		Character_Wildman: "DOOHK?"
+		jump Others
+	- Witch - Rosina
+		Character_Wildman: He nods calmly "MUH, PAKEE"
+		jump Others
+	- Cat - Bramble
+		Character_Wildman: "MEOWA?"
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

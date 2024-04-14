@@ -1,2 +1,58 @@
 join Character_Wizard 1
-AbracaDABRA! Pew pew.
+Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
+- Tell me about yesterday...
+	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night! I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants...wait no...that can't be right. The point is I summoned the Booglo and I vividly remember doing it.
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Wizard: She tells me not to bring my imp Pimmelstix to her tavern, no one will tell me what to do now! 
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Wizard: He asked me for a way to turn potatoes to turnips. I've better use of my talent.
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Wizard: Ah yes. He bought my rings of everlasting love! I made a fortune off those...
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Wizard: All my life I've strived to be recognized for my talents. Behold my awesome power! Throw me in jail if you dare! Bwahahahaha!
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Wizard: A loyal customer who buys my Wonder Wax, he at least has the good sense to recognize value!
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Wizard: That princess was no fair lady! If I hadn't squashed the king she would have!
+		jump Townsfolk
+	- King - Kurtis
+		Character_Wizard: It all could have been avoided if they had recognized me as grand supreme wizard of the realm! So I had to show them!
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Wizard: Just a regular little girl as far as I can tell, why?
+		jump Others
+	- Hero - Alexander
+		Character_Wizard: A hero is no match for my Booglo! AHAHAH!
+		jump Others
+	- Imp - Pimmelstix
+		Character_Wizard: My faithful familiar Pimmestix, my first ever summon. The second being the Booglo of course. 
+		jump Others
+	- Skeleton - ???
+		Character_Wizard: I must have summoned so good, a skeleton was raised by all the extra magic floating around. Lucky him!
+		jump Others
+	- Wildman - Doohk
+		Character_Wizard: Nature?! Bleh! Bleh! Magic will replace all trees some day.
+		jump Others
+	- Witch - Rosina
+		Character_Wizard: Pshaw! She thinks she's *so magical* with her potions and spells. Who's the most magical now? Only a true magic master could summon a Booglo!
+		jump Others
+	- Cat - Bramble
+		Character_Wizard: Gah! Foul beast! The natural enemies of imps!
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

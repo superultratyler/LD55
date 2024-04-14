@@ -1,2 +1,60 @@
-join Character_Hero 1
-Hero? Well I suppose I am!
+join Character_Guard 1
+Character_Hero: Ahahaha!...Wait, you really don't know? I'm Alexander! Illustrious adventurer and slayer of evil!
+- Tell me about yesterday...
+	Character_Hero: ****Ahem**** I arrived at dusk. I had come here anticipating the full moon to slay the werewolf terrorizing these... *fine* people. I brought my finest silver dagger...annnnd...lost it in a card game to that turnip farmer... It's not fair really! Years of turnip farming had honed his strategic mind to a deadly point, and that imp was there messing everything up! Now you say my dagger was found at the ritual site? Well it isn't my dagger anymore, now is it?
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Hero: She serves a fine ale, but can you believe she's never heard of me either?!
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Hero: He won my dagger from me in a card game. I'd have won if that miserable little imp wasn't flying about distracting me at every moment! That dagger was expensive you know. 
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Hero: He came into the tavern with a pixie in a bottle and a bundle of candles, he practically gave the thing away to the wizard and his imp the way he was playing those cards. 
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Hero: I visited his little shop.  I've been across the land and dealt with my share of magic items. Those are no magic items, and uhhgg what a stench that place had. He tied a porcupine to a stick and tried to sell it as a "magic mace of biting".
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Hero: No need for a guard anymore, the heroes in town.
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Hero: A beautiful princess and a dashing handsome man such as myself. It's the sort of thing they write story books about don't you think? I'd have won her heart had I a chance to slay the werewolf and demonstrate my combat prowess, I'm not just a handsome face you know. Alas she was taken from us too soon. 
+		jump Townsfolk
+	- King - Kurtis
+		Character_Hero: Squashed by the Booglo I hear. What? You think I should slay the Booglo? Well certainly I can, but that would require a certain sword in a certain cave and at least a few months of adventuring and self discovery where I'd learn something about myself and overcome my personal flaws. Frankly I'm enjoying this whole arrogance thing and I'd rather not give it up.
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Hero: Saw that little one carrying a blanket and pillow into the turnip farm's barn, odd.
+		jump Others
+	- Hero - Alexander
+		Character_Hero: Yes I'm Alexander, I do love hearing that name.
+		jump Others
+	- Imp - Pimmelstix
+		Character_Hero: Ghastly little thing. Snapped it's fingers and every candle in the tavern went out all at once, then it threw that pixie dust all over. I kept my distance. Snapped it's fingers again and all the candles were lit again. A fire hazard if you ask me.
+		jump Others
+	- Skeleton - ???
+		Character_Hero: Yawn. Slaying a single armless skeleton? You think a bard is going to write any songs about THAT? \
+
+		jump Others
+	- Wildman - Doohk
+		Character_Hero: I saw that...man...and his daughter going into turnip farm's barn at dusk as I came into town. He was carrying shackles and chain. I'm guessing for the cows? They can be vicious no?
+		jump Others
+	- Witch - Rosina
+		Character_Hero: She was lamenting over stolen something or another at the tavern around dusk.\
+Witches.  What is it with witches? Sometimes they just live in a town and sell fruit juice. Sometimes they eat children, it's like-just pick one so it's less confusing for us all.
+		jump Others
+	- Cat - Bramble
+		Character_Hero: Who doesn't love a *fwuffy wuffy wittle cattsy wattsy*? What? Why are you looking at me like that?
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

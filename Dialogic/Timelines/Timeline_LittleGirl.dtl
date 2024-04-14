@@ -1,2 +1,58 @@
 join Character_LittleGirl 1
-I'm a little girl! I couldn't have done it!
+- Tell me about yesterday...
+	Character_LittleGirl: I don't remember a lot. The witch came to see me during the day to help with my nightmares. Then I saw Willard...at night I remember the moon and candles, and a bone...and something smelled like cat pee!
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_LittleGirl: Her baked potatoes are really good!
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_LittleGirl: I sleep in his barn on full moons. But not since the witch started helping me.
+		jump Townsfolk
+	- Chandler - Willard
+		Character_LittleGirl: He came to my house and traded me some candy for the pixie the witch brought over, he said he was going to set it free. I thought that was nice. Dad wasn't happy when he found out...
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_LittleGirl: Daddy says not to go into his magic shop because it's not magic at all!
+		jump Townsfolk
+	- Guard - Duncan
+		Character_LittleGirl: I've seen him in the town, but I don't go there a lot, he smells like the farmer.
+		jump Townsfolk
+	- Princess - Primrose
+		Character_LittleGirl: ...June. I'm nine years old. I have nightmares sometimes.
+		Character_LittleGirl: She's so pretty!
+		jump Townsfolk
+	- King - Kurtis
+		Character_LittleGirl: I don't know who that is.
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_LittleGirl: I'm not allowed outside at night. Especially on full moons, it's dangerous.
+		jump Others
+	- Hero - Alexander
+		Character_LittleGirl: Daddy said to stay away from him but I like his fancy hair.
+		jump Others
+	- Imp - Pimmelstix
+		Character_LittleGirl: EW!
+		jump Others
+	- Skeleton - ???
+		Character_LittleGirl: She girl looks afraid
+		jump Others
+	- Wildman - Doohk
+		Character_LittleGirl: That's my Dad! 
+		jump Others
+	- Witch - Rosina
+		Character_LittleGirl: Daddy finds flowers for her and she makes medicine for me. She brought my a pixie to help me sleep...but I traded it to Willard...
+		jump Others
+	- Cat - Bramble
+		Character_LittleGirl: I like chasing the cat!
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

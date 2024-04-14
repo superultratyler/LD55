@@ -1,2 +1,59 @@
 join Character_Guard 1
-I'm the Guard!
+My name is Duncan, I'm the guard. Yes. the *only* guard.
+- Tell me about yesterday...
+	Character_Guard: I was looking into a break in at the Rosina the Witches hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there. At night I heard the signal for *"trouble"* so I rang the bell twelve times which is the new protocol. Then I noticed three cloaked figures out in the turnip field, up to no good I'm sure.Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_Guard: I stop by her tavern after most shifts. You would too if you had my job. I noticed her coming across the bridge at night. I'd have stopped by the tavern after my shift but, well you know giant Booglo got summoned. I don't even get overtime for this.
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern, I think he's jealous. Too bad about his field, that monster trampled it good.
+		
+		jump Townsfolk
+	- Chandler - Willard
+		Character_Guard: Willard, a real ninny if you ask me. I can't stand him...but he's my brother. I saw him at the tavern playing cards last night with my brother Willard, that wizard Wilton and his pet Imp-thing. Sure, I was sad to hear he got stepped on by the Booglo, but the fact that he's still here as a ghost talking my ear off makes it somehow less tragic.
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_Guard: I go to his shop to buy Wilton's Wonder Wax for back pain, he always complains about the Witch and how she's got all the best magic books. I wish he'd put on some real clothes instead of that sleeping cap and nightgown.
+		jump Townsfolk
+	- Guard - Duncan
+		Character_Guard: I was chosen by the king himself to protect the people of the land. Well, chosen by someone chosen by the King, it still counts.
+		jump Townsfolk
+	- Princess - Primrose
+		Character_Guard: Poor thing. She was next in line to rule too.
+		jump Townsfolk
+	- King - Kurtis
+		Character_Guard: He had plans to rule forever, don't know how but he said with the witches help his reign would last five hundred years. I'd have given my life to protect the King...yes I saw the Booglo step on him. I'd have tried to save him but then we'd both be stepped on, what's the sense in that?
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_Guard: She lives out in the woods I'd be afraid to with that werewolf out there, and I'm so big and strong!
+		jump Others
+	- Hero - Alexander
+		Character_Guard: We've had a werewolf problem in the woods lately, doesn't seem so bad compared to the Booglo. Anyway this guy comes out of nowhere saying he's going to slay the werewolf with a silver dagger and become famous, the timing is strange don't you think?
+		jump Others
+	- Imp - Pimmelstix
+		Character_Guard: I guess you can summon an imp to hang around and pester everyone. Apparently that's legal, I don't make the rules. If there's trouble that imp is usually involved. However... Sometimes it lights all the torches in town all at once, which is helpful but I don't tell it that or it might stop doing it.
+		jump Others
+	- Skeleton - ???
+		Character_Guard: Normally I'm supposed to fight a walking skeleton but given the circumstances I'll reconsider for now.
+		jump Others
+	- Wildman - Doohk
+		Character_Guard: He's more animal than man, growls every word he says. But I've never seen him do anything suspicious...which I find suspicious...
+		jump Others
+	- Witch - Rosina
+		Character_Guard: She makes potions and elixirs, that sort of stuff. I'll stick to Wilton's wonder wax thank you very much, smells like cat pee but it helps my aching back. Come to think of it she's got all those magic books, they found a page from a magic book didn't they?
+		jump Others
+	- Cat - Bramble
+		Character_Guard: I'm more of a dog person.
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]

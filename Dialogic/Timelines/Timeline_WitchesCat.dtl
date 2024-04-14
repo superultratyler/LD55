@@ -1,2 +1,58 @@
 join Character_WitchesCat 1
-MEOW meoooow
+Character_WitchesCat: She stares blankly at you
+- Tell me about yesterday...
+	Character_WitchesCat: She licks her paw.
+	jump 
+- Tell me about the townsfolk...
+	label Townsfolk
+	- Tavern Keeper - Harriet
+		Character_WitchesCat: Meow.
+		jump Townsfolk
+	- Farmer - Herbert
+		Character_WitchesCat: She bats at a fly.
+		jump Townsfolk
+	- Chandler - Willard
+		Character_WitchesCat: HISSSS!
+		jump Townsfolk
+	- Wizard - Wilton
+		Character_WitchesCat: No response, you feel slightly embarrassed asking a cat questions.
+		jump Townsfolk
+	- Guard - Duncan
+		Character_WitchesCat: She seems to be sleeping?
+		jump Townsfolk
+	- Princess - Primrose
+		Character_WitchesCat: She blinks at you. You pet the cat and you feel the games ratings rise.
+		jump Townsfolk
+	- King - Kurtis
+		Character_WitchesCat: She's not paying attention
+		jump Townsfolk
+	- On second thought...
+		jump 
+- Anyone else around here?
+	label Others
+	- Girl - June
+		Character_WitchesCat: HISSSS!
+		jump Others
+	- Hero - Alexander
+		Character_WitchesCat: She lays down.
+		jump Others
+	- Imp - Pimmelstix
+		Character_WitchesCat: HISS!
+		jump Others
+	- Skeleton - ???
+		Character_WitchesCat: HISSSS
+		jump Others
+	- Wildman - Doohk
+		Character_WitchesCat: She almost knocks the bottled pixie off the table.
+		jump Others
+	- Witch - Rosina
+		Character_WitchesCat: Purrrr
+		jump Others
+	- Cat - Bramble
+		Character_WitchesCat: She looks bored.
+		jump Others
+	- On second thought...
+		jump 
+
+- Nevermind...
+	[end_timeline]
