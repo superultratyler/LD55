@@ -567,8 +567,8 @@ offset_right = 555.0
 offset_bottom = 697.0
 texture_normal = ExtResource("68_7mwk6")
 texture_click_mask = ExtResource("84_amdj7")
-character_name = "Amulet"
-timeline_name = "Timeline_Amulet"
+character_name = "Lovenote"
+timeline_name = "Timeline_Lovenote"
 text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
 
 [node name="TextureButton_SuspectList" type="TextureButton" parent="."]
