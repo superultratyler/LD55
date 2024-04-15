@@ -1,7 +1,7 @@
 join Character_Wildman 1
 Character_Wildman: DOOHK!
 - Tell me about yesterday...
-	He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands. 
+	He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands.
 	Then, he gestures big chomping teeth with his hands and flails his arms about.
 	jump 
 - Tell me about the townsfolk...
@@ -11,15 +11,16 @@ Character_Wildman: DOOHK!
 		He nods.
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Wildman: Garumb.
-		He nods.
+		Character_Wildman: GARUMB, NUH SNUZ. MUH OONIP HOWZ.
+		He makes a key turning motion with his hand. He flails his arms.
+		RAWR RAWR RAAAAAWR! AHHH!! AHHHHHH!!!
 		jump Townsfolk
 	- Chandler - Willard
 		He gestures angrily. He flaps his arms.
 		Character_Wildman: GUH GUH BOO.
 		jump Townsfolk
 	- Wizard - Wilton
-		He pokes at his head. 
+		He pokes at his head.
 		Character_Wildman: BUG BUG.
 		jump Townsfolk
 	- Guard - Duncan
@@ -40,7 +41,7 @@ Character_Wildman: DOOHK!
 		He smiles broadly.
 		jump Others
 	- Hero - Alexander
-		He gets angry and shakes his head and makes a stabbing motion. 
+		He gets angry and shakes his head and makes a stabbing motion.
 		Character_Wildman: NUH! BAARAA! GUH GUH NUH!
 		jump Others
 	- Imp - Pimmelstix
