@@ -75,6 +75,7 @@ _data = {
 [sub_resource type="Theme" id="Theme_v6lf5"]
 
 [node name="IntroScreen" type="Control" node_paths=PackedStringArray("button_continue", "screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -89,6 +90,7 @@ screen_transition_animations = NodePath("ScreenAnimations")
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
+autoplay = "Off"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

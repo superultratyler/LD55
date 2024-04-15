@@ -106,6 +106,7 @@ _data = {
 [sub_resource type="Theme" id="Theme_afcei"]
 
 [node name="TitleScreen" type="Control" node_paths=PackedStringArray("button_play", "screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -120,6 +121,7 @@ screen_transition_animations = NodePath("ScreenAnimations")
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
+autoplay = "Off"
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -137,10 +139,10 @@ anchor_left = 0.5
 anchor_top = 0.4
 anchor_right = 0.5
 anchor_bottom = 0.4
-offset_left = -253.0
-offset_top = -259.5
-offset_right = 253.0
-offset_bottom = 259.5
+offset_left = 227.0
+offset_top = -19.5
+offset_right = 733.0
+offset_bottom = 499.5
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_1y3yi")
@@ -148,7 +150,7 @@ texture = ExtResource("3_1y3yi")
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0302083
+anchor_left = -0.0427083
 anchor_top = 0.0666667
 anchor_right = -0.0427083
 anchor_bottom = 0.0966667
