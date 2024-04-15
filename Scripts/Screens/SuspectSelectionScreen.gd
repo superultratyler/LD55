@@ -1,7 +1,9 @@
 extends Screen
 class_name SuspectSelectionScreen
 
+@export var button_click_catcher : BaseButton
 @export var button_close : BaseButton
+@export var button_submit : BaseButton
 @export var suspect_list : Control
 @export var suspect_list_item_template : PackedScene
 
@@ -15,13 +17,19 @@ func _ready():
 		print(Main.instance.suspects[i].character.display_name)
 		li.set_suspect(Main.instance.suspects[i])
 		suspect_list.add_child(li)
-	
-	button_close.connect("pressed",_on_button_close_pressed)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
-func _on_button_close_pressed():
+func exit():
 	Main.instance.screen_manager.close_modal(self as Screen)
-	#Main.instance.screen_manager.load_screen("res://Scenes/Screens/SuspectsScreen.tscn")
+
+func _on_button_submit_pressed():
+	print("Submitted!")
+
+func _on_button_click_catcher_toggled(toggled_on):
+	exit()
+
+func _on_button_back_pressed():
+	exit()

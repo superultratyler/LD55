@@ -5,7 +5,7 @@ class_name SuspectsScreen
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	super._ready()
+	#super._ready()
 	button_suspects_list.connect("pressed",_on_button_suspects_list_pressed)
 	open()
 

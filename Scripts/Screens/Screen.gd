@@ -16,10 +16,8 @@ var current_screen_state
 @export var is_modal : bool = false
 @export var screen_transition_animations : AnimationPlayer
 
-func _ready():
+func _enter_tree():
 	screen_transition_animations.animation_finished.connect(_on_screen_animations_animation_finished)
-	screen_transition_animations.get_animation("Off").loop_mode = Animation.LOOP_LINEAR
-	screen_transition_animations.get_animation("On").loop_mode = Animation.LOOP_LINEAR
 	
 	# Default to the Off state
 	screen_transition_animations.play("Off")

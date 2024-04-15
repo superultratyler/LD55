@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsrdvipk5barl"]
+[gd_scene load_steps=6 format=3 uid="uid://dsrdvipk5barl"]
 
 [ext_resource type="PackedScene" uid="uid://d0u7mwuyx8uww" path="res://UI/ButtonToggleSuspect.tscn" id="1_6bv62"]
 [ext_resource type="Script" path="res://Scripts/SuspectListItem.gd" id="1_epwel"]
 [ext_resource type="ButtonGroup" uid="uid://yhq85hvesggo" path="res://UI/SummonedButtonGroup.tres" id="1_hrp8v"]
+[ext_resource type="FontFile" uid="uid://q5c6gvtr5uv0" path="res://Fonts/Arvo/Arvo-Italic.ttf" id="3_2bm8i"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_nn1ii"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_21j0o"]
 
 [node name="SuspectListItem" type="VFlowContainer" node_paths=PackedStringArray("toggle_button_guilty", "toggle_button_involved", "toggle_button_summoned", "suspect_name_label")]
+size_flags_horizontal = 4
 script = ExtResource("1_epwel")
 summoned_button_group = ExtResource("1_hrp8v")
 toggle_button_guilty = NodePath("ButtonToggle_Suspect_Guilty")
@@ -19,17 +21,23 @@ custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_2bm8i")
+theme_override_font_sizes/normal_font_size = 18
 text = "[Suspect Name]"
 
 [node name="ButtonToggle_Suspect_Guilty" parent="." instance=ExtResource("1_6bv62")]
+custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
 
 [node name="ButtonToggle_Suspect_Involved" parent="." instance=ExtResource("1_6bv62")]
+custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
 
 [node name="ButtonToggle_Suspect_Summoned" parent="." instance=ExtResource("1_6bv62")]
+custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
-button_group = SubResource("ButtonGroup_nn1ii")
+button_group = SubResource("ButtonGroup_21j0o")
 
 [connection signal="toggled" from="ButtonToggle_Suspect_Guilty" to="." method="_on_button_toggled_guilty"]
 [connection signal="toggled" from="ButtonToggle_Suspect_Involved" to="." method="_on_button_toggled_involved"]

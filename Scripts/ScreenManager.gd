@@ -28,11 +28,7 @@ func load_screen(screen_path : String):
 
 func open_screen(screen: Screen):
 	if(_active_screen):
-		print("Active Scene: "+_active_screen.scene_file_path)
-		print("Next Scene: "+screen.scene_file_path)
 		if(_active_screen.current_screen_state == _active_screen.SCREEN_STATE.OPEN):
-			print("close active screen")
-			
 			# Close the active screen
 			_active_screen.close()
 			
@@ -56,6 +52,7 @@ func open_modal(screen: Screen):
 	print("[Screen Manager] open modal " + screen.scene_file_path)
 	add_child(screen)
 	move_child(screen, _modals.size() + 1)
+	screen.z_index = 1000
 	screen.open()
 	_modals.append(screen)
 
@@ -66,7 +63,6 @@ func close_modal(screen: Screen):
 			_modals[i].on_closed.connect(_on_modal_closed)
 
 func _on_modal_closed(screen : Screen):
-	print("Modal closed!")
 	screen.on_closed.disconnect(_on_modal_closed)
 	remove_child(screen)
 	_modals.erase(screen)
@@ -82,7 +78,6 @@ func _on_active_screen_off(screen : Screen):
 	_next_screen.on_open.connect(_on_next_screen_on)
 
 func _on_next_screen_on(screen : Screen):
-	print("Next screen is on!")
 	_active_screen = _next_screen
 	_next_screen = null
 

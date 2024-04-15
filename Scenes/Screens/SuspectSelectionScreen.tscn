@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://7ydf342klgsg"]
+[gd_scene load_steps=11 format=3 uid="uid://7ydf342klgsg"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectSelectionScreen.gd" id="1_67c4t"]
+[ext_resource type="FontFile" uid="uid://dnaaj28fpcydf" path="res://Fonts/Arvo/Arvo-Bold.ttf" id="4_ogq50"]
 [ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="14_nw54j"]
 [ext_resource type="PackedScene" uid="uid://dsrdvipk5barl" path="res://UI/SuspectListItem.tscn" id="14_tpjm6"]
 
@@ -72,8 +73,9 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="SuspectSelectionScreen" type="Control" node_paths=PackedStringArray("button_close", "suspect_list", "screen_transition_animations")]
-modulate = Color(1, 1, 1, 0)
+[sub_resource type="Theme" id="Theme_gipxi"]
+
+[node name="SuspectSelectionScreen" type="Control" node_paths=PackedStringArray("button_click_catcher", "button_close", "button_submit", "suspect_list", "screen_transition_animations")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -81,8 +83,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_67c4t")
-button_close = NodePath("ClickCatcherButton")
-suspect_list = NodePath("Panel/SuspectList")
+button_click_catcher = NodePath("ButtonClickCatcher")
+button_close = NodePath("ButtonClickCatcher")
+button_submit = NodePath("ButtonSubmit")
+suspect_list = NodePath("Panel/ScrollContainer/SuspectList")
 suspect_list_item_template = ExtResource("14_tpjm6")
 is_modal = true
 screen_transition_animations = NodePath("ScreenAnimations")
@@ -92,7 +96,7 @@ libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
 
-[node name="ClickCatcherButton" type="TextureButton" parent="."]
+[node name="ButtonClickCatcher" type="TextureButton" parent="."]
 modulate = Color(0, 0, 0, 0.392157)
 layout_mode = 1
 anchors_preset = 15
@@ -104,15 +108,20 @@ texture_normal = ExtResource("14_nw54j")
 stretch_mode = 1
 
 [node name="Panel" type="Control" parent="."]
-anchors_preset = 0
-offset_left = 167.0
-offset_top = 85.0
-offset_right = 767.0
-offset_bottom = 485.0
-metadata/_edit_group_ = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -304.0
+offset_top = 20.0
+offset_right = 296.0
+offset_bottom = 521.0
+grow_horizontal = 2
 
 [node name="PanelBkg" type="TextureRect" parent="Panel"]
 modulate = Color(0.619608, 0.639216, 0.639216, 1)
+clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -121,16 +130,151 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("14_nw54j")
 
-[node name="SuspectList" type="VBoxContainer" parent="Panel"]
+[node name="HeaderLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
+offset_bottom = 73.0
 grow_horizontal = 2
-grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_ogq50")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]Suspects List[center]"
 
-[node name="[EXAMPLE] SuspectListItem" parent="Panel/SuspectList" instance=ExtResource("14_tpjm6")]
+[node name="GuiltyLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 251.0
+offset_top = 114.796
+offset_right = -192.0
+offset_bottom = 142.796
+grow_horizontal = 2
+rotation = -0.376991
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_ogq50")
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "[center]Guilty?[center]"
+
+[node name="InvolvedLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 339.0
+offset_top = 114.796
+offset_right = -104.0
+offset_bottom = 142.796
+grow_horizontal = 2
+rotation = -0.376991
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_ogq50")
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "[center]Involved??[center]"
+
+[node name="SummonedLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 441.0
+offset_top = 109.796
+offset_right = -2.0
+offset_bottom = 137.796
+grow_horizontal = 2
+rotation = -0.376991
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_ogq50")
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "[center]Summoner?[center]"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -280.0
+offset_top = 113.0
+offset_right = 280.0
+offset_bottom = 480.0
+grow_horizontal = 2
+horizontal_scroll_mode = 0
+
+[node name="SuspectList" type="VBoxContainer" parent="Panel/ScrollContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/separation = 4
+
+[node name="[EXAMPLE] SuspectListItem" parent="Panel/ScrollContainer/SuspectList" instance=ExtResource("14_tpjm6")]
 visible = false
 layout_mode = 2
 
+[node name="ButtonBack" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.15
+anchor_top = 0.06
+anchor_right = 0.23125
+anchor_bottom = 0.161667
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("14_nw54j")
+stretch_mode = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ButtonBack"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_gipxi")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Back[/center]"
+fit_content = true
+
+[node name="ButtonSubmit" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.353125
+anchor_top = 0.828333
+anchor_right = 0.658333
+anchor_bottom = 0.931667
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("14_nw54j")
+stretch_mode = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ButtonSubmit"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_gipxi")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Submit Accusations![/center]"
+fit_content = true
+
 [connection signal="animation_finished" from="ScreenAnimations" to="." method="_on_screen_animations_animation_finished"]
+[connection signal="toggled" from="ButtonClickCatcher" to="." method="_on_button_click_catcher_toggled"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ButtonSubmit" to="." method="_on_button_submit_pressed"]
