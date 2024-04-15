@@ -1,4 +1,4 @@
-extends Node
+extends Control
 class_name Screen
 
 enum SCREEN_STATE{
@@ -15,12 +15,9 @@ var current_screen_state
 
 @export var is_modal : bool = false
 @export var screen_transition_animations : AnimationPlayer
-@export var audio_stream_player : AudioStreamPlayer
 
 func _ready():
-	screen_transition_animations.animation_changed.connect(_on_screen_transition_anim_change)
-	screen_transition_animations.animation_set_next("ToOff", "Off")
-	screen_transition_animations.animation_set_next("ToOn", "On")
+	screen_transition_animations.animation_finished.connect(_on_screen_animations_animation_finished)
 	screen_transition_animations.get_animation("Off").loop_mode = Animation.LOOP_LINEAR
 	screen_transition_animations.get_animation("On").loop_mode = Animation.LOOP_LINEAR
 	
@@ -32,16 +29,25 @@ func _ready():
 func open():
 	current_screen_state = SCREEN_STATE.TRANSITIONING_OPEN
 	screen_transition_animations.play("ToOn")
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 func close():
 	current_screen_state = SCREEN_STATE.TRANSITIONING_CLOSED
 	screen_transition_animations.play("ToOff")
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
 
-func _on_screen_transition_anim_change(anim_name):
+
+func _on_screen_animations_animation_finished(anim_name):
 	print(anim_name)
-	if anim_name == "Off":
+	if anim_name == "ToOff":
+		print("[Screen] " + scene_file_path + " is closed")
 		current_screen_state = SCREEN_STATE.CLOSED
+		screen_transition_animations.play("Off")
+		mouse_filter = Control.MOUSE_FILTER_STOP
 		on_closed.emit(self as Screen)
-	if anim_name == "On":
+	elif anim_name == "ToOn":
+		print("[Screen] " + scene_file_path + " is open")
 		current_screen_state = SCREEN_STATE.OPEN
+		screen_transition_animations.play("On")
+		mouse_filter = Control.MOUSE_FILTER_STOP
 		on_open.emit(self as Screen)

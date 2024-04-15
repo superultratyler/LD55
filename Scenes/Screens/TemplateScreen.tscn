@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ioj8cudu0f4l"]
+[gd_scene load_steps=8 format=3 uid="uid://cwedp1x6avgaw"]
 
-[ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="1_gj6ye"]
-[ext_resource type="Script" path="res://Scripts/Screens/TitleScreen.gd" id="1_j4jva"]
+[ext_resource type="Script" path="res://Scripts/Screens/TitleScreen.gd" id="1_xvsbp"]
+[ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="2_8ykmd"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -79,7 +79,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_j4jva")
+script = ExtResource("1_xvsbp")
 button_play = NodePath("TextureButton")
 screen_transition_animations = NodePath("ScreenAnimations")
 
@@ -94,7 +94,7 @@ offset_left = 394.0
 offset_top = 443.0
 offset_right = 594.0
 offset_bottom = 483.0
-texture_normal = ExtResource("1_gj6ye")
+texture_normal = ExtResource("2_8ykmd")
 stretch_mode = 1
 metadata/_edit_group_ = true
 metadata/_edit_use_anchors_ = true

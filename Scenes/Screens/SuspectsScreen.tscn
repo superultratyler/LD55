@@ -1,10 +1,31 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5hetjh0msmdc"]
+[gd_scene load_steps=32 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
-[ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/tempbg.png" id="2_7c15o"]
+[ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/Portraits/tempbg.png" id="2_7c15o"]
 [ext_resource type="PackedScene" uid="uid://v86y8bcqht14" path="res://Scenes/SceneCharacter.tscn" id="3_feb8l"]
 [ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="4_87eie"]
 [ext_resource type="AudioStream" uid="uid://bgt5bky71cgv3" path="res://Audio/Voices/Farmer_Idunno.ogg" id="4_l58k4"]
+[ext_resource type="AudioStream" uid="uid://dw2ty7q7obddv" path="res://Audio/Voices/Farmer_LetsSee.ogg" id="5_ao36a"]
+[ext_resource type="AudioStream" uid="uid://wi4pkt81d3n8" path="res://Audio/Voices/Farmer_Weelp.ogg" id="6_lkyc3"]
+[ext_resource type="AudioStream" uid="uid://87yke0r6mbmv" path="res://Audio/Voices/WitchsCat_Meow1.ogg" id="7_fi7wy"]
+[ext_resource type="AudioStream" uid="uid://bwldu8wy6eypv" path="res://Audio/Voices/Wizard_DoNotMeddle.ogg" id="7_jc5dc"]
+[ext_resource type="AudioStream" uid="uid://d23fw43gota67" path="res://Audio/Voices/Wildman_Grunt1.ogg" id="7_lpqwf"]
+[ext_resource type="AudioStream" uid="uid://dipooq4rysl0e" path="res://Audio/Voices/Skeleton_Rattle1.ogg" id="7_t51tc"]
+[ext_resource type="AudioStream" uid="uid://y0ol8e2lgcef" path="res://Audio/Voices/Wizard_What.ogg" id="8_5xu1q"]
+[ext_resource type="AudioStream" uid="uid://cve2odugfws4v" path="res://Audio/Voices/WitchsCat_Meow2.ogg" id="8_6lmkh"]
+[ext_resource type="AudioStream" uid="uid://dkrt7u5bums1h" path="res://Audio/Voices/Wildman_Grunt2.ogg" id="8_d5hsi"]
+[ext_resource type="AudioStream" uid="uid://b810b7fm3lf7m" path="res://Audio/Voices/Skeleton_Rattle2.ogg" id="8_umif2"]
+[ext_resource type="AudioStream" uid="uid://bhucq6idrfbrn" path="res://Audio/Voices/Wizard_WhatIsIt.ogg" id="9_tndo7"]
+[ext_resource type="AudioStream" uid="uid://cunfaupdqpx4u" path="res://Audio/Voices/Wizard_Yes.ogg" id="10_ytexo"]
+[ext_resource type="AudioStream" uid="uid://dojidfrtjrtxn" path="res://Audio/Voices/Witch_Huh.ogg" id="11_vhy1o"]
+[ext_resource type="AudioStream" uid="uid://d4fmla5dlbahk" path="res://Audio/Voices/Witch_Potions.ogg" id="12_5q1vr"]
+[ext_resource type="AudioStream" uid="uid://csv6rhuj2kgcn" path="res://Audio/Voices/Witch_What.ogg" id="13_ehmp4"]
+[ext_resource type="AudioStream" uid="uid://tijmehaaiigs" path="res://Art/Portraits/Barkeep_Huh.ogg" id="14_4by0r"]
+[ext_resource type="AudioStream" uid="uid://mjxblsutrwav" path="res://Art/Portraits/Barkeep_WhatllItBe.ogg" id="15_2uqpj"]
+[ext_resource type="AudioStream" uid="uid://dtn8t0u74rviu" path="res://Art/Portraits/Barkeep_Yeup.ogg" id="16_ijl3e"]
+[ext_resource type="AudioStream" uid="uid://e1ka8kxvm1ek" path="res://Art/Portraits/Girl_ImHungry.ogg" id="23_fudx2"]
+[ext_resource type="AudioStream" uid="uid://tlenphmoy4eg" path="res://Art/Portraits/Girl_Me.ogg" id="24_tj6vm"]
+[ext_resource type="AudioStream" uid="uid://cpaxuupden3ui" path="res://Art/Portraits/Girl_WhoAreYou.ogg" id="25_gwtru"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -74,12 +95,17 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="SuspectsScreen" type="Node2D" node_paths=PackedStringArray("button_suspects_list", "screen_transition_animations", "audio_stream_player")]
-position = Vector2(1, -1)
+[node name="SuspectsScreen" type="Control" node_paths=PackedStringArray("button_suspects_list", "screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_xsddm")
 button_suspects_list = NodePath("TextureButton_SuspectList")
 screen_transition_animations = NodePath("ScreenAnimations")
-audio_stream_player = NodePath("")
 
 [node name="ScreenAnimations" type="AnimationPlayer" parent="."]
 libraries = {
@@ -88,21 +114,24 @@ libraries = {
 
 [node name="TextureRect_Background" type="TextureRect" parent="."]
 modulate = Color(0.427451, 0.427451, 0.427451, 1)
+layout_mode = 0
 offset_right = 960.0
 offset_bottom = 600.0
 texture = ExtResource("2_7c15o")
 expand_mode = 2
 
 [node name="SceneCharacter_Farmer" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 200.0
 offset_top = 11.0
 offset_right = 328.0
 offset_bottom = 139.0
 character_name = "Farmer"
 timeline_name = "Timeline_Farmer"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4")])
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4"), ExtResource("5_ao36a"), ExtResource("6_lkyc3")])
 
 [node name="SceneCharacter_Hero" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 430.0
 offset_top = 17.0
 offset_right = 558.0
@@ -111,6 +140,7 @@ character_name = "Hero"
 timeline_name = "Timeline_Hero"
 
 [node name="SceneCharacter_Guard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 460.0
 offset_top = 210.0
 offset_right = 588.0
@@ -119,38 +149,47 @@ character_name = "Guard"
 timeline_name = "Timeline_Guard"
 
 [node name="SceneCharacter_WitchesCat" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 276.0
 offset_right = 160.0
 offset_bottom = 404.0
 character_name = "Witches Cat"
 timeline_name = "Timeline_WitchesCat"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_fi7wy"), ExtResource("8_6lmkh")])
 
 [node name="SceneCharacter_Wildman" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 590.0
 offset_top = 60.0
 offset_right = 718.0
 offset_bottom = 188.0
 character_name = "Wildman"
 timeline_name = "Timeline_Wildman"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_lpqwf"), ExtResource("8_d5hsi")])
 
 [node name="SceneCharacter_Witch" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 305.0
 offset_top = 139.0
 offset_right = 433.0
 offset_bottom = 267.0
 character_name = "Witch"
 timeline_name = "Timeline_Witch"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("11_vhy1o"), ExtResource("12_5q1vr"), ExtResource("13_ehmp4")])
 
 [node name="SceneCharacter_Barkeep" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 150.0
 offset_top = 146.0
 offset_right = 278.0
 offset_bottom = 274.0
 character_name = "Barkeep"
 timeline_name = "Timeline_Barkeep"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("14_4by0r"), ExtResource("15_2uqpj"), ExtResource("16_ijl3e")])
 
 [node name="SceneCharacter_WizardsImp" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 752.0
 offset_top = 36.0
 offset_right = 880.0
@@ -159,30 +198,37 @@ character_name = "Wizard's Imp"
 timeline_name = "Timeline_WizardsImp"
 
 [node name="SceneCharacter_Wizard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 617.0
 offset_top = 244.0
 offset_right = 745.0
 offset_bottom = 372.0
 character_name = "Wizard"
 timeline_name = "Timeline_Wizard"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_jc5dc"), ExtResource("8_5xu1q"), ExtResource("9_tndo7"), ExtResource("10_ytexo")])
 
 [node name="SceneCharacter_Skeleton" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 790.0
 offset_top = 207.0
 offset_right = 918.0
 offset_bottom = 335.0
 character_name = "Skeleton"
 timeline_name = "Timeline_Skeleton"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_t51tc"), ExtResource("8_umif2")])
 
 [node name="SceneCharacter_LittleGirl" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 244.0
 offset_top = 279.0
 offset_right = 372.0
 offset_bottom = 407.0
 character_name = "Little Girl"
 timeline_name = "Timeline_LittleGirl"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("23_fudx2"), ExtResource("24_tj6vm"), ExtResource("25_gwtru")])
 
 [node name="SceneCharacter_Ghost" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 26.0
 offset_top = 64.0
 offset_right = 154.0
@@ -191,6 +237,7 @@ character_name = "Ghost"
 timeline_name = "Timeline_Ghost"
 
 [node name="TextureButton_SuspectList" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 748.0
 offset_top = 441.0
 offset_right = 876.0

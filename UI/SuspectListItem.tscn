@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsrdvipk5barl"]
+
+[ext_resource type="PackedScene" uid="uid://d0u7mwuyx8uww" path="res://UI/ButtonToggleSuspect.tscn" id="1_6bv62"]
+[ext_resource type="Script" path="res://Scripts/SuspectListItem.gd" id="1_epwel"]
+[ext_resource type="ButtonGroup" uid="uid://yhq85hvesggo" path="res://UI/SummonedButtonGroup.tres" id="1_hrp8v"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_f3hmv"]
+
+[node name="SuspectListItem" type="VFlowContainer" node_paths=PackedStringArray("toggle_button_guilty", "toggle_button_involved", "toggle_button_summoned", "suspect_name_label")]
+script = ExtResource("1_epwel")
+summoned_button_group = ExtResource("1_hrp8v")
+toggle_button_guilty = NodePath("ButtonToggle_Suspect_Guilty")
+toggle_button_involved = NodePath("ButtonToggle_Suspect_Involved")
+toggle_button_summoned = NodePath("ButtonToggle_Suspect_Summoned")
+suspect_name_label = NodePath("SuspectLabel")
+
+[node name="SuspectLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Suspect Name"
+
+[node name="ButtonToggle_Suspect_Guilty" parent="." instance=ExtResource("1_6bv62")]
+layout_mode = 2
+
+[node name="ButtonToggle_Suspect_Involved" parent="." instance=ExtResource("1_6bv62")]
+layout_mode = 2
+
+[node name="ButtonToggle_Suspect_Summoned" parent="." instance=ExtResource("1_6bv62")]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_f3hmv")
