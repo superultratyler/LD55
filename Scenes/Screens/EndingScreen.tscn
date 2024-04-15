@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://ioj8cudu0f4l"]
+[gd_scene load_steps=7 format=3 uid="uid://drj1kfdwcogkr"]
 
-[ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="1_gj6ye"]
-[ext_resource type="Script" path="res://Scripts/Screens/TitleScreen.gd" id="1_j4jva"]
+[ext_resource type="Script" path="res://Scripts/Screens/EndingScreen.gd" id="1_ntund"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -71,7 +70,7 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="TitleScreen" type="Control" node_paths=PackedStringArray("button_play", "screen_transition_animations")]
+[node name="EndingScreen" type="Control"]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
@@ -79,44 +78,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_j4jva")
-button_play = NodePath("TextureButton")
-screen_transition_animations = NodePath("ScreenAnimations")
+script = ExtResource("1_ntund")
 
 [node name="ScreenAnimations" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
-
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 394.0
-offset_top = 443.0
-offset_right = 594.0
-offset_bottom = 483.0
-texture_normal = ExtResource("1_gj6ye")
-stretch_mode = 1
-metadata/_edit_group_ = true
-metadata/_edit_use_anchors_ = true
-
-[node name="RichTextLabel" type="RichTextLabel" parent="TextureButton"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "PLAY GAME"
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 363.0
-offset_top = 189.0
-offset_right = 643.0
-offset_bottom = 280.0
-theme_override_font_sizes/normal_font_size = 30
-text = "WHO DUNNIT SUMMONED IT?!"
 
 [connection signal="animation_finished" from="ScreenAnimations" to="." method="_on_screen_animations_animation_finished"]

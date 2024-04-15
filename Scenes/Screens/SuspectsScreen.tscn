@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b5hetjh0msmdc"]
+[gd_scene load_steps=32 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/Portraits/tempbg.png" id="2_7c15o"]
@@ -95,8 +95,14 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="SuspectsScreen" type="Node2D" node_paths=PackedStringArray("button_suspects_list", "screen_transition_animations")]
-position = Vector2(1, -1)
+[node name="SuspectsScreen" type="Control" node_paths=PackedStringArray("button_suspects_list", "screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_xsddm")
 button_suspects_list = NodePath("TextureButton_SuspectList")
 screen_transition_animations = NodePath("ScreenAnimations")
@@ -108,12 +114,14 @@ libraries = {
 
 [node name="TextureRect_Background" type="TextureRect" parent="."]
 modulate = Color(0.427451, 0.427451, 0.427451, 1)
+layout_mode = 0
 offset_right = 960.0
 offset_bottom = 600.0
 texture = ExtResource("2_7c15o")
 expand_mode = 2
 
 [node name="SceneCharacter_Farmer" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 200.0
 offset_top = 11.0
 offset_right = 328.0
@@ -123,6 +131,7 @@ timeline_name = "Timeline_Farmer"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4"), ExtResource("5_ao36a"), ExtResource("6_lkyc3")])
 
 [node name="SceneCharacter_Hero" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 430.0
 offset_top = 17.0
 offset_right = 558.0
@@ -131,6 +140,7 @@ character_name = "Hero"
 timeline_name = "Timeline_Hero"
 
 [node name="SceneCharacter_Guard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 460.0
 offset_top = 210.0
 offset_right = 588.0
@@ -139,6 +149,7 @@ character_name = "Guard"
 timeline_name = "Timeline_Guard"
 
 [node name="SceneCharacter_WitchesCat" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 276.0
 offset_right = 160.0
@@ -148,6 +159,7 @@ timeline_name = "Timeline_WitchesCat"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_fi7wy"), ExtResource("8_6lmkh")])
 
 [node name="SceneCharacter_Wildman" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 590.0
 offset_top = 60.0
 offset_right = 718.0
@@ -157,6 +169,7 @@ timeline_name = "Timeline_Wildman"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_lpqwf"), ExtResource("8_d5hsi")])
 
 [node name="SceneCharacter_Witch" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 305.0
 offset_top = 139.0
 offset_right = 433.0
@@ -166,6 +179,7 @@ timeline_name = "Timeline_Witch"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("11_vhy1o"), ExtResource("12_5q1vr"), ExtResource("13_ehmp4")])
 
 [node name="SceneCharacter_Barkeep" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 150.0
 offset_top = 146.0
 offset_right = 278.0
@@ -175,6 +189,7 @@ timeline_name = "Timeline_Barkeep"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("14_4by0r"), ExtResource("15_2uqpj"), ExtResource("16_ijl3e")])
 
 [node name="SceneCharacter_WizardsImp" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 752.0
 offset_top = 36.0
 offset_right = 880.0
@@ -183,6 +198,7 @@ character_name = "Wizard's Imp"
 timeline_name = "Timeline_WizardsImp"
 
 [node name="SceneCharacter_Wizard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 617.0
 offset_top = 244.0
 offset_right = 745.0
@@ -192,6 +208,7 @@ timeline_name = "Timeline_Wizard"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_jc5dc"), ExtResource("8_5xu1q"), ExtResource("9_tndo7"), ExtResource("10_ytexo")])
 
 [node name="SceneCharacter_Skeleton" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 790.0
 offset_top = 207.0
 offset_right = 918.0
@@ -201,6 +218,7 @@ timeline_name = "Timeline_Skeleton"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_t51tc"), ExtResource("8_umif2")])
 
 [node name="SceneCharacter_LittleGirl" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 244.0
 offset_top = 279.0
 offset_right = 372.0
@@ -210,6 +228,7 @@ timeline_name = "Timeline_LittleGirl"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("23_fudx2"), ExtResource("24_tj6vm"), ExtResource("25_gwtru")])
 
 [node name="SceneCharacter_Ghost" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
 offset_left = 26.0
 offset_top = 64.0
 offset_right = 154.0
@@ -218,6 +237,7 @@ character_name = "Ghost"
 timeline_name = "Timeline_Ghost"
 
 [node name="TextureButton_SuspectList" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 748.0
 offset_top = 441.0
 offset_right = 876.0

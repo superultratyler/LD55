@@ -34,5 +34,5 @@ func _pressed():
 	if audio_barks.size() > 0:
 		var random_index = randi() % audio_barks.size()
 		var audio = audio_barks[random_index]
-		Main.AUDIO_STREAM_GLOBAL.stream = audio
-		Main.AUDIO_STREAM_GLOBAL.play(0)
+		Main.instance.audio_stream.stream = audio
+		Main.instance.audio_stream.play(0)
