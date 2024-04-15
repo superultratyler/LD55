@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://brju8dwh0ta0j"]
+[gd_scene load_steps=18 format=3 uid="uid://brju8dwh0ta0j"]
 
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_jm7ib"]
+[ext_resource type="AudioStream" uid="uid://mdqbtnkbmbin" path="res://Audio/Music/neighbourhood-oddities-matt-stewart-evans-main-version-16714-02-00.mp3" id="2_ff568"]
 [ext_resource type="Script" path="res://Scripts/ScreenManager.gd" id="2_mela7"]
 [ext_resource type="Script" path="res://Scripts/Suspect.gd" id="3_srp3b"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Barkeep.dch" id="4_27kvk"]
@@ -17,10 +18,12 @@
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Wizard.dch" id="14_nvktc"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_WizardsImp.dch" id="15_xbvqg"]
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("screen_manager", "audio_stream", "suspects")]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("screen_manager", "audio_stream", "audio_stream_bgm", "suspects")]
 script = ExtResource("1_jm7ib")
 screen_manager = NodePath("ScreenManager")
 audio_stream = NodePath("AudioStreamPlayer")
+audio_stream_bgm = NodePath("AudioStreamPlayer_BGM")
+bgm_audiostream = ExtResource("2_ff568")
 suspects = [NodePath("Suspects/Suspect_Barkeep"), NodePath("Suspects/Suspect_Farmer"), NodePath("Suspects/Suspect_Ghost"), NodePath("Suspects/Suspect_Guard"), NodePath("Suspects/Suspect_Hero"), NodePath("Suspects/Suspect_LittleGirl"), NodePath("Suspects/Suspect_Skeleton"), NodePath("Suspects/Suspect_Wildman"), NodePath("Suspects/Suspect_Witch"), NodePath("Suspects/Suspect_WitchesCat"), NodePath("Suspects/Suspect_Wizard"), NodePath("Suspects/Suspect_WizardsImp")]
 
 [node name="Suspects" type="Node" parent="."]
@@ -89,3 +92,7 @@ guilty = true
 script = ExtResource("2_mela7")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AudioStreamPlayer_BGM" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+autoplay = true
