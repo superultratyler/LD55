@@ -89,6 +89,8 @@ button_close = NodePath("ButtonBack")
 button_submit = NodePath("ButtonSubmit")
 suspect_list = NodePath("Panel/ScrollContainer/SuspectList")
 suspect_list_item_template = ExtResource("14_tpjm6")
+timeline_incorrect = "Timeline_WrongAnswers"
+timeline_correct = "Timeline_CorrectAnswers"
 is_modal = true
 screen_transition_animations = NodePath("ScreenAnimations")
 
