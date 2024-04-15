@@ -28,6 +28,7 @@ directories/dch_directory={
 "Character_Guard": "res://Dialogic/Characters/Character_Guard.dch",
 "Character_Hero": "res://Dialogic/Characters/Character_Hero.dch",
 "Character_LittleGirl": "res://Dialogic/Characters/Character_LittleGirl.dch",
+"Character_Princess": "res://Dialogic/Characters/Character_Princess.dch",
 "Character_Skeleton": "res://Dialogic/Characters/Character_Skeleton.dch",
 "Character_Test": "res://Dialogic/Characters/Character_Test.dch",
 "Character_Wildman": "res://Dialogic/Characters/Character_Wildman.dch",
@@ -57,6 +58,7 @@ directories/dtl_directory={
 "Timeline_Barkeep": "res://Dialogic/Timelines/Timeline_Barkeep.dtl",
 "Timeline_Bone": "res://Dialogic/Timelines/Timeline_Bone.dtl",
 "Timeline_Candle": "res://Dialogic/Timelines/Timeline_Candle.dtl",
+"Timeline_CorrectAnswers": "res://Dialogic/Timelines/Timeline_CorrectAnswers.dtl",
 "Timeline_Crown": "res://Dialogic/Timelines/Timeline_Crown.dtl",
 "Timeline_Dagger": "res://Dialogic/Timelines/Timeline_Dagger.dtl",
 "Timeline_Farmer": "res://Dialogic/Timelines/Timeline_Farmer.dtl",
@@ -81,7 +83,8 @@ directories/dtl_directory={
 "Timeline_Witch": "res://Dialogic/Timelines/Timeline_Witch.dtl",
 "Timeline_WitchesCat": "res://Dialogic/Timelines/Timeline_WitchesCat.dtl",
 "Timeline_Wizard": "res://Dialogic/Timelines/Timeline_Wizard.dtl",
-"Timeline_WizardsImp": "res://Dialogic/Timelines/Timeline_WizardsImp.dtl"
+"Timeline_WizardsImp": "res://Dialogic/Timelines/Timeline_WizardsImp.dtl",
+"Timeline_WrongAnswers": "res://Dialogic/Timelines/Timeline_WrongAnswers.dtl"
 }
 layout/style_list=["res://Dialogic/CustomStyle.tres"]
 layout/default_style="res://Dialogic/CustomStyle.tres"
