@@ -5,7 +5,7 @@
 [ext_resource type="ButtonGroup" uid="uid://yhq85hvesggo" path="res://UI/SummonedButtonGroup.tres" id="1_hrp8v"]
 [ext_resource type="FontFile" uid="uid://q5c6gvtr5uv0" path="res://Fonts/Arvo/Arvo-Italic.ttf" id="3_2bm8i"]
 
-[sub_resource type="ButtonGroup" id="ButtonGroup_21j0o"]
+[sub_resource type="ButtonGroup" id="ButtonGroup_gyyq6"]
 
 [node name="SuspectListItem" type="VFlowContainer" node_paths=PackedStringArray("toggle_button_guilty", "toggle_button_involved", "toggle_button_summoned", "suspect_name_label")]
 size_flags_horizontal = 4
@@ -26,19 +26,19 @@ theme_override_fonts/normal_font = ExtResource("3_2bm8i")
 theme_override_font_sizes/normal_font_size = 18
 text = "[Suspect Name]"
 
-[node name="ButtonToggle_Suspect_Guilty" parent="." instance=ExtResource("1_6bv62")]
+[node name="ButtonToggle_Suspect_Involved" parent="." instance=ExtResource("1_6bv62")]
 custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
 
-[node name="ButtonToggle_Suspect_Involved" parent="." instance=ExtResource("1_6bv62")]
+[node name="ButtonToggle_Suspect_Guilty" parent="." instance=ExtResource("1_6bv62")]
 custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
 
 [node name="ButtonToggle_Suspect_Summoned" parent="." instance=ExtResource("1_6bv62")]
 custom_minimum_size = Vector2(80, 32)
 layout_mode = 2
-button_group = SubResource("ButtonGroup_21j0o")
+button_group = SubResource("ButtonGroup_gyyq6")
 
-[connection signal="toggled" from="ButtonToggle_Suspect_Guilty" to="." method="_on_button_toggled_guilty"]
 [connection signal="toggled" from="ButtonToggle_Suspect_Involved" to="." method="_on_button_toggled_involved"]
+[connection signal="toggled" from="ButtonToggle_Suspect_Guilty" to="." method="_on_button_toggled_guilty"]
 [connection signal="toggled" from="ButtonToggle_Suspect_Summoned" to="." method="_on_button_toggled_summoned"]
