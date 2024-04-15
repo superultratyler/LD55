@@ -16,7 +16,7 @@ Character_Witch: I'm Rosina the alchemist, but most call me a witch. Witch I am.
 		Character_Witch: I see that sap fawning over the princess every time she would parade around town. Pathetic.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Witch: Hah! *Wizard?* ***Him?*** There's more magic in Brambles litterbox-which I've seen him digging through. 
+		Character_Witch: Hah! [i]Wizard?[/i] [b]Him?[/b] There's more magic in Brambles litterbox-which I've seen him digging through. 
 		Character_Witch: He claims he summoned the Booglo but I don't buy that for one minute. You have to be born with inate magical ability to pull that off! Was he? I doubt it. His magic amulet is just a whistle!
 		jump Townsfolk
 	- Guard - Duncan
@@ -26,7 +26,7 @@ Character_Witch: I'm Rosina the alchemist, but most call me a witch. Witch I am.
 		Character_Witch: A sweet young girl, but she kept her distance from me... I wonder why.
 		jump Townsfolk
 	- King - Kurtis
-		Character_Witch: I was in the process of creating a very complicated potion for him, yes. It requires the rarest ingredients only a king could afford. The "Elixir of obnoxiously long life". Guaranteed to outlive your greedy, spoiled children. 
+		Character_Witch: I was in the process of creating a very complicated potion for him, yes. It requires the rarest ingredients only a king could afford. "The Elixir of Obnoxiously Long Life". Guaranteed to outlive your greedy, spoiled children. 
 		Character_Witch: He was squashed before I could complete it, ironic. Oh well I spose I'll drink it and live another two-hundred years haha!
 		jump Townsfolk
 	- On second thought...
@@ -40,13 +40,13 @@ Character_Witch: I'm Rosina the alchemist, but most call me a witch. Witch I am.
 		Character_Witch: The newcomer? Hopefully he buys some potions.
 		jump Others
 	- Imp - Pimmelstix
-		Character_Witch: What a foul creature. Wilton *claims* to have summoned it but I know they've been cursed to be bound to each other. Mark my words that Imp will off Milton the first chance it gets. It wants nothing more than to be free of that so called **wizard.**
+		Character_Witch: What a foul creature. Wilton [i]claims[/i] to have summoned it but I know they've been cursed to be bound to each other. Mark my words that Imp will off Milton the first chance it gets. It wants nothing more than to be free of that so called [i]wizard[/i].
 		jump Others
 	- Skeleton - ???
 		Character_Witch: It's not everyday you see a walking skeleton, they don't just pop out of the ground you know. Someone did that on purpose.
 		jump Others
 	- Wildman - Doohk
-		Character_Witch: Ah Doohk, I find him quite handsome and well spoken. The fools of this town just don't understand him! He would do anything for his dear little daughter...
+		Character_Witch: Ah, Doohk, I find him quite handsome and well spoken. The fools of this town just don't understand him! He would do anything for his dear little daughter...
 		jump Others
 	- Witch - Rosina
 		Character_Witch: Fine, I'm a witch but I'm other things too. I bake delicious pastries, but no one calls me a baker! 

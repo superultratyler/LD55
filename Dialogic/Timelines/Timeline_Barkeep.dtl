@@ -1,7 +1,8 @@
 join Character_Barkeep 1
-Character_Barkeep: Just a typical barkeep, yeup. Not much more to it.
+Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 - Tell me about yesterday...
-	Character_Barkeep: I was tending the bar all day, yeup. Till I found Wilton asleep in my root cellar with a bottled pixie around dusk, I know Doohk needs that on full moons so I walked it on down to his hut but he wasn't there. So I came right back here but it's a long walk with the bridge out. On my way back I passed three cloaked figures.  One smelled awful, like that Wonder Wax Wilton is trying to pedal. Soon after I heard the sound of a big ol'monster crushing half the town. So I decided to close early on account of the cataclysmic event and such. Yeup.
+	Character_Barkeep: I was tending the bar all day, yeup. Til' I found Wilton asleep in my root cellar with a bottled pixie around dusk, I know Doohk needs that on full moons so I walked it on down to his hut but he wasn't there. So I came right back here but it's a long walk with the bridge out. 
+	Character_Barkeep: On my way back I passed three cloaked figures.  One smelled awful, like that Wonder Wax Wilton is always trying to peddle. Soon after I heard the sound of a big ol'monster crushing half the town. I decided to close early on account of the cataclysmic event and such. Yeup.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -15,7 +16,7 @@ Character_Barkeep: Just a typical barkeep, yeup. Not much more to it.
 		Character_Barkeep: I buy candles from him, everyone does. Or we did, seems he's going to need a different line of work now. He was in here playing cards with Wilton and that nasty Imp around dusk. Watched him lose a whole bundle o' fancy lookin candles and a sparkly bottle to that Imp, yeup. 
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Barkeep: He does call himself a *wizard*, but I never seen any wizarding outta him. Unless you count that infernal imp, but I can't imagine why anyone would choose to have that thing around. He passed out in my root cellar last night so I put him to bed in one of the rooms upstairs, I put that on his tab. 
+		Character_Barkeep: He does call himself a [i]wizard[/i], but I never seen any wizardin' outta him. Unless you count that infernal imp, but I can't imagine why anyone would choose to have that thing around. He passed out in my root cellar last night so I put him to bed in one of the rooms upstairs, I put that on his tab. 
 		jump Townsfolk
 	- Guard - Duncan
 		Character_Barkeep: He's got his hands full alright. I saw him up on the bell tower ringing the bell when the Booglo was summoned. 

@@ -1,13 +1,14 @@
 join Character_Farmer 1
-Character_Farmer: The names Herbert. I farm the best turnips and don't you ever let anyone tell you different.
+Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't you ever let anyone tell you different.
 - Tell me about yesterday...
-	Character_Farmer: During the day I played some cards with that Alexander, did pretty well. 'Course at night a Booglo was summoned in my field, ruining my turnips. 
+	Character_Farmer: During the day I played some cards with that Alexander, and did pretty well. 'Course at night a Booglo was summoned in my field, ruining my turnips. 
 	Character_Farmer: I'd bet that tavern keeper Harriet had something to do with this, couldn't live knowing my delicious turnips are better than her baked potatoes.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Farmer: She doesn't buy my turnips. She would rather buy **potatoes** from the neighboring town. What goes better with an ale than a fresh turnip? Everyone's always eating those potatoes instead of my turnips. They don't know what they're missing.
+		Character_Farmer: She doesn't buy my turnips. She would rather buy [b]potatoes[/b] from the neighboring town. What goes better with an ale than a fresh turnip? 
+		Character_Farmer: Everyone's always eating those potatoes instead of my turnips. They don't know what they're missing.
 		jump Townsfolk
 	- Farmer - Herbert
 		Character_Farmer: Mmmmhmmm, been farming turnips my whole life. 
@@ -16,7 +17,7 @@ Character_Farmer: The names Herbert. I farm the best turnips and don't you ever 
 		Character_Farmer: I know they found some freaky candles at the ritual site and no one could make candles like that but him.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Farmer: He claims he summoned that Imp but I happen to know it's a curse he put on himself by *accident.* That's what he gets trying to meddle with magical stuff.
+		Character_Farmer: He claims he summoned that Imp but I happen to know it's a curse he put on himself by [i]accident[/i]. That's what he gets trying to meddle with magical stuff.
 		jump Townsfolk
 	- Guard - Duncan
 		Character_Farmer: Pffft! Only cared about those royals. You won't see him sticking his neck out to save my turnips! No one respects my turnips. He did let me know about Wilton's Wonder Wax, it's gonna help my aching back some day.
@@ -32,7 +33,7 @@ Character_Farmer: The names Herbert. I farm the best turnips and don't you ever 
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Farmer: Lives out in the wilds with her father, they're a wild bunch. I let them use my barn...when the *weather* turns bad.
+		Character_Farmer: Lives out in the wilds with her father, they're a wild bunch. I let them use my barn...when the [i]weather[/i] turns bad.
 		jump Others
 	- Hero - Alexander
 		Character_Farmer: Another fool to go along with the rest in this town. He came here to slay the beast werewolf. The werewolf never did harm my turnips, and it ate plenty of rabbits. You know what those rabbits eat? That's right, my turnips. I say leave it alone.
@@ -51,6 +52,5 @@ Character_Farmer: The names Herbert. I farm the best turnips and don't you ever 
 		jump Others
 	- On second thought...
 		jump 
-
 - Nevermind...
 	[end_timeline]

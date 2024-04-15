@@ -2,18 +2,19 @@ join Character_Guard 1
 Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 - Tell me about yesterday...
 	Character_Guard: I was looking into a break in at the Rosina the Witches hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there. 
-	Character_Guard: At night I heard the signal for *"trouble"* so I rang the bell twelve times which is the new protocol. Then I noticed three cloaked figures out in the turnip field, up to no good I'm sure. Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
+	Character_Guard: At night I heard the signal for "trouble" so I rang the bell twelve times which is the new protocol. Then I noticed three cloaked figures out in the turnip field, up to no good I'm sure. Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Guard: I stop by her tavern after most shifts. You would too if you had my job. I noticed her coming across the bridge at night. I'd have stopped by the tavern after my shift but, well you know giant Booglo got summoned. I don't even get overtime for this.
+		Character_Guard: I stop by her tavern after most shifts. You would too if you had my job. I noticed her coming across the bridge at night. I'd have stopped by the tavern after my shift but, well you know - giant Booglo got summoned. I don't even get overtime for this.
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern, I think he's jealous. Too bad about his field, that monster trampled it good.
+		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern. I think he's jealous. Too bad about his field, that monster trampled it good.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Guard: Willard, a real ninny if you ask me. I can't stand him...but he's my brother. I saw him at the tavern playing cards last night with my brother Willard, that wizard Wilton and his pet Imp-thing. Sure, I was sad to hear he got stepped on by the Booglo, but the fact that he's still here as a ghost talking my ear off makes it somehow less tragic.
+		Character_Guard: Willard, a real ninny if you ask me. I can't stand him...but he's my brother. I saw him at the tavern playing cards last night with my brother Willard, that wizard Wilton and his pet Imp-thing. 
+		Character_Guard: Sure, I was sad to hear he got stepped on by the Booglo, but the fact that he's still here as a ghost talking my ear off makes it somehow less tragic.
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Guard: I go to his shop to buy Wilton's Wonder Wax for back pain, he always complains about the Witch and how she's got all the best magic books. I wish he'd put on some real clothes instead of that sleeping cap and nightgown.

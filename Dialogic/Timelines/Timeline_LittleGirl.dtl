@@ -21,7 +21,6 @@ Character_LittleGirl: I'm hungry...
 		Character_LittleGirl: I've seen him in the town, but I don't go there a lot, he smells like the farmer.
 		jump Townsfolk
 	- Princess - Primrose
-		Character_LittleGirl: ...June. I'm nine years old. I have nightmares sometimes.
 		Character_LittleGirl: She's so pretty!
 		jump Townsfolk
 	- King - Kurtis
@@ -32,10 +31,11 @@ Character_LittleGirl: I'm hungry...
 - Anyone else around here?
 	label Others
 	- Girl - June
+		Character_LittleGirl: ...June. I'm nine years old. I have nightmares sometimes.
 		Character_LittleGirl: I'm not allowed outside at night. Especially on full moons, it's dangerous.
 		jump Others
 	- Hero - Alexander
-		Character_LittleGirl: Daddy said to stay away from him but I like his fancy hair.
+		Character_LittleGirl: Daddy said to stay away from him but I like his [i]fancy[/i] hair.
 		jump Others
 	- Imp - Pimmelstix
 		Character_LittleGirl: EW!
