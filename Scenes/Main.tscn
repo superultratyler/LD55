@@ -1,12 +1,76 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5hetjh0msmdc"]
+[gd_scene load_steps=16 format=3 uid="uid://brju8dwh0ta0j"]
 
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_jm7ib"]
 [ext_resource type="Script" path="res://Scripts/ScreenManager.gd" id="2_mela7"]
+[ext_resource type="Script" path="res://Scripts/Suspect.gd" id="3_srp3b"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Barkeep.dch" id="4_27kvk"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Farmer.dch" id="5_ygqb1"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Ghost.dch" id="6_lju4i"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Guard.dch" id="7_lvylv"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Hero.dch" id="8_dmxl8"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_LittleGirl.dch" id="9_mlf8b"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Skeleton.dch" id="10_uyot1"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Wildman.dch" id="11_cn5ay"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Witch.dch" id="12_em7tn"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_WitchesCat.dch" id="13_to6um"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Wizard.dch" id="14_nvktc"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_WizardsImp.dch" id="15_xbvqg"]
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("screen_manager", "audio_stream")]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("screen_manager", "audio_stream", "suspects")]
 script = ExtResource("1_jm7ib")
 screen_manager = NodePath("ScreenManager")
 audio_stream = NodePath("AudioStreamPlayer")
+suspects = [NodePath("Suspects/Suspect_Barkeep"), NodePath("Suspects/Suspect_Farmer"), NodePath("Suspects/Suspect_Ghost"), NodePath("Suspects/Suspect_Guard"), NodePath("Suspects/Suspect_Hero"), NodePath("Suspects/Suspect_LittleGirl"), NodePath("Suspects/Suspect_Skeleton"), NodePath("Suspects/Suspect_Wildman"), NodePath("Suspects/Suspect_Witch"), NodePath("Suspects/Suspect_WitchesCat"), NodePath("Suspects/Suspect_Wizard"), NodePath("Suspects/Suspect_WizardsImp")]
+
+[node name="Suspects" type="Node" parent="."]
+
+[node name="Suspect_Barkeep" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("4_27kvk")
+
+[node name="Suspect_Farmer" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("5_ygqb1")
+
+[node name="Suspect_Ghost" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("6_lju4i")
+
+[node name="Suspect_Guard" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("7_lvylv")
+
+[node name="Suspect_Hero" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("8_dmxl8")
+
+[node name="Suspect_LittleGirl" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("9_mlf8b")
+
+[node name="Suspect_Skeleton" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("10_uyot1")
+
+[node name="Suspect_Wildman" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("11_cn5ay")
+
+[node name="Suspect_Witch" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("12_em7tn")
+
+[node name="Suspect_WitchesCat" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("13_to6um")
+
+[node name="Suspect_Wizard" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("14_nvktc")
+
+[node name="Suspect_WizardsImp" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("15_xbvqg")
 
 [node name="ScreenManager" type="Node" parent="."]
 script = ExtResource("2_mela7")

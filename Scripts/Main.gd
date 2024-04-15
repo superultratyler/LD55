@@ -5,6 +5,7 @@ static var instance : Main
 
 @export var screen_manager : ScreenManager
 @export var audio_stream : AudioStreamPlayer
+@export var suspects : Array[Suspect]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

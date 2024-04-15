@@ -3,20 +3,18 @@ class_name SuspectSelectionScreen
 
 @export var button_close : BaseButton
 @export var suspect_list : Control
-@export var suspect_list_item_template : SuspectListItem
-@export var suspects : Array[DialogicCharacter]
+@export var suspect_list_item_template : PackedScene
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# Create list items for all the suspects using the template list item
-	for i in range(suspects.size()):
-		var li = suspect_list_item_template.duplicate() as SuspectListItem
-		li.suspect_name_label.text = suspects[i].display_name
-		suspect_list.add_child(li)
 	
-	# Remove the template list item
-	suspect_list.remove_child(suspect_list_item_template)
+	# Create list items for all the suspects using the template list item
+	for i in range(Main.instance.suspects.size()):
+		var li = suspect_list_item_template.instantiate() as SuspectListItem
+		print(Main.instance.suspects[i].character.display_name)
+		li.set_suspect(Main.instance.suspects[i])
+		suspect_list.add_child(li)
 	
 	button_close.connect("pressed",_on_button_close_pressed)
 

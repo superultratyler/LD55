@@ -1,18 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://7ydf342klgsg"]
+[gd_scene load_steps=9 format=3 uid="uid://7ydf342klgsg"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectSelectionScreen.gd" id="1_67c4t"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Barkeep.dch" id="2_rmbke"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Farmer.dch" id="3_2jblr"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Ghost.dch" id="4_1wht8"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Guard.dch" id="5_uuiyp"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Hero.dch" id="6_iqkp6"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_LittleGirl.dch" id="7_m05ba"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Skeleton.dch" id="8_i7j3p"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Wildman.dch" id="9_be5io"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Witch.dch" id="10_2rig6"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_WitchesCat.dch" id="11_q8t86"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Wizard.dch" id="12_bh7uo"]
-[ext_resource type="Resource" path="res://Dialogic/Characters/Character_WizardsImp.dch" id="13_8d4pe"]
 [ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="14_nw54j"]
 [ext_resource type="PackedScene" uid="uid://dsrdvipk5barl" path="res://UI/SuspectListItem.tscn" id="14_tpjm6"]
 
@@ -84,7 +72,7 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="SuspectSelectionScreen" type="Control" node_paths=PackedStringArray("button_close", "suspect_list", "suspect_list_item_template", "screen_transition_animations")]
+[node name="SuspectSelectionScreen" type="Control" node_paths=PackedStringArray("button_close", "suspect_list", "screen_transition_animations")]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
@@ -95,8 +83,7 @@ grow_vertical = 2
 script = ExtResource("1_67c4t")
 button_close = NodePath("ClickCatcherButton")
 suspect_list = NodePath("Panel/SuspectList")
-suspect_list_item_template = NodePath("Panel/SuspectList/SuspectListItem")
-suspects = Array[Resource("res://addons/dialogic/Resources/character.gd")]([ExtResource("2_rmbke"), ExtResource("3_2jblr"), ExtResource("4_1wht8"), ExtResource("5_uuiyp"), ExtResource("6_iqkp6"), ExtResource("7_m05ba"), ExtResource("8_i7j3p"), ExtResource("9_be5io"), ExtResource("10_2rig6"), ExtResource("11_q8t86"), ExtResource("12_bh7uo"), ExtResource("13_8d4pe")])
+suspect_list_item_template = ExtResource("14_tpjm6")
 is_modal = true
 screen_transition_animations = NodePath("ScreenAnimations")
 
@@ -142,7 +129,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="SuspectListItem" parent="Panel/SuspectList" instance=ExtResource("14_tpjm6")]
+[node name="[EXAMPLE] SuspectListItem" parent="Panel/SuspectList" instance=ExtResource("14_tpjm6")]
+visible = false
 layout_mode = 2
 
 [connection signal="animation_finished" from="ScreenAnimations" to="." method="_on_screen_animations_animation_finished"]
