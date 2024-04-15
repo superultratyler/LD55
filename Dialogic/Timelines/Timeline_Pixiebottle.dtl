@@ -1,10 +1,10 @@
 join evidence_pixiebottle 1
-evidence_pixiebottle: The label reads - Sprinkle one pinch pixie dust on head and whisper desired dream into ear. Causes magic induced sleep until daylight. Warning \: Choose dreams with caution, extremely vivid.  
+The label reads - Sprinkle one pinch pixie dust on head and whisper desired dream into ear. Causes magic induced sleep until daylight. [br]Warning: Choose dreams with caution, extremely vivid.  
 - Hello?
 	evidence_pixiebottle: Hello? Is that it? I was happy to help that little girl, but now you want me to conjure a bunch of wish fullfilment for a middle aged man who thinks he's a wizard!? I'll be reporting this to the fey creatures union! 
 	jump 
 - What happened yesterday?
-	evidence_pixiebottle: I was ready to perform my monthly task of lulling that little girl to sleep when some ninny with a bad haircut takes me away! Then he loses me in a game of cards! Unacceptable! Worst of all an imp! An IMP! Uses my magic dust on a delusional megalomaniac. This was NOT in the job description!
+	evidence_pixiebottle: I was ready to perform my monthly task of lulling that little girl to sleep when some ninny with a bad haircut takes me away! [n]Then he loses me in a game of cards! Unacceptable! Worst of all an imp! An IMP! Uses my magic dust on a delusional megalomaniac. This was NOT in the job description!
 	jump 
 - Sorry about all this.
 	evidence_pixiebottle: You had better be!

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=104 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://cakuxst4xhep5" path="res://Art/MISC/holebackround.png" id="2_juilj"]
@@ -618,7 +618,7 @@ offset_right = 555.0
 offset_bottom = 697.0
 texture_normal = ExtResource("68_7mwk6")
 texture_click_mask = ExtResource("84_amdj7")
-character_name = "Amulet"
+character_name = "Lovenote"
 timeline_name = "Timeline_Lovenote"
 text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
 

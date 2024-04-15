@@ -1,9 +1,4 @@
 join evidence_royaldecree 1
-evidence_royaldecree: ROYAL DECREE\
-\
-WHEN HEARD\
-A LONG HELD WHISTLE\
-RING BELL TWELVE TIMES\
-NO MORE NO LESS
-It bears a heart shaped insignia
+evidence_royaldecree: [i]WHEN HEARD[br]A LONG HELD WHISTLE[br]RING BELL TWELVE TIMES[br]NO MORE NO LESS[/i]
+It bears a heart shaped insignia.
 [end_timeline]
