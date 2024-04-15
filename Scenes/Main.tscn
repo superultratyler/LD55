@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://brju8dwh0ta0j"]
+[gd_scene load_steps=19 format=3 uid="uid://brju8dwh0ta0j"]
 
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_jm7ib"]
 [ext_resource type="AudioStream" uid="uid://mdqbtnkbmbin" path="res://Audio/Music/neighbourhood-oddities-matt-stewart-evans-main-version-16714-02-00.mp3" id="2_ff568"]
@@ -8,6 +8,7 @@
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Princess.dch" id="5_q485o"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Farmer.dch" id="5_ygqb1"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Ghost.dch" id="6_lju4i"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_King.dch" id="6_xncvh"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Guard.dch" id="7_lvylv"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Hero.dch" id="8_dmxl8"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_LittleGirl.dch" id="9_mlf8b"]
@@ -24,7 +25,7 @@ screen_manager = NodePath("ScreenManager")
 audio_stream = NodePath("AudioStreamPlayer")
 audio_stream_bgm = NodePath("AudioStreamPlayer_BGM")
 bgm_audiostream = ExtResource("2_ff568")
-suspects = [NodePath("Suspects/Suspect_Barkeep"), NodePath("Suspects/Suspect_Farmer"), NodePath("Suspects/Suspect_Ghost"), NodePath("Suspects/Suspect_Guard"), NodePath("Suspects/Suspect_Hero"), NodePath("Suspects/Suspect_LittleGirl"), NodePath("Suspects/Suspect_Skeleton"), NodePath("Suspects/Suspect_Wildman"), NodePath("Suspects/Suspect_Witch"), NodePath("Suspects/Suspect_WitchesCat"), NodePath("Suspects/Suspect_Wizard"), NodePath("Suspects/Suspect_WizardsImp")]
+suspects = [NodePath("Suspects/Suspect_Barkeep"), NodePath("Suspects/Suspect_Farmer"), NodePath("Suspects/Suspect_Ghost"), NodePath("Suspects/Suspect_Guard"), NodePath("Suspects/Suspect_Hero"), NodePath("Suspects/Suspect_LittleGirl"), NodePath("Suspects/Suspect_Skeleton"), NodePath("Suspects/Suspect_Wildman"), NodePath("Suspects/Suspect_Witch"), NodePath("Suspects/Suspect_WitchesCat"), NodePath("Suspects/Suspect_Wizard"), NodePath("Suspects/Suspect_WizardsImp"), NodePath("Suspects/Suspect_King"), NodePath("Suspects/Suspect_Princess")]
 
 [node name="Suspects" type="Node" parent="."]
 
@@ -36,6 +37,10 @@ character = ExtResource("4_27kvk")
 script = ExtResource("3_srp3b")
 character = ExtResource("5_ygqb1")
 guilty = true
+
+[node name="Suspect_King" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("6_xncvh")
 
 [node name="Suspect_Princess" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")

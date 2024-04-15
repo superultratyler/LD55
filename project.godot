@@ -27,6 +27,7 @@ directories/dch_directory={
 "Character_Ghost": "res://Dialogic/Characters/Character_Ghost.dch",
 "Character_Guard": "res://Dialogic/Characters/Character_Guard.dch",
 "Character_Hero": "res://Dialogic/Characters/Character_Hero.dch",
+"Character_King": "res://Dialogic/Characters/Character_King.dch",
 "Character_LittleGirl": "res://Dialogic/Characters/Character_LittleGirl.dch",
 "Character_Princess": "res://Dialogic/Characters/Character_Princess.dch",
 "Character_Skeleton": "res://Dialogic/Characters/Character_Skeleton.dch",
