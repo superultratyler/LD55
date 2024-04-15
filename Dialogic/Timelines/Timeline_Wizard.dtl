@@ -1,8 +1,8 @@
 join Character_Wizard 1
-Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
+Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
 - Tell me about yesterday...
 	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night!
-	Character_Wizard:  I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants...wait no...that can't be right. 
+	Character_Wizard:  I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants - wait no...that can't be right. 
 	Character_Wizard: The point is I summoned the Booglo and I vividly remember doing it.
 	jump 
 - Tell me about the townsfolk...
@@ -48,7 +48,7 @@ Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have sum
 		Character_Wizard: Nature?! Bleh! Bleh! Magic will replace all trees some day.
 		jump Others
 	- Witch - Rosina
-		Character_Wizard: Pshaw! She thinks she's *so magical* with her potions and spells. Who's the most magical now? Only a true magic master could summon a Booglo!
+		Character_Wizard: Pshaw! She thinks she's [i]so magical[/i] with her potions and spells. Who's the most magical now? Only a true magic master could summon a Booglo!
 		jump Others
 	- Cat - Bramble
 		Character_Wizard: Gah! Foul beast! The natural enemies of imps!
