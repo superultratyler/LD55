@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=104 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://bgiswo11s2iqv" path="res://Art/MISC/background.png" id="2_5gy6n"]
@@ -54,6 +54,38 @@
 [ext_resource type="Texture2D" uid="uid://cnxw5wjuuqgji" path="res://Art/MISC/table.png" id="42_4e36a"]
 [ext_resource type="BitMap" uid="uid://c7e6n7u261ywn" path="res://Art/Portraits/SKELLY_CLICKMASK.png" id="44_irsid"]
 [ext_resource type="BitMap" uid="uid://ccade8g3o6r0s" path="res://Art/Portraits/GHOST_CLICKMASK.png" id="50_w0yyu"]
+[ext_resource type="Texture2D" uid="uid://blnens7e14e8w" path="res://Art/Evidence/AMULET.png" id="53_3u5b2"]
+[ext_resource type="Texture2D" uid="uid://bghc86nhtdcg4" path="res://Art/Evidence/BONE.png" id="54_0qacm"]
+[ext_resource type="BitMap" uid="uid://c2afijetabojy" path="res://Art/Evidence/AMULET_CLICKMASK.png" id="54_ej5xl"]
+[ext_resource type="Texture2D" uid="uid://brxgv5papsh2u" path="res://Art/Evidence/BOTTLE.png" id="55_w2rha"]
+[ext_resource type="Texture2D" uid="uid://d2pg0rkr4yhnh" path="res://Art/Evidence/CANDLE.png" id="56_dnm2x"]
+[ext_resource type="BitMap" uid="uid://cxlb8tr66r32g" path="res://Art/Evidence/BONE_CLICKMASK.png" id="56_onf15"]
+[ext_resource type="Texture2D" uid="uid://dbiyj017kxsvl" path="res://Art/Evidence/CROWN.png" id="57_wxjx4"]
+[ext_resource type="Texture2D" uid="uid://cxjwonb1rhr07" path="res://Art/Evidence/DAGGER.png" id="58_1tjax"]
+[ext_resource type="BitMap" uid="uid://biplybhnygdiq" path="res://Art/Evidence/BOTTLE_CLICKMASK.png" id="58_y83vq"]
+[ext_resource type="Texture2D" uid="uid://dtg04axssyhjj" path="res://Art/Evidence/KEY.png" id="59_pjudp"]
+[ext_resource type="BitMap" uid="uid://cwn3c0n5htv43" path="res://Art/Evidence/CANDLE_CLICKMASK.png" id="60_7s7em"]
+[ext_resource type="Texture2D" uid="uid://dekhxdvee2ker" path="res://Art/Evidence/MUG.png" id="60_jkj73"]
+[ext_resource type="Texture2D" uid="uid://c3pnj13sninye" path="res://Art/Evidence/PAINTING.png" id="61_f3d8h"]
+[ext_resource type="Texture2D" uid="uid://dp33eucsp461k" path="res://Art/Evidence/royaldecree.png" id="62_7m0hm"]
+[ext_resource type="BitMap" uid="uid://b3fm7tt5futhx" path="res://Art/Evidence/CROWN_CLICKMASK.png" id="62_ncu83"]
+[ext_resource type="Texture2D" uid="uid://dabdocs2as1dx" path="res://Art/Evidence/SHACKLE.png" id="63_257g7"]
+[ext_resource type="Texture2D" uid="uid://dhkd61ajui6mn" path="res://Art/Evidence/shadynote.png" id="64_diah5"]
+[ext_resource type="BitMap" uid="uid://c00w3xqcbe0gf" path="res://Art/Evidence/DAGGER_CLICKMASK.png" id="64_px27s"]
+[ext_resource type="Texture2D" uid="uid://dk1mb8vcm5i1f" path="res://Art/Evidence/summoninstructions.png" id="65_eig1s"]
+[ext_resource type="BitMap" uid="uid://lh06sbpuncg6" path="res://Art/Evidence/KEY_CLICKMASK.png" id="66_ntd3e"]
+[ext_resource type="Texture2D" uid="uid://bjwtk4kdlk0tt" path="res://Art/Evidence/WAX.png" id="67_a16oe"]
+[ext_resource type="Texture2D" uid="uid://cf8elqehex6ud" path="res://Art/Evidence/lovenote.png" id="68_7mwk6"]
+[ext_resource type="Texture2D" uid="uid://c2qhfeaevhyu0" path="res://Art/Evidence/townmap.png" id="68_8i560"]
+[ext_resource type="BitMap" uid="uid://c642qxugwtfbw" path="res://Art/Evidence/MUG_CLICKMASK.png" id="68_y0ryp"]
+[ext_resource type="BitMap" uid="uid://chy2n34qy6h3o" path="res://Art/Evidence/PAINTING_CLICKMASK.png" id="70_456s8"]
+[ext_resource type="BitMap" uid="uid://cmfsrb8up2pqi" path="res://Art/Evidence/royaldecree_CLICKMASK.png" id="72_6tbvj"]
+[ext_resource type="BitMap" uid="uid://bibfmeqd5yl8g" path="res://Art/Evidence/SHACKLE_CLICKMASK.png" id="74_y0at6"]
+[ext_resource type="BitMap" uid="uid://cjojyx36lfgpi" path="res://Art/Evidence/shadynote_CLICKMASK.png" id="76_6l8qt"]
+[ext_resource type="BitMap" uid="uid://ca7m8yb4qoll4" path="res://Art/Evidence/summoninstructions_CLICKMASK.png" id="78_xbe2k"]
+[ext_resource type="BitMap" uid="uid://deq4p0fubxm8u" path="res://Art/Evidence/townmap_CLICKMASK.png" id="80_eamj3"]
+[ext_resource type="BitMap" uid="uid://y835wet38mpc" path="res://Art/Evidence/WAX_CLICKMASK.png" id="82_uvnhd"]
+[ext_resource type="BitMap" uid="uid://bar60wcabemy8" path="res://Art/Evidence/lovenote_CLICKMASK.png" id="84_amdj7"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -197,129 +229,6 @@ texture = ExtResource("2_5gy6n")
 expand_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="SceneCharacter_Farmer" parent="." instance=ExtResource("3_feb8l")]
-z_index = 2
-layout_mode = 0
-offset_left = 266.0
-offset_top = 99.0
-offset_right = 614.0
-offset_bottom = 503.0
-texture_normal = ExtResource("4_pyqjt")
-texture_click_mask = ExtResource("5_x5p85")
-character_name = "Farmer"
-timeline_name = "Timeline_Farmer"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4"), ExtResource("5_ao36a"), ExtResource("6_lkyc3")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Hero" parent="." instance=ExtResource("3_feb8l")]
-z_index = 1
-layout_mode = 0
-offset_left = 564.0
-offset_top = 51.0
-offset_right = 932.0
-offset_bottom = 464.0
-texture_normal = ExtResource("8_p5ols")
-texture_click_mask = ExtResource("10_ai4je")
-character_name = "Hero"
-timeline_name = "Timeline_Hero"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_mnq3y"), ExtResource("8_c2452")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Guard" parent="." instance=ExtResource("3_feb8l")]
-z_index = 1
-layout_mode = 0
-offset_left = 187.0
-offset_top = 89.0
-offset_right = 551.0
-offset_bottom = 462.0
-texture_normal = ExtResource("11_nk8x5")
-texture_click_mask = ExtResource("14_g3v1a")
-character_name = "Guard"
-timeline_name = "Timeline_Guard"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_qi5q6"), ExtResource("8_33jsu"), ExtResource("9_5r1r2")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Cat" parent="." instance=ExtResource("3_feb8l")]
-z_index = 11
-layout_mode = 0
-offset_left = 466.0
-offset_top = 67.0
-offset_right = 966.0
-offset_bottom = 567.0
-texture_normal = ExtResource("15_bici7")
-texture_click_mask = ExtResource("19_c5dot")
-character_name = "Witches Cat"
-timeline_name = "Timeline_WitchesCat"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_fi7wy"), ExtResource("8_6lmkh")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Wildman" parent="." instance=ExtResource("3_feb8l")]
-layout_mode = 0
-offset_left = -141.0
-offset_top = -87.0
-offset_right = 351.0
-offset_bottom = 452.0
-texture_normal = ExtResource("18_yfyy7")
-texture_click_mask = ExtResource("23_kos2r")
-character_name = "Wildman"
-timeline_name = "Timeline_Wildman"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_lpqwf"), ExtResource("8_d5hsi")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Witch" parent="." instance=ExtResource("3_feb8l")]
-z_index = 2
-layout_mode = 0
-offset_left = 697.0
-offset_top = 80.0
-offset_right = 1121.0
-offset_bottom = 475.0
-texture_normal = ExtResource("21_yai40")
-texture_click_mask = ExtResource("27_dxhtu")
-character_name = "Witch"
-timeline_name = "Timeline_Witch"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("11_vhy1o"), ExtResource("12_5q1vr"), ExtResource("13_ehmp4")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Barkeep" parent="." instance=ExtResource("3_feb8l")]
-layout_mode = 0
-offset_left = 395.0
-offset_top = 49.0
-offset_right = 822.0
-offset_bottom = 539.0
-texture_normal = ExtResource("25_kcqwt")
-texture_click_mask = ExtResource("32_bq3sq")
-character_name = "Barkeep"
-timeline_name = "Timeline_Barkeep"
-audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_v76ci"), SubResource("AudioStreamOggVorbis_sfgb0"), SubResource("AudioStreamOggVorbis_xtidj")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_Imp" parent="." instance=ExtResource("3_feb8l")]
-z_index = 2
-layout_mode = 0
-offset_left = 117.0
-offset_top = -17.0
-offset_right = 410.0
-offset_bottom = 256.0
-texture_normal = ExtResource("26_ka7u4")
-texture_click_mask = ExtResource("34_y6k07")
-character_name = "Wizard's Imp"
-timeline_name = "Timeline_WizardsImp"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("17_ouyis"), ExtResource("18_dycbg")])
-
-[node name="SceneCharacter_Wizard" parent="." instance=ExtResource("3_feb8l")]
-z_index = 1
-layout_mode = 0
-offset_left = -33.0
-offset_top = 80.0
-offset_right = 372.0
-offset_bottom = 572.0
-texture_normal = ExtResource("29_lg2ta")
-texture_click_mask = ExtResource("38_hv1bo")
-character_name = "Wizard"
-timeline_name = "Timeline_Wizard"
-audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_jc5dc"), ExtResource("8_5xu1q"), ExtResource("9_tndo7"), ExtResource("10_ytexo")])
-metadata/_edit_lock_ = true
-
 [node name="SceneCharacter_Skeleton" parent="." instance=ExtResource("3_feb8l")]
 layout_mode = 0
 offset_left = 713.0
@@ -331,22 +240,6 @@ texture_click_mask = ExtResource("44_irsid")
 character_name = "Skeleton"
 timeline_name = "Timeline_Skeleton"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_t51tc"), ExtResource("8_umif2")])
-metadata/_edit_lock_ = true
-
-[node name="SceneCharacter_LittleGirl" parent="." instance=ExtResource("3_feb8l")]
-z_index = 1
-z_as_relative = false
-layout_mode = 0
-offset_left = 68.0
-offset_top = 83.0
-offset_right = 446.0
-offset_bottom = 539.0
-texture_normal = ExtResource("30_ha6ev")
-texture_click_mask = ExtResource("38_7qi5o")
-character_name = "Little Girl"
-timeline_name = "Timeline_LittleGirl"
-audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_8tpr7"), SubResource("AudioStreamOggVorbis_dhi1c"), SubResource("AudioStreamOggVorbis_as7xd")])
-metadata/_edit_lock_ = true
 
 [node name="SceneCharacter_Ghost" parent="." instance=ExtResource("3_feb8l")]
 layout_mode = 0
@@ -359,14 +252,324 @@ texture_click_mask = ExtResource("50_w0yyu")
 character_name = "Ghost"
 timeline_name = "Timeline_Ghost"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("20_grp1h"), ExtResource("21_r78yu")])
-metadata/_edit_lock_ = true
+
+[node name="SceneCharacter_Hero" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 51.0
+offset_right = 932.0
+offset_bottom = 464.0
+texture_normal = ExtResource("8_p5ols")
+texture_click_mask = ExtResource("10_ai4je")
+character_name = "Hero"
+timeline_name = "Timeline_Hero"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_mnq3y"), ExtResource("8_c2452")])
+
+[node name="SceneCharacter_Guard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 89.0
+offset_right = 551.0
+offset_bottom = 462.0
+texture_normal = ExtResource("11_nk8x5")
+texture_click_mask = ExtResource("14_g3v1a")
+character_name = "Guard"
+timeline_name = "Timeline_Guard"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_qi5q6"), ExtResource("8_33jsu"), ExtResource("9_5r1r2")])
+
+[node name="SceneCharacter_Wildman" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = -137.0
+offset_top = -61.0
+offset_right = 355.0
+offset_bottom = 478.0
+texture_normal = ExtResource("18_yfyy7")
+texture_click_mask = ExtResource("23_kos2r")
+character_name = "Wildman"
+timeline_name = "Timeline_Wildman"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_lpqwf"), ExtResource("8_d5hsi")])
+
+[node name="SceneCharacter_Witch" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 697.0
+offset_top = 80.0
+offset_right = 1121.0
+offset_bottom = 475.0
+texture_normal = ExtResource("21_yai40")
+texture_click_mask = ExtResource("27_dxhtu")
+character_name = "Witch"
+timeline_name = "Timeline_Witch"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("11_vhy1o"), ExtResource("12_5q1vr"), ExtResource("13_ehmp4")])
+
+[node name="SceneCharacter_Barkeep" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 49.0
+offset_right = 822.0
+offset_bottom = 539.0
+texture_normal = ExtResource("25_kcqwt")
+texture_click_mask = ExtResource("32_bq3sq")
+character_name = "Barkeep"
+timeline_name = "Timeline_Barkeep"
+audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_v76ci"), SubResource("AudioStreamOggVorbis_sfgb0"), SubResource("AudioStreamOggVorbis_xtidj")])
+
+[node name="SceneCharacter_Imp" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 117.0
+offset_top = -17.0
+offset_right = 410.0
+offset_bottom = 256.0
+texture_normal = ExtResource("26_ka7u4")
+texture_click_mask = ExtResource("34_y6k07")
+character_name = "Wizard's Imp"
+timeline_name = "Timeline_WizardsImp"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("17_ouyis"), ExtResource("18_dycbg")])
+
+[node name="SceneCharacter_Wizard" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = -28.0
+offset_top = 92.0
+offset_right = 377.0
+offset_bottom = 584.0
+texture_normal = ExtResource("29_lg2ta")
+texture_click_mask = ExtResource("38_hv1bo")
+character_name = "Wizard"
+timeline_name = "Timeline_Wizard"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_jc5dc"), ExtResource("8_5xu1q"), ExtResource("9_tndo7"), ExtResource("10_ytexo")])
+
+[node name="SceneCharacter_LittleGirl" parent="." instance=ExtResource("3_feb8l")]
+z_as_relative = false
+layout_mode = 0
+offset_left = 68.0
+offset_top = 83.0
+offset_right = 446.0
+offset_bottom = 539.0
+texture_normal = ExtResource("30_ha6ev")
+texture_click_mask = ExtResource("38_7qi5o")
+character_name = "Little Girl"
+timeline_name = "Timeline_LittleGirl"
+audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_8tpr7"), SubResource("AudioStreamOggVorbis_dhi1c"), SubResource("AudioStreamOggVorbis_as7xd")])
+
+[node name="SceneCharacter_Farmer" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 266.0
+offset_top = 99.0
+offset_right = 614.0
+offset_bottom = 503.0
+texture_normal = ExtResource("4_pyqjt")
+texture_click_mask = ExtResource("5_x5p85")
+character_name = "Farmer"
+timeline_name = "Timeline_Farmer"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4"), ExtResource("5_ao36a"), ExtResource("6_lkyc3")])
 
 [node name="Sprite2D_Table" type="Sprite2D" parent="."]
-z_index = 5
 scale = Vector2(0.2, 0.1875)
 texture = ExtResource("42_4e36a")
 centered = false
 metadata/_edit_lock_ = true
+
+[node name="SceneCharacter_Cat" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 67.0
+offset_right = 966.0
+offset_bottom = 567.0
+texture_normal = ExtResource("15_bici7")
+texture_click_mask = ExtResource("19_c5dot")
+character_name = "Witches Cat"
+timeline_name = "Timeline_WitchesCat"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_fi7wy"), ExtResource("8_6lmkh")])
+
+[node name="SceneCharacter_Evidence_Amulet" parent="." instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 419.0
+offset_right = 618.0
+offset_bottom = 502.0
+texture_normal = ExtResource("53_3u5b2")
+texture_click_mask = ExtResource("54_ej5xl")
+character_name = "Amulet"
+timeline_name = "Timeline_Amulet"
+
+[node name="SceneCharacter_Evidence_Bone" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 386.0
+offset_right = 365.0
+offset_bottom = 554.0
+texture_normal = ExtResource("54_0qacm")
+texture_click_mask = ExtResource("56_onf15")
+character_name = "Bone"
+timeline_name = "Timeline_Bone"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Bottle" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 372.0
+offset_right = 536.0
+offset_bottom = 500.0
+texture_normal = ExtResource("55_w2rha")
+texture_click_mask = ExtResource("58_y83vq")
+character_name = "Bottle"
+timeline_name = "Timeline_Pixiebottle"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Candle" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 419.0
+offset_right = 223.0
+offset_bottom = 507.0
+texture_normal = ExtResource("56_dnm2x")
+texture_click_mask = ExtResource("60_7s7em")
+character_name = "Candle"
+timeline_name = "Timeline_Candle"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Crown" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 380.0
+offset_right = 384.0
+offset_bottom = 508.0
+texture_normal = ExtResource("57_wxjx4")
+texture_click_mask = ExtResource("62_ncu83")
+character_name = "Bottle"
+timeline_name = "Timeline_Crown"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Dagger" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 681.0
+offset_top = 485.0
+offset_right = 825.0
+offset_bottom = 618.0
+texture_normal = ExtResource("58_1tjax")
+texture_click_mask = ExtResource("64_px27s")
+character_name = "Bottle"
+timeline_name = "Timeline_Dagger"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Key" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 630.0
+offset_top = 500.0
+offset_right = 720.0
+offset_bottom = 575.0
+texture_normal = ExtResource("59_pjudp")
+texture_click_mask = ExtResource("66_ntd3e")
+character_name = "Bottle"
+timeline_name = "Timeline_Turnipkey"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Mug" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 420.0
+offset_right = 428.0
+offset_bottom = 518.0
+texture_normal = ExtResource("60_jkj73")
+texture_click_mask = ExtResource("68_y0ryp")
+character_name = "Bottle"
+timeline_name = "Timeline_Mug"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Painting" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 378.0
+offset_right = 132.0
+offset_bottom = 506.0
+texture_normal = ExtResource("61_f3d8h")
+texture_click_mask = ExtResource("70_456s8")
+character_name = "Bottle"
+timeline_name = "Timeline_Painting"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_RoyalDecree" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 515.0
+offset_right = 415.0
+offset_bottom = 643.0
+texture_normal = ExtResource("62_7m0hm")
+texture_click_mask = ExtResource("72_6tbvj")
+character_name = "Bottle"
+timeline_name = "Timeline_Royaldecree"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Shackle" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 434.0
+offset_right = 556.0
+offset_bottom = 562.0
+texture_normal = ExtResource("63_257g7")
+texture_click_mask = ExtResource("74_y0at6")
+character_name = "Bottle"
+timeline_name = "Timeline_Shackle"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_ShadyNote" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 502.0
+offset_right = 259.0
+offset_bottom = 662.0
+texture_normal = ExtResource("64_diah5")
+texture_click_mask = ExtResource("76_6l8qt")
+character_name = "Bottle"
+timeline_name = "Timeline_Shadynote"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_SummonInstructions" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 540.0
+offset_right = 353.0
+offset_bottom = 686.0
+texture_normal = ExtResource("65_eig1s")
+texture_click_mask = ExtResource("78_xbe2k")
+character_name = "Bottle"
+timeline_name = "Timeline_Magicbookpage"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_TownMap" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 495.0
+offset_right = 140.0
+offset_bottom = 649.0
+texture_normal = ExtResource("68_8i560")
+texture_click_mask = ExtResource("80_eamj3")
+character_name = "Bottle"
+timeline_name = "Timeline_Townmap"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Wax" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 462.0
+offset_right = 659.0
+offset_bottom = 590.0
+texture_normal = ExtResource("67_a16oe")
+texture_click_mask = ExtResource("82_uvnhd")
+character_name = "Bottle"
+timeline_name = "Timeline_Wax"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+
+[node name="SceneCharacter_Evidence_Lovenote" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
+layout_mode = 0
+offset_left = 322.0
+offset_top = 530.0
+offset_right = 555.0
+offset_bottom = 697.0
+texture_normal = ExtResource("68_7mwk6")
+texture_click_mask = ExtResource("84_amdj7")
+character_name = "Amulet"
+timeline_name = "Timeline_Amulet"
+text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
 
 [node name="TextureButton_SuspectList" type="TextureButton" parent="."]
 z_index = 5

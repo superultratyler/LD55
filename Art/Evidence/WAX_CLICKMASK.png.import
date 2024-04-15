@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://y835wet38mpc"
+path="res://.godot/imported/WAX_CLICKMASK.png-27d74912dc6034448e3a060d78191648.res"
+
+[deps]
+
+source_file="res://Art/Evidence/WAX_CLICKMASK.png"
+dest_files=["res://.godot/imported/WAX_CLICKMASK.png-27d74912dc6034448e3a060d78191648.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

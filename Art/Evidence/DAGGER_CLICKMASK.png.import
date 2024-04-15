@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c00w3xqcbe0gf"
+path="res://.godot/imported/DAGGER_CLICKMASK.png-7cdfbe93e9f9086c5af9b565e29ec4be.res"
+
+[deps]
+
+source_file="res://Art/Evidence/DAGGER_CLICKMASK.png"
+dest_files=["res://.godot/imported/DAGGER_CLICKMASK.png-7cdfbe93e9f9086c5af9b565e29ec4be.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

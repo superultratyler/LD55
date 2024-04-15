@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c642qxugwtfbw"
+path="res://.godot/imported/MUG_CLICKMASK.png-f06588adaa1239280297be13a5e151b3.res"
+
+[deps]
+
+source_file="res://Art/Evidence/MUG_CLICKMASK.png"
+dest_files=["res://.godot/imported/MUG_CLICKMASK.png-f06588adaa1239280297be13a5e151b3.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

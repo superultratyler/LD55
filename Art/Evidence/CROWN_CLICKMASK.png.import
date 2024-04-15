@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b3fm7tt5futhx"
+path="res://.godot/imported/CROWN_CLICKMASK.png-079f5c4b244ba1648861f43d09dc6da6.res"
+
+[deps]
+
+source_file="res://Art/Evidence/CROWN_CLICKMASK.png"
+dest_files=["res://.godot/imported/CROWN_CLICKMASK.png-079f5c4b244ba1648861f43d09dc6da6.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

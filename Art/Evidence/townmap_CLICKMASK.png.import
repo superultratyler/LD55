@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://deq4p0fubxm8u"
+path="res://.godot/imported/townmap_CLICKMASK.png-82b725a461c6f6d9cb62d7a187b47efd.res"
+
+[deps]
+
+source_file="res://Art/Evidence/townmap_CLICKMASK.png"
+dest_files=["res://.godot/imported/townmap_CLICKMASK.png-82b725a461c6f6d9cb62d7a187b47efd.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

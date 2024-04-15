@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3avk2oy1ust"]
+[gd_scene load_steps=10 format=3 uid="uid://c3avk2oy1ust"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/IntroScreen.gd" id="1_3l5i5"]
+[ext_resource type="Texture2D" uid="uid://h52pb28qsfcq" path="res://Art/MISC/introscreen.png" id="2_tjk8r"]
+[ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="3_ovo82"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -70,8 +72,9 @@ _data = {
 "ToOn": SubResource("Animation_p7jfk")
 }
 
-[node name="IntroScreen" type="Control"]
-modulate = Color(1, 1, 1, 0)
+[sub_resource type="Theme" id="Theme_v6lf5"]
+
+[node name="IntroScreen" type="Control" node_paths=PackedStringArray("button_continue", "screen_transition_animations")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -79,10 +82,54 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_3l5i5")
+button_continue = NodePath("ButtonSubmit")
+screen_transition_animations = NodePath("ScreenAnimations")
 
 [node name="ScreenAnimations" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tjk8r")
+expand_mode = 2
+
+[node name="ButtonSubmit" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.346875
+anchor_top = 0.858333
+anchor_right = 0.639583
+anchor_bottom = 0.935
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_ovo82")
+stretch_mode = 1
+metadata/_edit_group_ = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ButtonSubmit"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("Theme_v6lf5")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]BEGIN INQUIRY![/center]"
+fit_content = true
+
 [connection signal="animation_finished" from="ScreenAnimations" to="." method="_on_screen_animations_animation_finished"]
+[connection signal="pressed" from="ButtonSubmit" to="." method="_on_button_submit_pressed"]

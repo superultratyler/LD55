@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cxlb8tr66r32g"
+path="res://.godot/imported/BONE_CLICKMASK.png-6e11cff6d64e541f1c989dad6d91341d.res"
+
+[deps]
+
+source_file="res://Art/Evidence/BONE_CLICKMASK.png"
+dest_files=["res://.godot/imported/BONE_CLICKMASK.png-6e11cff6d64e541f1c989dad6d91341d.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

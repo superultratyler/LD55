@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c2afijetabojy"
+path="res://.godot/imported/AMULET_CLICKMASK.png-4daabd9ff8a934678b8e42282a1cf902.res"
+
+[deps]
+
+source_file="res://Art/Evidence/AMULET_CLICKMASK.png"
+dest_files=["res://.godot/imported/AMULET_CLICKMASK.png-4daabd9ff8a934678b8e42282a1cf902.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

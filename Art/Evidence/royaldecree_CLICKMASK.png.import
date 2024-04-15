@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cmfsrb8up2pqi"
+path="res://.godot/imported/royaldecree_CLICKMASK.png-67f9a3477163c1e6c72a565c7c71b806.res"
+
+[deps]
+
+source_file="res://Art/Evidence/royaldecree_CLICKMASK.png"
+dest_files=["res://.godot/imported/royaldecree_CLICKMASK.png-67f9a3477163c1e6c72a565c7c71b806.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

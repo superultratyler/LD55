@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ca7m8yb4qoll4"
+path="res://.godot/imported/summoninstructions_CLICKMASK.png-9478195cd2cd7ed0fb582b370508f18e.res"
+
+[deps]
+
+source_file="res://Art/Evidence/summoninstructions_CLICKMASK.png"
+dest_files=["res://.godot/imported/summoninstructions_CLICKMASK.png-9478195cd2cd7ed0fb582b370508f18e.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

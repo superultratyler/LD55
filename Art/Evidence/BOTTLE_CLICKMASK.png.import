@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://biplybhnygdiq"
+path="res://.godot/imported/BOTTLE_CLICKMASK.png-06e45cf43b918c9a32665e600008faa2.res"
+
+[deps]
+
+source_file="res://Art/Evidence/BOTTLE_CLICKMASK.png"
+dest_files=["res://.godot/imported/BOTTLE_CLICKMASK.png-06e45cf43b918c9a32665e600008faa2.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

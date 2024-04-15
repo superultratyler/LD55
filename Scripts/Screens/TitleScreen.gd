@@ -9,7 +9,7 @@ func _ready():
 	open()
 
 func _on_button_play_pressed():
-	Main.instance.screen_manager.load_screen("res://Scenes/Screens/SuspectsScreen.tscn")
+	Main.instance.screen_manager.load_screen("res://Scenes/Screens/IntroScreen.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

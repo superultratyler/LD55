@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://lh06sbpuncg6"
+path="res://.godot/imported/KEY_CLICKMASK.png-bcddf22db1f21be50bd4ec2a5362b6cd.res"
+
+[deps]
+
+source_file="res://Art/Evidence/KEY_CLICKMASK.png"
+dest_files=["res://.godot/imported/KEY_CLICKMASK.png-bcddf22db1f21be50bd4ec2a5362b6cd.res"]
+
+[params]
+
+create_from=1
+threshold=0.5
