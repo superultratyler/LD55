@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=47 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/Portraits/tempbg.png" id="2_7c15o"]
@@ -10,11 +10,13 @@
 [ext_resource type="AudioStream" uid="uid://87yke0r6mbmv" path="res://Audio/Voices/WitchsCat_Meow1.ogg" id="7_fi7wy"]
 [ext_resource type="AudioStream" uid="uid://bwldu8wy6eypv" path="res://Audio/Voices/Wizard_DoNotMeddle.ogg" id="7_jc5dc"]
 [ext_resource type="AudioStream" uid="uid://d23fw43gota67" path="res://Audio/Voices/Wildman_Grunt1.ogg" id="7_lpqwf"]
+[ext_resource type="AudioStream" uid="uid://bem18ox4aqdl2" path="res://Audio/Voices/Hero_Hoho.ogg" id="7_mnq3y"]
 [ext_resource type="AudioStream" uid="uid://jhqiuy4murew" path="res://Audio/Voices/Guard_WhatNow.ogg" id="7_qi5q6"]
 [ext_resource type="AudioStream" uid="uid://dipooq4rysl0e" path="res://Audio/Voices/Skeleton_Rattle1.ogg" id="7_t51tc"]
 [ext_resource type="AudioStream" uid="uid://y0ol8e2lgcef" path="res://Audio/Voices/Wizard_What.ogg" id="8_5xu1q"]
 [ext_resource type="AudioStream" uid="uid://cve2odugfws4v" path="res://Audio/Voices/WitchsCat_Meow2.ogg" id="8_6lmkh"]
 [ext_resource type="AudioStream" uid="uid://d1fx0broa7oa5" path="res://Audio/Voices/Guard_ICantBelieveIt.ogg" id="8_33jsu"]
+[ext_resource type="AudioStream" uid="uid://buuo884gv2bpd" path="res://Audio/Voices/Hero_WhatHaveWeHere.ogg" id="8_c2452"]
 [ext_resource type="AudioStream" uid="uid://dkrt7u5bums1h" path="res://Audio/Voices/Wildman_Grunt2.ogg" id="8_d5hsi"]
 [ext_resource type="AudioStream" uid="uid://b810b7fm3lf7m" path="res://Audio/Voices/Skeleton_Rattle2.ogg" id="8_umif2"]
 [ext_resource type="AudioStream" uid="uid://8ojfyhoaop3m" path="res://Audio/Voices/Guard_YouveGotToBeKiddingMe.ogg" id="9_5r1r2"]
@@ -187,6 +189,7 @@ offset_right = 558.0
 offset_bottom = 145.0
 character_name = "Hero"
 timeline_name = "Timeline_Hero"
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_mnq3y"), ExtResource("8_c2452")])
 
 [node name="SceneCharacter_Guard" parent="." instance=ExtResource("3_feb8l")]
 layout_mode = 0
