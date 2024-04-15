@@ -37,7 +37,7 @@ Character_Ghost: I'm Willard the chandler that's a candlestick maker for the but
 		jump Others
 		Character_Ghost: Her...a wretched little cretin, like all children. Except me when I was a child, I was different.
 	- Imp - Pimmelstix
-		A helpful little creature indeed, seems to be telling the truth if you ask me.
+		Character_Ghost: A helpful little creature indeed, seems to be telling the truth if you ask me.
 		jump Others
 	- Skeleton - ???
 		Character_Ghost: Ehmmm, hmm...another victim of the disaster I suppose. His bone structure implies he was ***very*** handsome.

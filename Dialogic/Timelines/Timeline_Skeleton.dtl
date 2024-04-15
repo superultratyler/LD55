@@ -1,55 +1,56 @@
 join Character_Skeleton 1
-It stares at you blankly
+It stares at you blankly.
 - Tell me about yesterday...
-	Character_Skeleton: rattle
+	Character_Skeleton: [i]*rattle*[/i]
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Skeleton: rattle rattle
+		Character_Skeleton: [i]*rattle rattle*[/i]
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Skeleton: It nods
+		It nods.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Townsfolk
 	- Guard - Duncan
-		Character_Skeleton: bone noises
+		Character_Skeleton: [i]*bones clattering*[/i]
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Skeleton: It holds it's hands close to it's face in an adoring fashion. 
+		It holds its bony hands close to its face in an adoring fashion. 
 		jump Townsfolk
 	- King - Kurtis
-		Character_Skeleton: It rattles angrily.
+		Character_Skeleton: [i]*rattles angrily*[/i]
 		jump Townsfolk
 	- On second thought...
 		jump 
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- Hero - Alexander
-		Character_Skeleton: <Empty Text Event>
+		Character_Skeleton: ...
+		Notably, it does not rattle.
 		jump Others
 	- Imp - Pimmelstix
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- Skeleton - ???
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- Wildman - Doohk
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- Witch - Rosina
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- Cat - Bramble
-		Character_Skeleton: rattle
+		Character_Skeleton: [i]*rattle*[/i]
 		jump Others
 	- On second thought...
 		jump 

@@ -1,7 +1,9 @@
 join Character_Wizard 1
 Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
 - Tell me about yesterday...
-	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night! I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants...wait no...that can't be right. The point is I summoned the Booglo and I vividly remember doing it.
+	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night!
+	Character_Wizard:  I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants...wait no...that can't be right. 
+	Character_Wizard: The point is I summoned the Booglo and I vividly remember doing it.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -37,7 +39,7 @@ Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have sum
 		Character_Wizard: A hero is no match for my Booglo! AHAHAH!
 		jump Others
 	- Imp - Pimmelstix
-		Character_Wizard: My faithful familiar Pimmestix, my first ever summon. The second being the Booglo of course. 
+		Character_Wizard: My faithful familiar Pimmelstix, my first ever summon. The second being the Booglo of course. 
 		jump Others
 	- Skeleton - ???
 		Character_Wizard: I must have summoned so good, a skeleton was raised by all the extra magic floating around. Lucky him!
@@ -53,6 +55,5 @@ Character_Wizard: I am the evil dread wizard Wilton! **Fear me!** For I have sum
 		jump Others
 	- On second thought...
 		jump 
-
 - Nevermind...
 	[end_timeline]

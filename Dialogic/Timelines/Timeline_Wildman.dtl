@@ -1,56 +1,65 @@
 join Character_Wildman 1
 Character_Wildman: DOOHK!
 - Tell me about yesterday...
-	Character_Wildman: He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands. He then gestures big chomping teeth with his hands and flails his arms about.
+	He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands. 
+	Then, he gestures big chomping teeth with his hands and flails his arms about.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Wildman: He nods "HUAH"
+		Character_Wildman: HUAH!
+		He nods.
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Wildman: He nods "Garumb".
+		Character_Wildman: Garumb.
+		He nods.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Wildman: GUH GUH BOO. He gestures angrily. He flaps his arms.
+		He gestures angrily. He flaps his arms.
+		Character_Wildman: GUH GUH BOO.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Wildman: He pokes at his head "BUG BUG".
+		He pokes at his head. 
+		Character_Wildman: BUG BUG.
 		jump Townsfolk
 	- Guard - Duncan
-		Character_Wildman: He holds his nose and waves his hand
+		He holds his nose and waves his hand.
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Wildman: He stares at you blankly.
+		He stares at you blankly.
 		jump Townsfolk
 	- King - Kurtis
-		Character_Wildman: He shrugs.
+		He shrugs.
 		jump Townsfolk
 	- On second thought...
 		jump 
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Wildman: He smiles broadly "MA LEEPA".
+		Character_Wildman: MA LEEPA!
+		He smiles broadly.
 		jump Others
 	- Hero - Alexander
-		Character_Wildman: He gets angry and shakes his head and makes a stabbing motion. "NUH! BAARAA! GUH GUH NUH!"
+		He gets angry and shakes his head and makes a stabbing motion. 
+		Character_Wildman: NUH! BAARAA! GUH GUH NUH!
 		jump Others
 	- Imp - Pimmelstix
-		Character_Wildman: "NUH" he makes a swatting motion.
+		Character_Wildman: NUH!
+		He makes a swatting motion.
 		jump Others
 	- Skeleton - ???
-		Character_Wildman: "ARRAA".
-		Character_Wildman: He shakes his head.
+		Character_Wildman: ARRAA.
+		He shakes his head.
 		jump Others
 	- Wildman - Doohk
-		Character_Wildman: "DOOHK?"
+		Character_Wildman: DOOHK?
 		jump Others
 	- Witch - Rosina
-		Character_Wildman: He nods calmly "MUH, PAKEE"
+		He nods calmly.
+		Character_Wildman: MUH, PAKEE.
 		jump Others
 	- Cat - Bramble
-		Character_Wildman: "MEOWA?"
+		Character_Wildman: MEOWA?
 		jump Others
 	- On second thought...
 		jump 

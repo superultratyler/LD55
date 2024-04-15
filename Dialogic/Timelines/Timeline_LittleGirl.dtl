@@ -1,4 +1,5 @@
 join Character_LittleGirl 1
+Character_LittleGirl: I'm hungry...
 - Tell me about yesterday...
 	Character_LittleGirl: I don't remember a lot. The witch came to see me during the day to help with my nightmares. Then I saw Willard...at night I remember the moon and candles, and a bone...and something smelled like cat pee!
 	jump 
@@ -40,7 +41,7 @@ join Character_LittleGirl 1
 		Character_LittleGirl: EW!
 		jump Others
 	- Skeleton - ???
-		Character_LittleGirl: She girl looks afraid
+		The girl looks afraid.
 		jump Others
 	- Wildman - Doohk
 		Character_LittleGirl: That's my Dad! 
@@ -53,6 +54,5 @@ join Character_LittleGirl 1
 		jump Others
 	- On second thought...
 		jump 
-
 - Nevermind...
 	[end_timeline]

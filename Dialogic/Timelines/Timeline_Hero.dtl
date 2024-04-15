@@ -1,7 +1,8 @@
 join Character_Hero 1
 Character_Hero: Ahahaha!...Wait, you really don't know? I'm Alexander! Illustrious adventurer and slayer of evil!
 - Tell me about yesterday...
-	Character_Hero: ****Ahem**** I arrived at dusk. I had come here anticipating the full moon to slay the werewolf terrorizing these... *fine* people. I brought my finest silver dagger...annnnd...lost it in a card game to that turnip farmer... It's not fair really! Years of turnip farming had honed his strategic mind to a deadly point, and that imp was there messing everything up! Now you say my dagger was found at the ritual site? Well it isn't my dagger anymore, now is it?
+	Character_Hero: ****Ahem**** I arrived at dusk. I had come here anticipating the full moon to slay the werewolf terrorizing these... *fine* people. I brought my finest silver dagger...annnnd...lost it in a card game to that turnip farmer... It's not fair really! Years of turnip farming had honed his strategic mind to a deadly point, and that imp was there messing everything up! 
+	Character_Hero: Now you say my dagger was found at the ritual site? Well it isn't my dagger anymore, now is it?
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk

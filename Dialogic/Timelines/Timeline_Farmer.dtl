@@ -1,8 +1,8 @@
 join Character_Farmer 1
-The names Herbert. I farm the best turnips and don't you ever let anyone tell you different.
+Character_Farmer: The names Herbert. I farm the best turnips and don't you ever let anyone tell you different.
 - Tell me about yesterday...
-	Character_Farmer: During the day I played some cards with that Alexander, did pretty well. Course at night a Booglo was summoned in my field, ruining my turnips. I'd bet that tavern keeper Harriet had something to do with this, couldn't live knowing my delicious turnips are better than her baked potatoes.
-
+	Character_Farmer: During the day I played some cards with that Alexander, did pretty well. 'Course at night a Booglo was summoned in my field, ruining my turnips. 
+	Character_Farmer: I'd bet that tavern keeper Harriet had something to do with this, couldn't live knowing my delicious turnips are better than her baked potatoes.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
