@@ -26,10 +26,11 @@ func exit():
 	Main.instance.screen_manager.close_modal(self as Screen)
 
 func _on_button_submit_pressed():
-	print("Submitted!")
-
-func _on_button_click_catcher_toggled(toggled_on):
+	Main.instance.screen_manager.load_screen("res://Scenes/Screens/EndingScreen.tscn")
+	exit()
+	
+func _on_button_back_pressed():
 	exit()
 
-func _on_button_back_pressed():
+func _on_button_click_catcher_pressed():
 	exit()

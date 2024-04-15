@@ -11,7 +11,6 @@ static var instance : Main
 func _ready():
 	instance = self
 	screen_manager.load_screen("res://Scenes/Screens/TitleScreen.tscn")
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

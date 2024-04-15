@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://7ydf342klgsg"]
+[gd_scene load_steps=12 format=3 uid="uid://7ydf342klgsg"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectSelectionScreen.gd" id="1_67c4t"]
 [ext_resource type="FontFile" uid="uid://dnaaj28fpcydf" path="res://Fonts/Arvo/Arvo-Bold.ttf" id="4_ogq50"]
+[ext_resource type="Texture2D" uid="uid://fmhgsawbknp1" path="res://Art/MISC/LISTSCREEN.png" id="4_wpo20"]
 [ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="14_nw54j"]
 [ext_resource type="PackedScene" uid="uid://dsrdvipk5barl" path="res://UI/SuspectListItem.tscn" id="14_tpjm6"]
 
@@ -84,7 +85,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_67c4t")
 button_click_catcher = NodePath("ButtonClickCatcher")
-button_close = NodePath("ButtonClickCatcher")
+button_close = NodePath("ButtonBack")
 button_submit = NodePath("ButtonSubmit")
 suspect_list = NodePath("Panel/ScrollContainer/SuspectList")
 suspect_list_item_template = ExtResource("14_tpjm6")
@@ -97,7 +98,7 @@ libraries = {
 }
 
 [node name="ButtonClickCatcher" type="TextureButton" parent="."]
-modulate = Color(0, 0, 0, 0.392157)
+modulate = Color(0, 0, 0, 0.819608)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -128,19 +129,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_nw54j")
+texture = ExtResource("4_wpo20")
 
 [node name="HeaderLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 73.0
+offset_left = -5.0
+offset_top = 39.0
+offset_right = -322.0
+offset_bottom = 112.0
 grow_horizontal = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_ogq50")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[center]Suspects List[center]"
+text = "[center]Suspects[center]"
 
 [node name="GuiltyLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
@@ -198,7 +202,7 @@ anchor_right = 0.5
 offset_left = -280.0
 offset_top = 113.0
 offset_right = 280.0
-offset_bottom = 480.0
+offset_bottom = 443.0
 grow_horizontal = 2
 horizontal_scroll_mode = 0
 
@@ -215,10 +219,10 @@ layout_mode = 2
 [node name="ButtonBack" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.15
-anchor_top = 0.06
-anchor_right = 0.23125
-anchor_bottom = 0.161667
+anchor_left = 0.0645833
+anchor_top = 0.1
+anchor_right = 0.145833
+anchor_bottom = 0.201667
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("14_nw54j")
@@ -275,6 +279,6 @@ text = "[center]Submit Accusations![/center]"
 fit_content = true
 
 [connection signal="animation_finished" from="ScreenAnimations" to="." method="_on_screen_animations_animation_finished"]
-[connection signal="toggled" from="ButtonClickCatcher" to="." method="_on_button_click_catcher_toggled"]
+[connection signal="pressed" from="ButtonClickCatcher" to="." method="_on_button_click_catcher_pressed"]
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
 [connection signal="pressed" from="ButtonSubmit" to="." method="_on_button_submit_pressed"]

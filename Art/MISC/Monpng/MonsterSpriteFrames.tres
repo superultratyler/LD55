@@ -1,0 +1,50 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://cwuupcml4sf3t"]
+
+[ext_resource type="Texture2D" uid="uid://53gddho2loo2" path="res://Art/MISC/Monpng/MON-1.png" id="1_cakms"]
+[ext_resource type="Texture2D" uid="uid://dccbl76exrm5j" path="res://Art/MISC/Monpng/MON-2.png" id="2_kcfuk"]
+[ext_resource type="Texture2D" uid="uid://cr2byagusbuc6" path="res://Art/MISC/Monpng/MON-3.png" id="3_tlnt6"]
+[ext_resource type="Texture2D" uid="uid://ckmkne1bjk45e" path="res://Art/MISC/Monpng/MON-4.png" id="4_b6jxv"]
+[ext_resource type="Texture2D" uid="uid://dqu8xiprxt54j" path="res://Art/MISC/Monpng/MON-5.png" id="5_7dqpn"]
+[ext_resource type="Texture2D" uid="uid://cy0msvcmw17py" path="res://Art/MISC/Monpng/MON-6.png" id="6_2u63y"]
+[ext_resource type="Texture2D" uid="uid://decmh5h6yn3r5" path="res://Art/MISC/Monpng/MON-7.png" id="7_67cv2"]
+[ext_resource type="Texture2D" uid="uid://bydxk1x7x4kkd" path="res://Art/MISC/Monpng/MON-8.png" id="8_2vf67"]
+[ext_resource type="Texture2D" uid="uid://8tn78crs040c" path="res://Art/MISC/Monpng/MON-9.png" id="9_i6nch"]
+[ext_resource type="Texture2D" uid="uid://cyactwf16wxg0" path="res://Art/MISC/Monpng/MON-10.png" id="10_a7lg7"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cakms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kcfuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tlnt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b6jxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7dqpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2u63y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_67cv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2vf67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i6nch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_a7lg7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

@@ -17,7 +17,7 @@ var current_screen_state
 @export var screen_transition_animations : AnimationPlayer
 
 func _enter_tree():
-	screen_transition_animations.animation_finished.connect(_on_screen_animations_animation_finished)
+	#screen_transition_animations.animation_finished.connect(_on_screen_animations_animation_finished)
 	
 	# Default to the Off state
 	screen_transition_animations.play("Off")
