@@ -94,10 +94,7 @@ script = ExtResource("3_srp3b")
 character = ExtResource("15_xbvqg")
 guilty = true
 
-[node name="ScreenManager" type="Node" parent="."]
-script = ExtResource("2_mela7")
-
-[node name="Backing" type="TextureRect" parent="ScreenManager"]
+[node name="Backing" type="TextureRect" parent="."]
 modulate = Color(0, 0, 0, 1)
 anchors_preset = 15
 anchor_right = 1.0
@@ -108,6 +105,9 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource("19_4ax5h")
 expand_mode = 1
+
+[node name="ScreenManager" type="Node" parent="."]
+script = ExtResource("2_mela7")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
