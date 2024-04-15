@@ -14,9 +14,9 @@ var _suspect : Suspect
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	toggle_button_summoned.button_group = summoned_button_group
-	toggle_button_guilty.connect("toggled",_on_button_toggled_guilty)
-	toggle_button_involved.connect("toggled",_on_button_toggled_involved)
-	toggle_button_summoned.connect("toggled",_on_button_toggled_summoned)
+	#toggle_button_guilty.connect("toggled",_on_button_toggled_guilty)
+	#toggle_button_involved.connect("toggled",_on_button_toggled_involved)
+	#toggle_button_summoned.connect("toggled",_on_button_toggled_summoned)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -31,15 +31,12 @@ func set_suspect(suspect : Suspect):
 
 func _on_button_toggled_guilty(toggle : bool):
 	if(_suspect):
-		print(_suspect.character.display_name + " guilty!")
 		_suspect.player_selected_guilty = toggle;
 
 func _on_button_toggled_involved(toggle : bool):
 	if(_suspect):
-		print(_suspect.character.display_name + " involved!")
 		_suspect.player_selected_involved = toggle;
 
 func _on_button_toggled_summoned(toggle : bool):
 	if(_suspect):
-		print(_suspect.character.display_name + " summoned!")
 		_suspect.player_selected_summoned = toggle;
