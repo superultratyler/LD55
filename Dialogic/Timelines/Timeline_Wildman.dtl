@@ -1,5 +1,5 @@
 join Character_Wildman 1
-Character_Wildman: DOOHK! 
+Character_Wildman: DOOHK!
 - Tell me about yesterday...
 	Character_Wildman: He gestures wildly flapping his arms around before closing his eyes and resting his head on this hands. He then gestures big chomping teeth with his hands and flails his arms about.
 	jump 
@@ -12,7 +12,7 @@ Character_Wildman: DOOHK!
 		Character_Wildman: He nods "Garumb".
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Wildman: GUH GUH BOO. He gestures angrily. He flaps his arms. 
+		Character_Wildman: GUH GUH BOO. He gestures angrily. He flaps his arms.
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Wildman: He pokes at his head "BUG BUG".
@@ -40,8 +40,8 @@ Character_Wildman: DOOHK!
 		Character_Wildman: "NUH" he makes a swatting motion.
 		jump Others
 	- Skeleton - ???
-		Character_Wildman: he shakes his head \
-"ARRAA".
+		Character_Wildman: "ARRAA".
+		Character_Wildman: He shakes his head.
 		jump Others
 	- Wildman - Doohk
 		Character_Wildman: "DOOHK?"
@@ -54,6 +54,5 @@ Character_Wildman: DOOHK!
 		jump Others
 	- On second thought...
 		jump 
-
 - Nevermind...
 	[end_timeline]

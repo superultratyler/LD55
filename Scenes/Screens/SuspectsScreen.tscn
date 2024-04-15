@@ -1,10 +1,11 @@
-[gd_scene load_steps=47 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=60 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
-[ext_resource type="Texture2D" uid="uid://g85mx84f0vt4" path="res://Art/Portraits/tempbg.png" id="2_7c15o"]
+[ext_resource type="Texture2D" uid="uid://bgiswo11s2iqv" path="res://Art/MISC/background.png" id="2_5gy6n"]
 [ext_resource type="PackedScene" uid="uid://v86y8bcqht14" path="res://Scenes/SceneCharacter.tscn" id="3_feb8l"]
 [ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="4_87eie"]
 [ext_resource type="AudioStream" uid="uid://bgt5bky71cgv3" path="res://Audio/Voices/Farmer_Idunno.ogg" id="4_l58k4"]
+[ext_resource type="Texture2D" uid="uid://bfrlod50jou5n" path="res://Art/Portraits/FARMER.png" id="4_pyqjt"]
 [ext_resource type="AudioStream" uid="uid://dw2ty7q7obddv" path="res://Audio/Voices/Farmer_LetsSee.ogg" id="5_ao36a"]
 [ext_resource type="AudioStream" uid="uid://wi4pkt81d3n8" path="res://Audio/Voices/Farmer_Weelp.ogg" id="6_lkyc3"]
 [ext_resource type="AudioStream" uid="uid://87yke0r6mbmv" path="res://Audio/Voices/WitchsCat_Meow1.ogg" id="7_fi7wy"]
@@ -18,17 +19,29 @@
 [ext_resource type="AudioStream" uid="uid://d1fx0broa7oa5" path="res://Audio/Voices/Guard_ICantBelieveIt.ogg" id="8_33jsu"]
 [ext_resource type="AudioStream" uid="uid://buuo884gv2bpd" path="res://Audio/Voices/Hero_WhatHaveWeHere.ogg" id="8_c2452"]
 [ext_resource type="AudioStream" uid="uid://dkrt7u5bums1h" path="res://Audio/Voices/Wildman_Grunt2.ogg" id="8_d5hsi"]
+[ext_resource type="Texture2D" uid="uid://lbeunuo210ln" path="res://Art/Portraits/HERO.png" id="8_p5ols"]
 [ext_resource type="AudioStream" uid="uid://b810b7fm3lf7m" path="res://Audio/Voices/Skeleton_Rattle2.ogg" id="8_umif2"]
 [ext_resource type="AudioStream" uid="uid://8ojfyhoaop3m" path="res://Audio/Voices/Guard_YouveGotToBeKiddingMe.ogg" id="9_5r1r2"]
 [ext_resource type="AudioStream" uid="uid://bhucq6idrfbrn" path="res://Audio/Voices/Wizard_WhatIsIt.ogg" id="9_tndo7"]
 [ext_resource type="AudioStream" uid="uid://cunfaupdqpx4u" path="res://Audio/Voices/Wizard_Yes.ogg" id="10_ytexo"]
+[ext_resource type="Texture2D" uid="uid://bajkywtmict80" path="res://Art/Portraits/GUARD.png" id="11_nk8x5"]
 [ext_resource type="AudioStream" uid="uid://dojidfrtjrtxn" path="res://Audio/Voices/Witch_Huh.ogg" id="11_vhy1o"]
 [ext_resource type="AudioStream" uid="uid://d4fmla5dlbahk" path="res://Audio/Voices/Witch_Potions.ogg" id="12_5q1vr"]
 [ext_resource type="AudioStream" uid="uid://csv6rhuj2kgcn" path="res://Audio/Voices/Witch_What.ogg" id="13_ehmp4"]
+[ext_resource type="Texture2D" uid="uid://b8gffogd7aing" path="res://Art/Portraits/CAT.png" id="15_bici7"]
 [ext_resource type="AudioStream" uid="uid://bf7v7i0ikq3r8" path="res://Audio/Voices/Imp_Laugh.ogg" id="17_ouyis"]
 [ext_resource type="AudioStream" uid="uid://8tikngr4y7sv" path="res://Audio/Voices/Imp_Pimmelstix.ogg" id="18_dycbg"]
+[ext_resource type="Texture2D" uid="uid://blfhg5ajovgnp" path="res://Art/Portraits/WILDMAN.png" id="18_yfyy7"]
 [ext_resource type="AudioStream" uid="uid://cxdbr6v6b72kt" path="res://Audio/Voices/Ghost_Booooo.ogg" id="20_grp1h"]
 [ext_resource type="AudioStream" uid="uid://b2ecl1lqa34qe" path="res://Audio/Voices/Ghost_Fantastic.ogg" id="21_r78yu"]
+[ext_resource type="Texture2D" uid="uid://b3giqiye8pnny" path="res://Art/Portraits/WITCH.png" id="21_yai40"]
+[ext_resource type="Texture2D" uid="uid://dwix3u7gn3e40" path="res://Art/Portraits/BARKEEP.png" id="25_kcqwt"]
+[ext_resource type="Texture2D" uid="uid://dvkx165cix7sl" path="res://Art/Portraits/IMP.png" id="26_ka7u4"]
+[ext_resource type="Texture2D" uid="uid://0x0fk6vds3o5" path="res://Art/Portraits/SKELLY.png" id="27_btoew"]
+[ext_resource type="Texture2D" uid="uid://cynlg7t4jfipq" path="res://Art/Portraits/WIZ.png" id="29_lg2ta"]
+[ext_resource type="Texture2D" uid="uid://2f60wnyf7btr" path="res://Art/Portraits/WOLFGIRL.png" id="30_ha6ev"]
+[ext_resource type="Texture2D" uid="uid://iwmybrtx5qfd" path="res://Art/Portraits/GHOST.png" id="31_wgvh4"]
+[ext_resource type="Texture2D" uid="uid://cnxw5wjuuqgji" path="res://Art/MISC/table.png" id="42_4e36a"]
 
 [sub_resource type="Animation" id="Animation_vjwdp"]
 resource_name = "Off"
@@ -168,7 +181,7 @@ modulate = Color(0.427451, 0.427451, 0.427451, 1)
 layout_mode = 0
 offset_right = 960.0
 offset_bottom = 600.0
-texture = ExtResource("2_7c15o")
+texture = ExtResource("2_5gy6n")
 expand_mode = 2
 
 [node name="SceneCharacter_Farmer" parent="." instance=ExtResource("3_feb8l")]
@@ -177,6 +190,9 @@ offset_left = 200.0
 offset_top = 11.0
 offset_right = 328.0
 offset_bottom = 139.0
+texture_normal = ExtResource("4_pyqjt")
+texture_pressed = null
+texture_hover = null
 character_name = "Farmer"
 timeline_name = "Timeline_Farmer"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("4_l58k4"), ExtResource("5_ao36a"), ExtResource("6_lkyc3")])
@@ -187,6 +203,9 @@ offset_left = 430.0
 offset_top = 17.0
 offset_right = 558.0
 offset_bottom = 145.0
+texture_normal = ExtResource("8_p5ols")
+texture_pressed = null
+texture_hover = null
 character_name = "Hero"
 timeline_name = "Timeline_Hero"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_mnq3y"), ExtResource("8_c2452")])
@@ -197,6 +216,9 @@ offset_left = 460.0
 offset_top = 210.0
 offset_right = 588.0
 offset_bottom = 338.0
+texture_normal = ExtResource("11_nk8x5")
+texture_pressed = null
+texture_hover = null
 character_name = "Guard"
 timeline_name = "Timeline_Guard"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_qi5q6"), ExtResource("8_33jsu"), ExtResource("9_5r1r2")])
@@ -207,6 +229,9 @@ offset_left = 32.0
 offset_top = 276.0
 offset_right = 160.0
 offset_bottom = 404.0
+texture_normal = ExtResource("15_bici7")
+texture_pressed = null
+texture_hover = null
 character_name = "Witches Cat"
 timeline_name = "Timeline_WitchesCat"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_fi7wy"), ExtResource("8_6lmkh")])
@@ -217,6 +242,9 @@ offset_left = 590.0
 offset_top = 60.0
 offset_right = 718.0
 offset_bottom = 188.0
+texture_normal = ExtResource("18_yfyy7")
+texture_pressed = null
+texture_hover = null
 character_name = "Wildman"
 timeline_name = "Timeline_Wildman"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_lpqwf"), ExtResource("8_d5hsi")])
@@ -227,6 +255,9 @@ offset_left = 305.0
 offset_top = 139.0
 offset_right = 433.0
 offset_bottom = 267.0
+texture_normal = ExtResource("21_yai40")
+texture_pressed = null
+texture_hover = null
 character_name = "Witch"
 timeline_name = "Timeline_Witch"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("11_vhy1o"), ExtResource("12_5q1vr"), ExtResource("13_ehmp4")])
@@ -237,6 +268,9 @@ offset_left = 150.0
 offset_top = 146.0
 offset_right = 278.0
 offset_bottom = 274.0
+texture_normal = ExtResource("25_kcqwt")
+texture_pressed = null
+texture_hover = null
 character_name = "Barkeep"
 timeline_name = "Timeline_Barkeep"
 audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_v76ci"), SubResource("AudioStreamOggVorbis_sfgb0"), SubResource("AudioStreamOggVorbis_xtidj")])
@@ -247,6 +281,9 @@ offset_left = 752.0
 offset_top = 36.0
 offset_right = 880.0
 offset_bottom = 164.0
+texture_normal = ExtResource("26_ka7u4")
+texture_pressed = null
+texture_hover = null
 character_name = "Wizard's Imp"
 timeline_name = "Timeline_WizardsImp"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("17_ouyis"), ExtResource("18_dycbg")])
@@ -257,6 +294,9 @@ offset_left = 617.0
 offset_top = 244.0
 offset_right = 745.0
 offset_bottom = 372.0
+texture_normal = ExtResource("29_lg2ta")
+texture_pressed = null
+texture_hover = null
 character_name = "Wizard"
 timeline_name = "Timeline_Wizard"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_jc5dc"), ExtResource("8_5xu1q"), ExtResource("9_tndo7"), ExtResource("10_ytexo")])
@@ -267,6 +307,9 @@ offset_left = 790.0
 offset_top = 207.0
 offset_right = 918.0
 offset_bottom = 335.0
+texture_normal = ExtResource("27_btoew")
+texture_pressed = null
+texture_hover = null
 character_name = "Skeleton"
 timeline_name = "Timeline_Skeleton"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("7_t51tc"), ExtResource("8_umif2")])
@@ -277,6 +320,9 @@ offset_left = 244.0
 offset_top = 279.0
 offset_right = 372.0
 offset_bottom = 407.0
+texture_normal = ExtResource("30_ha6ev")
+texture_pressed = null
+texture_hover = null
 character_name = "Little Girl"
 timeline_name = "Timeline_LittleGirl"
 audio_barks = Array[AudioStreamOggVorbis]([SubResource("AudioStreamOggVorbis_8tpr7"), SubResource("AudioStreamOggVorbis_dhi1c"), SubResource("AudioStreamOggVorbis_as7xd")])
@@ -287,6 +333,9 @@ offset_left = 26.0
 offset_top = 64.0
 offset_right = 154.0
 offset_bottom = 192.0
+texture_normal = ExtResource("31_wgvh4")
+texture_pressed = null
+texture_hover = null
 character_name = "Ghost"
 timeline_name = "Timeline_Ghost"
 audio_barks = Array[AudioStreamOggVorbis]([ExtResource("20_grp1h"), ExtResource("21_r78yu")])
@@ -298,3 +347,7 @@ offset_top = 441.0
 offset_right = 876.0
 offset_bottom = 569.0
 texture_normal = ExtResource("4_87eie")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(0, 485)
+texture = ExtResource("42_4e36a")
