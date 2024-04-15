@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bgi483uvpxsrq"
+path="res://.godot/imported/GUARD_CLICKMASK.png-044ab6f4286396b31e9b31c84d2008e6.res"
+
+[deps]
+
+source_file="res://Art/Portraits/GUARD_CLICKMASK.png"
+dest_files=["res://.godot/imported/GUARD_CLICKMASK.png-044ab6f4286396b31e9b31c84d2008e6.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

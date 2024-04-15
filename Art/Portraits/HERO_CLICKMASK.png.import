@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bhygu4hmk02hu"
+path="res://.godot/imported/HERO_CLICKMASK.png-a4c74baae8fc613005d9a68fb8436ee1.res"
+
+[deps]
+
+source_file="res://Art/Portraits/HERO_CLICKMASK.png"
+dest_files=["res://.godot/imported/HERO_CLICKMASK.png-a4c74baae8fc613005d9a68fb8436ee1.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

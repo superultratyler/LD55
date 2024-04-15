@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c23is7ikhxns5"
+path="res://.godot/imported/CAT_CLICKMASK.png-3a198699996d66bfed837f1d43413ac0.res"
+
+[deps]
+
+source_file="res://Art/Portraits/CAT_CLICKMASK.png"
+dest_files=["res://.godot/imported/CAT_CLICKMASK.png-3a198699996d66bfed837f1d43413ac0.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

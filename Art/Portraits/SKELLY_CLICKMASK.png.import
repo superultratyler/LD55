@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c7e6n7u261ywn"
+path="res://.godot/imported/SKELLY_CLICKMASK.png-cf617b49137197253bbf79cdff766490.res"
+
+[deps]
+
+source_file="res://Art/Portraits/SKELLY_CLICKMASK.png"
+dest_files=["res://.godot/imported/SKELLY_CLICKMASK.png-cf617b49137197253bbf79cdff766490.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

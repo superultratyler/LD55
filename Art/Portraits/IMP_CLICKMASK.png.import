@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://b2iaqe3dhee8m"
+path="res://.godot/imported/IMP_CLICKMASK.png-f604ad42fc62bb36b01960af848cc18b.res"
+
+[deps]
+
+source_file="res://Art/Portraits/IMP_CLICKMASK.png"
+dest_files=["res://.godot/imported/IMP_CLICKMASK.png-f604ad42fc62bb36b01960af848cc18b.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

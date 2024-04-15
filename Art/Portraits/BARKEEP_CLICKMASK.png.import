@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cf1a4skqvix6y"
+path="res://.godot/imported/BARKEEP_CLICKMASK.png-95c1643e91f377ca108d7ec64179b895.res"
+
+[deps]
+
+source_file="res://Art/Portraits/BARKEEP_CLICKMASK.png"
+dest_files=["res://.godot/imported/BARKEEP_CLICKMASK.png-95c1643e91f377ca108d7ec64179b895.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

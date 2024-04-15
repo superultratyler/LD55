@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bi5klq7mk6tn1"
+path="res://.godot/imported/WILDMAN_CLICKMASK.png-bae39a9047223e1ef91ecb537a1a7af8.res"
+
+[deps]
+
+source_file="res://Art/Portraits/WILDMAN_CLICKMASK.png"
+dest_files=["res://.godot/imported/WILDMAN_CLICKMASK.png-bae39a9047223e1ef91ecb537a1a7af8.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

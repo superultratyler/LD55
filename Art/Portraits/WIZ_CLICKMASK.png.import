@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://y002kf3i1xl"
+path="res://.godot/imported/WIZ_CLICKMASK.png-b716d6c21e6bdd76c380e41c71ab22eb.res"
+
+[deps]
+
+source_file="res://Art/Portraits/WIZ_CLICKMASK.png"
+dest_files=["res://.godot/imported/WIZ_CLICKMASK.png-b716d6c21e6bdd76c380e41c71ab22eb.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

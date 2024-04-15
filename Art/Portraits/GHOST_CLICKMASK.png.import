@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ccade8g3o6r0s"
+path="res://.godot/imported/GHOST_CLICKMASK.png-69d55f48c5056ad68c6b9cd65d17c2f8.res"
+
+[deps]
+
+source_file="res://Art/Portraits/GHOST_CLICKMASK.png"
+dest_files=["res://.godot/imported/GHOST_CLICKMASK.png-69d55f48c5056ad68c6b9cd65d17c2f8.res"]
+
+[params]
+
+create_from=1
+threshold=0.5
