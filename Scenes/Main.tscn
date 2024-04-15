@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://brju8dwh0ta0j"]
+[gd_scene load_steps=17 format=3 uid="uid://brju8dwh0ta0j"]
 
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_jm7ib"]
 [ext_resource type="Script" path="res://Scripts/ScreenManager.gd" id="2_mela7"]
 [ext_resource type="Script" path="res://Scripts/Suspect.gd" id="3_srp3b"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Barkeep.dch" id="4_27kvk"]
+[ext_resource type="Resource" path="res://Dialogic/Characters/Character_Princess.dch" id="5_q485o"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Farmer.dch" id="5_ygqb1"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Ghost.dch" id="6_lju4i"]
 [ext_resource type="Resource" path="res://Dialogic/Characters/Character_Guard.dch" id="7_lvylv"]
@@ -31,14 +32,23 @@ character = ExtResource("4_27kvk")
 [node name="Suspect_Farmer" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("5_ygqb1")
+guilty = true
+
+[node name="Suspect_Princess" type="Node" parent="Suspects"]
+script = ExtResource("3_srp3b")
+character = ExtResource("5_q485o")
+guilty = true
+summoned = true
 
 [node name="Suspect_Ghost" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("6_lju4i")
+guilty = true
 
 [node name="Suspect_Guard" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("7_lvylv")
+involved = true
 
 [node name="Suspect_Hero" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
@@ -47,10 +57,12 @@ character = ExtResource("8_dmxl8")
 [node name="Suspect_LittleGirl" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("9_mlf8b")
+involved = true
 
 [node name="Suspect_Skeleton" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("10_uyot1")
+guilty = true
 
 [node name="Suspect_Wildman" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
@@ -71,6 +83,7 @@ character = ExtResource("14_nvktc")
 [node name="Suspect_WizardsImp" type="Node" parent="Suspects"]
 script = ExtResource("3_srp3b")
 character = ExtResource("15_xbvqg")
+guilty = true
 
 [node name="ScreenManager" type="Node" parent="."]
 script = ExtResource("2_mela7")

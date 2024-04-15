@@ -1,16 +1,7 @@
 join evidence_magicbookpage 1
-evidence_magicbookpage: Summon the Bloogo as the full moon wakes \
-\
-Alight fives candles inscribed with the summoners mark at precisely the same moment\
-\
-A soul must forfeit, a loving heart taken by the summoners blade.\
-\
-Body and soul severe, the bones bind the beast\
-
-evidence_magicbookpage: Place tokens bearing the mark of their prey in the circle\
-\
-All must resolve within twelve tolls of the bell\
-\
-In the center of flames The bloogo will wake and seek it's feast lead by relics of the prey
-evidence_magicbookpage: Note \: If you did not summon the Bloogo it is advised to take shelter as it begins its path of destruction.
+evidence_magicbookpage: [i]Summon the Bloogo as the full moon wakes[br][br]Alight fives candles inscribed with the summoners mark at precisely the same moment[/i]
+evidence_magicbookpage: [i]A soul must forfeit, a loving heart taken by the summoners blade.[br][br]Body and soul severe, the bones bind the beast[/i]
+evidence_magicbookpage: [i]Place tokens bearing the mark of their prey in the circle[br][br]All must resolve within twelve tolls of the bell[/i]
+evidence_magicbookpage: [i]In the center of flames The bloogo will wake and seek it's feast lead by relics of the prey[/i]
+evidence_magicbookpage: [i]Note\: If you did not summon the Bloogo it is advised to take shelter as it begins its path of destruction[/i]
 [end_timeline]

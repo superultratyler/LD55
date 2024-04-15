@@ -121,7 +121,6 @@ offset_bottom = 521.0
 grow_horizontal = 2
 
 [node name="PanelBkg" type="TextureRect" parent="Panel"]
-modulate = Color(0.619608, 0.639216, 0.639216, 1)
 clip_contents = true
 layout_mode = 1
 anchors_preset = 15
@@ -150,33 +149,33 @@ text = "[center]Suspects[center]"
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 251.0
-offset_top = 114.796
-offset_right = -192.0
-offset_bottom = 142.796
+offset_left = 236.0
+offset_top = 108.0
+offset_right = -207.0
+offset_bottom = 155.0
 grow_horizontal = 2
 rotation = -0.376991
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_ogq50")
 theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
-text = "[center]Guilty?[center]"
+text = "[center]Unwitting Accomplice?[center]"
 
 [node name="InvolvedLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = 339.0
-offset_top = 114.796
-offset_right = -104.0
-offset_bottom = 142.796
+offset_left = 346.0
+offset_top = 119.0
+offset_right = -97.0
+offset_bottom = 147.0
 grow_horizontal = 2
 rotation = -0.376991
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_ogq50")
 theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
-text = "[center]Involved??[center]"
+text = "[center]Conspirator??[center]"
 
 [node name="SummonedLabel" type="RichTextLabel" parent="Panel"]
 layout_mode = 1
