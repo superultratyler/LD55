@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/Barkeep_WhatllItBe.ogg-b3880a56210e356c0d435f
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

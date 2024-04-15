@@ -1,6 +1,6 @@
 join evidence_shadynote 1
 evidence_shadynote: we meet at night in the turnip field\
-bring the candles and the page.\
+I'll bring the candles and the page.\
 \
 make sure the dagger isn't yours\
 \
@@ -11,4 +11,5 @@ we make the signal then begin the ritual when the bell tolls\
 wear a cloak\
 a nice one\
 this is serious
+evidence_shadynote: I'm having a hard time getting the amulet. He never takes that thing off. But don't worry, I have an idea. 
 [end_timeline]

@@ -10,7 +10,7 @@ Character_Ghost: I'm Willard the chandler - [i]that's a candlestick maker for th
 		jump Townsfolk
 	- Farmer - Herbert
 		Character_Ghost: He hates that no one likes his turnips. The ritual was in [i]his[/i] turnip field, I'd bet he had something to do with all this! Either way he should go to jail for smelling terrible with that Wilton's Wonder Wax all the time.
-		jump Townsfolk 
+		jump Townsfolk
 	- Chandler - Willard
 		Character_Ghost: Yes that's me, what of it? I made candles, everyone needs candles!
 		jump Townsfolk
@@ -21,7 +21,7 @@ Character_Ghost: I'm Willard the chandler - [i]that's a candlestick maker for th
 		Character_Ghost: A fine job he did! If we had proper security in this town perhaps I'd still be alive! And...our sweet, dear princess would be too...Where was he during all of this anyway?
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Ghost: A tragedy of the highest magnitude... Ohhh fairest maiden, the shining example of a princess. 
+		Character_Ghost: A tragedy of the highest magnitude... Ohhh fairest maiden, the shining example of a princess.
 		Character_Ghost: If only you became a ghost like me...together...forever...
 		jump Townsfolk
 	- King - Kurtis
@@ -32,7 +32,7 @@ Character_Ghost: I'm Willard the chandler - [i]that's a candlestick maker for th
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Ghost: Her...a wretched little cretin, like all children. Except me when I was a child, I was different.
+		Character_Ghost: Her...How was I supposed to know why she needed pixie dust?! Wretched little cretin, like all children. Except me when I was a child, I was different.
 		jump Others
 	- Hero - Alexander
 		Character_Ghost: An outsider, we can't trust them! I heard his silver dagger was found at the ritual site. There aren't many silver daggers floating around.

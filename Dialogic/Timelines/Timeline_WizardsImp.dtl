@@ -9,19 +9,19 @@ Character_WizardsImp: Pimmelstix!
 		Character_WizardsImp: I spit in the mugs at her tavern HEEHEEHEEE!
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_WizardsImp: He yells and yells when I pull up his turnips! Great fun! 
+		Character_WizardsImp: He yells and yells when I pull up his turnips! Great fun!
 		jump Townsfolk
 	- Chandler - Willard
 		Character_WizardsImp: Candle maker! Candle maker! I can light candles without any flame! Now he's a ghost but who's to blame? Wilton that's who!
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_WizardsImp: Imbecile! Fool! No master of Pimmelstix! NO! Each others curse...take him away! TAKE HIM AWAY! HE DID IT! HE SUMMONED BLOOGO! EXECUTE HIM!
+		Character_WizardsImp: Dream dream dream of the Bloogo! No master of Pimmelstix! NO! Each others curse...take him away! TAKE HIM AWAY! 
 		jump Townsfolk
 	- Guard - Duncan
-		Character_WizardsImp: He chases Pimmelstix but is too slow! Not like Pimmelstix! No one is faster than Pimmelstix! 
+		Character_WizardsImp: He chases Pimmelstix but is too slow! Not like Pimmelstix! No one is faster than Pimmelstix!
 		jump Townsfolk
 	- Princess - Primrose
-		Character_WizardsImp: Eyes green with envy teehee! 
+		Character_WizardsImp: Eyes green with envy teehee!
 		jump Townsfolk
 	- King - Kurtis
 		Character_WizardsImp: Heart filled with greed haahaa!
@@ -31,7 +31,7 @@ Character_WizardsImp: Pimmelstix!
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_WizardsImp: Little girl with secrets secrets secrets! I'll never tell you!
+		Character_WizardsImp: Little girl with secrets secrets secrets! Ruined EVERYTHING! HER FAULT! HER FAULT!
 		jump Others
 	- Hero - Alexander
 		Character_WizardsImp: BLAH! Hero's unwelcome. He'll never slay the Booglo! Teehee!
