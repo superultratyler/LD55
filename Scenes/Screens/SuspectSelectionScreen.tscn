@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://7ydf342klgsg"]
+[gd_scene load_steps=13 format=3 uid="uid://7ydf342klgsg"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectSelectionScreen.gd" id="1_67c4t"]
 [ext_resource type="FontFile" uid="uid://dnaaj28fpcydf" path="res://Fonts/Arvo/Arvo-Bold.ttf" id="4_ogq50"]
 [ext_resource type="Texture2D" uid="uid://fmhgsawbknp1" path="res://Art/MISC/LISTSCREEN.png" id="4_wpo20"]
+[ext_resource type="Texture2D" uid="uid://ckyndr1uygmxr" path="res://Art/MISC/buttonrectangle.png" id="6_us7o6"]
 [ext_resource type="Texture2D" uid="uid://c08sm3x67c344" path="res://Art/white_pixel.png" id="14_nw54j"]
 [ext_resource type="PackedScene" uid="uid://dsrdvipk5barl" path="res://UI/SuspectListItem.tscn" id="14_tpjm6"]
 
@@ -226,10 +227,19 @@ anchor_right = 0.145833
 anchor_bottom = 0.201667
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("14_nw54j")
 stretch_mode = 1
 metadata/_edit_group_ = true
 metadata/_edit_use_anchors_ = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="ButtonBack"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_us7o6")
+region_rect = Rect2(-0.781403, -0.444077, 320.755, 130.08)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ButtonBack"]
 layout_mode = 1
@@ -251,16 +261,25 @@ fit_content = true
 [node name="ButtonSubmit" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.353125
-anchor_top = 0.828333
-anchor_right = 0.658333
-anchor_bottom = 0.931667
+anchor_left = 0.377083
+anchor_top = 0.805
+anchor_right = 0.589583
+anchor_bottom = 0.918333
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("14_nw54j")
 stretch_mode = 1
 metadata/_edit_group_ = true
 metadata/_edit_use_anchors_ = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="ButtonSubmit"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_us7o6")
+region_rect = Rect2(-0.781403, -0.444077, 320.755, 130.08)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ButtonSubmit"]
 layout_mode = 1
