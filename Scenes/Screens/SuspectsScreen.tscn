@@ -1,8 +1,9 @@
-[gd_scene load_steps=104 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=105 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://bgiswo11s2iqv" path="res://Art/MISC/background.png" id="2_5gy6n"]
 [ext_resource type="PackedScene" uid="uid://v86y8bcqht14" path="res://Scenes/SceneCharacter.tscn" id="3_feb8l"]
+[ext_resource type="SpriteFrames" uid="uid://cwuupcml4sf3t" path="res://Art/MISC/Monpng/MonsterSpriteFrames.tres" id="3_h3yek"]
 [ext_resource type="Texture2D" uid="uid://b4uqlh13fsbie" path="res://icon.svg" id="4_87eie"]
 [ext_resource type="AudioStream" uid="uid://bgt5bky71cgv3" path="res://Audio/Voices/Farmer_Idunno.ogg" id="4_l58k4"]
 [ext_resource type="Texture2D" uid="uid://bfrlod50jou5n" path="res://Art/Portraits/FARMER.png" id="4_pyqjt"]
@@ -228,6 +229,13 @@ offset_bottom = 600.0
 texture = ExtResource("2_5gy6n")
 expand_mode = 2
 metadata/_edit_lock_ = true
+
+[node name="BoogloAnimated" type="AnimatedSprite2D" parent="."]
+position = Vector2(781, 186)
+sprite_frames = ExtResource("3_h3yek")
+autoplay = "default"
+frame = 4
+frame_progress = 0.655197
 
 [node name="SceneCharacter_Skeleton" parent="." instance=ExtResource("3_feb8l")]
 layout_mode = 0
