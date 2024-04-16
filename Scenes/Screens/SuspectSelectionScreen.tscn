@@ -78,6 +78,7 @@ _data = {
 [sub_resource type="Theme" id="Theme_gipxi"]
 
 [node name="SuspectSelectionScreen" type="Control" node_paths=PackedStringArray("button_click_catcher", "button_close", "button_submit", "suspect_list", "screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

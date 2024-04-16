@@ -73,6 +73,7 @@ _data = {
 }
 
 [node name="EndingScreen" type="Control" node_paths=PackedStringArray("screen_transition_animations")]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -87,6 +88,7 @@ screen_transition_animations = NodePath("ScreenAnimations")
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
+autoplay = "Off"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

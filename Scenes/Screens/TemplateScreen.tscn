@@ -87,6 +87,7 @@ screen_transition_animations = NodePath("ScreenAnimations")
 libraries = {
 "": SubResource("AnimationLibrary_3d7a8")
 }
+autoplay = "Off"
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
