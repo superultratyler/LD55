@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=109 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://cakuxst4xhep5" path="res://Art/MISC/holebackround.png" id="2_juilj"]
@@ -68,9 +68,11 @@
 [ext_resource type="BitMap" uid="uid://cwn3c0n5htv43" path="res://Art/Evidence/CANDLE_CLICKMASK.png" id="60_7s7em"]
 [ext_resource type="Texture2D" uid="uid://dekhxdvee2ker" path="res://Art/Evidence/MUG.png" id="60_jkj73"]
 [ext_resource type="Texture2D" uid="uid://c3pnj13sninye" path="res://Art/Evidence/PAINTING.png" id="61_f3d8h"]
+[ext_resource type="AudioStream" uid="uid://6hmtop640uqo" path="res://Audio/Voices/Pixie_Ooh.ogg" id="62_0wtc3"]
 [ext_resource type="Texture2D" uid="uid://dp33eucsp461k" path="res://Art/Evidence/royaldecree.png" id="62_7m0hm"]
 [ext_resource type="BitMap" uid="uid://b3fm7tt5futhx" path="res://Art/Evidence/CROWN_CLICKMASK.png" id="62_ncu83"]
 [ext_resource type="Texture2D" uid="uid://dabdocs2as1dx" path="res://Art/Evidence/SHACKLE.png" id="63_257g7"]
+[ext_resource type="AudioStream" uid="uid://bp2w7mx1dd5sl" path="res://Audio/Voices/Pixie_Hmm.ogg" id="63_l8ict"]
 [ext_resource type="Texture2D" uid="uid://dhkd61ajui6mn" path="res://Art/Evidence/shadynote.png" id="64_diah5"]
 [ext_resource type="BitMap" uid="uid://c00w3xqcbe0gf" path="res://Art/Evidence/DAGGER_CLICKMASK.png" id="64_px27s"]
 [ext_resource type="Texture2D" uid="uid://dk1mb8vcm5i1f" path="res://Art/Evidence/summoninstructions.png" id="65_eig1s"]
@@ -466,6 +468,7 @@ texture_click_mask = ExtResource("58_y83vq")
 character_name = "Bottle"
 timeline_name = "Timeline_Pixiebottle"
 text_label = NodePath("../SceneCharacter_Evidence_Amulet/RichTextLabel")
+audio_barks = Array[AudioStreamOggVorbis]([ExtResource("62_0wtc3"), ExtResource("63_l8ict")])
 
 [node name="SceneCharacter_Evidence_Candle" parent="." node_paths=PackedStringArray("text_label") instance=ExtResource("3_feb8l")]
 layout_mode = 0
