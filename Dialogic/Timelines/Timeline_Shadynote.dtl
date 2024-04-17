@@ -1,7 +1,7 @@
 join evidence_shadynote 1
-evidence_shadynote: [i]We meet at night in the turnip field[br]I'll bring the candles and the page.[br]Make sure the dagger isn't yours[/i]
+evidence_shadynote: [i]We meet at night in the turnip field[br]I'll bring the candles and the page.[br]Make sure it's the silver dagger[/i]
 evidence_shadynote: [i]The items must bear the symbol of your target[br]We make the signal then begin the ritual when the bell tolls[/i]
 evidence_shadynote: [i]Wear a cloak[br]A nice one[br]This is serious[/i]
 There's something else written on the back.
-evidence_shadynote: [i]I'm having a hard time getting the amulet. He never takes that thing off. But don't worry, I have an idea.[/i]
+evidence_shadynote: [i]I'm having a hard time getting the amulet. He never takes that thing off. But I have an idea, I'll send the quick one.[/i]
 [end_timeline]

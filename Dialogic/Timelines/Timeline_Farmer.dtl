@@ -1,7 +1,7 @@
 join Character_Farmer 1
 Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't you ever let anyone tell you different.
 - Tell me about yesterday...
-	Character_Farmer: During the day I played some cards with that Alexander, and did pretty well. 'Course at night a Booglo was summoned in my field, ruining my turnips.
+	Character_Farmer: During the day I played some cards with that Alexander fellow and did pretty well. 'Course at night a Booglo was summoned in my field, ruining my turnips.
 	Character_Farmer: I'd bet that tavern keeper Harriet had something to do with this, couldn't live knowing my delicious turnips are better than her baked potatoes.
 	jump 
 - Tell me about the townsfolk...
@@ -11,7 +11,7 @@ Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't yo
 		Character_Farmer: Everyone's always eating those potatoes instead of my turnips. They don't know what they're missing.
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Farmer: Mmmmhmmm, been farming turnips my whole life.
+		Character_Farmer: Mmmmhmmm, been farming turnips my whole life. I expect compensation from whoever ruined my turnip field.
 		jump Townsfolk
 	- Chandler - Willard
 		Character_Farmer: I know they found some freaky candles at the ritual site and no one could make candles like that but him.
@@ -23,7 +23,7 @@ Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't yo
 		Character_Farmer: Pffft! Only cared about those royals. You won't see him sticking his neck out to save my turnips! No one respects my turnips. He did let me know about Wilton's Wonder Wax, it's gonna help my aching back some day.
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Farmer: I'm just a simple farmer but I'm not so sure that princess had the best intentions. Maybe it's for the best.
+		Character_Farmer: I'm just a simple farmer but I get the feeling that princess was up to something, she had her own royal insignia made. Started putting it on everything.
 		jump Townsfolk
 	- King - Kurtis
 		Character_Farmer: We'll have another king telling us what to do before long.

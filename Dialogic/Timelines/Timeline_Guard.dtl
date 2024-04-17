@@ -7,7 +7,7 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Guard: I stop by her tavern after most shifts. You would too if you had my job. I noticed her coming across the bridge at night. I'd have stopped by the tavern after my shift but, well you know - giant Booglo got summoned. I don't even get overtime for this.
+		Character_Guard: I noticed her coming across the bridge at night when she would normally be running the taver. I stop by there after most shifts. You would too if you had my job.  I'd would have after my shift last night but, well you know - giant Booglo got summoned. Been on duty since then, I don't even get overtime for this.
 		jump Townsfolk
 	- Farmer - Herbert
 		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern. I think he's jealous. Too bad about his field, that monster trampled it good.
@@ -23,7 +23,7 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 		Character_Guard: I was chosen by the king himself to protect the people of the land. Well, chosen by someone chosen by the King, it still counts.
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Guard: Poor thing. She was next in line to rule too.
+		Character_Guard: Poor thing. She was next in line to rule too. She died with her father in their royal castle. On the bright side I can stop swapping out all the old diamond insignias for the princesses new heart insignia.
 		jump Townsfolk
 	- King - Kurtis
 		Character_Guard: He had plans to rule forever, don't know how but he said with the witches help his reign would last five hundred years. I'd have given my life to protect the King...yes I saw the Booglo step on him. I'd have tried to save him but then we'd both be stepped on, what's the sense in that?
@@ -33,7 +33,7 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Guard: She lives out in the woods I'd be afraid to with that werewolf out there, and I'm so big and strong!
+		Character_Guard: She lives out in the woods I'd be afraid to be out there with that werewolf running around, and I'm so big and strong!
 		jump Others
 	- Hero - Alexander
 		Character_Guard: We've had a werewolf problem in the woods lately, doesn't seem so bad compared to the Booglo. Anyway this guy comes out of nowhere saying he's going to slay the werewolf with a silver dagger and become famous, the timing is strange don't you think?
@@ -45,7 +45,7 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 		Character_Guard: Normally I'm supposed to fight a walking skeleton but given the circumstances I'll reconsider for now.
 		jump Others
 	- Wildman - Doohk
-		Character_Guard: He's more animal than man, growls every word he says. But I've never seen him do anything suspicious...which I find suspicious...
+		Character_Guard: He's more animal than man, growls every word he says. The princess instructed me to no longer allow him to gather herbs in the royal forest. But you try telling a guy like that what to do.
 		jump Others
 	- Witch - Rosina
 		Character_Guard: She makes potions and elixirs, that sort of stuff. I'll stick to Wilton's wonder wax thank you very much, smells like cat pee but it helps my aching back. Come to think of it she's got all those magic books, they found a page from a magic book didn't they?

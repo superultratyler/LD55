@@ -1,25 +1,25 @@
 join Character_Barkeep 1
 Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 - Tell me about yesterday...
-	Character_Barkeep: I was tending the bar all day, yeup. Til' I found Wilton asleep in my root cellar with a bottled pixie around dusk, I know Doohk needs that on full moons so I walked it on down to his hut but he wasn't there. So I came right back here but it's a long walk with the bridge out. 
+	Character_Barkeep: I was tending the bar all day, yeup. Til' I found Wilton asleep in my root cellar with a bottled pixie around dusk, I know Doohk needs that on full moons so I walked it on down to his hut but he wasn't there. So I brought it back to the tavern for safe keeping.
 	Character_Barkeep: On my way back I passed three cloaked figures.  One smelled awful, like that Wonder Wax Wilton is always trying to peddle. Soon after I heard the sound of a big ol'monster crushing half the town. I decided to close early on account of the cataclysmic event and such. Yeup.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Barkeep: That's me. Taverns been in the family for generations. It's famous for my baked potatoes, people come from all over to get them.
+		Character_Barkeep: That's me. Taverns been in the family for generations. It's famous for my baked potatoes, people come from all over to try them.
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Barkeep: Herbert, he farms turnips. Can't say I enjoy his company, he made a big deal a while back about my baked potatoes ruining his turnip business. Your turnips are nasty Herbert, get over it. He walked out with one of my mugs yesterday, I just put it on his tab. 
+		Character_Barkeep: Herbert, he farms turnips. Can't say I enjoy his company, he made a big deal a while back about my baked potatoes ruining his turnip business. Your turnips are nasty Herbert, get over it. He walked out with one of my mugs yesterday, I just put it on his tab.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Barkeep: I buy candles from him, everyone does. Or we did, seems he's going to need a different line of work now. He was in here playing cards with Wilton and that nasty Imp around dusk. Watched him lose a whole bundle o' fancy lookin candles and a sparkly bottle to that Imp, yeup. 
+		Character_Barkeep: I buy candles from him, everyone does. Or we did, seems he's going to need a different line of work now. He was in here playing cards with Wilton and that nasty Imp around dusk. Watched him lose a whole bundle o' fancy lookin candles and a sparkly bottle to that Imp, yeup.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Barkeep: He does call himself a [i]wizard[/i], but I never seen any wizardin' outta him. Unless you count that infernal imp, but I can't imagine why anyone would choose to have that thing around. He passed out in my root cellar last night so I put him to bed in one of the rooms upstairs, I put that on his tab. 
+		Character_Barkeep: He does call himself a [i]wizard[/i], but I never seen any wizardin' outta him. Unless you count that infernal imp, but I can't imagine why anyone would choose to have that thing around. He passed out in my root cellar last night so I put him to bed in one of the rooms upstairs, I put that on his tab.
 		jump Townsfolk
 	- Guard - Duncan
-		Character_Barkeep: He's got his hands full alright. I saw him up on the bell tower ringing the bell when the Booglo was summoned. 
+		Character_Barkeep: He's got his hands full alright. I saw him up on the bell tower ringing the bell when the Booglo was summoned.
 		jump Townsfolk
 	- Princess - Primrose
 		Character_Barkeep: She's got a poker face, but seems nice. That's a dangerous combination. Rumor has it her mom was some powerful sorceress.
@@ -32,10 +32,10 @@ Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Barkeep: Odd little gal, but who isn't round here. Lives in the woods with her Pa, Doohk. They don't come round here much but I try to look out for them. 
+		Character_Barkeep: Odd little gal, but who isn't round here. Lives in the woods with her Pa, Doohk. They don't come round here much but I try to look out for them.
 		jump Others
 	- Hero - Alexander
-		Character_Barkeep: Came round here saying he's gonna help with our werewolf problem. That was before our present situation. Had a silver dagger and he was showing off, can you believe that turnip farmer managed to win it from him in a card game? 
+		Character_Barkeep: Came round here saying he's gonna help with our werewolf problem. That was before our present situation. Had a silver dagger and he was showing off, can you believe that turnip farmer managed to win it from him in a card game?
 		jump Others
 	- Imp - Pimmelstix
 		Character_Barkeep: Gah I hate that thing! It's always messin' up the chairs or licking the mugs. Miserable little puke. That wizard claims it's his service animal or whats it, but all it does is run amok and cheat at cards.
@@ -44,10 +44,10 @@ Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 		Character_Barkeep: Showed up after the summoning, guessing the Booglow got'em, but skeletons don't typically get up and walk around. Can't say I'm surprised considering this town though, yeup.
 		jump Others
 	- Wildman - Doohk
-		Character_Barkeep: Nice guy, doesn't cause trouble. Can't talk so good, but he gets his point across. 
+		Character_Barkeep: Nice guy, doesn't cause trouble. Can't talk so good, but he gets his point across.
 		jump Others
 	- Witch - Rosina
-		Character_Barkeep: She was in here yesterday night, none too happy neither. Says her shop had a break in. I poured her one on the house. 
+		Character_Barkeep: She was in here yesterday night, none too happy neither. Says her shop had a break in. I poured her one on the house.
 		jump Others
 	- On second thought...
 		jump 

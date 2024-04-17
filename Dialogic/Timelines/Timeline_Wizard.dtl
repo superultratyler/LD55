@@ -2,16 +2,16 @@ join Character_Wizard 1
 Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
 - Tell me about yesterday...
 	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night!
-	Character_Wizard:  I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants - wait no...that can't be right. 
+	Character_Wizard: I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants - wait no...that can't be right.
 	Character_Wizard: The point is I summoned the Booglo and I vividly remember doing it.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Wizard: She tells me not to bring my imp Pimmelstix to her tavern, no one will tell me what to do now! 
+		Character_Wizard: She tells me not to bring my imp Pimmelstix to her tavern, no one will tell me what to do now!
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Wizard: He asked me for a way to turn potatoes to turnips. I've better use of my talent.
+		Character_Wizard: He asked me for a spell to turn potatoes into turnips. I've better use of my talent. Still he buys my Wonder Wax bwaha!
 		jump Townsfolk
 	- Chandler - Willard
 		Character_Wizard: Ah yes. He bought my rings of everlasting love! I made a fortune off those...
@@ -23,7 +23,7 @@ Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have 
 		Character_Wizard: A loyal customer who buys my Wonder Wax, he at least has the good sense to recognize value!
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Wizard: That princess was no fair lady! If I hadn't squashed the king she would have!
+		Character_Wizard: I've seen her practice magic in secret when I was digging through the royal dumpster. You woulden't beleive what they throw out!
 		jump Townsfolk
 	- King - Kurtis
 		Character_Wizard: It all could have been avoided if they had recognized me as grand supreme wizard of the realm! So I had to show them!
@@ -39,7 +39,7 @@ Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have 
 		Character_Wizard: A hero is no match for my Booglo! AHAHAH!
 		jump Others
 	- Imp - Pimmelstix
-		Character_Wizard: My faithful familiar Pimmelstix, my first ever summon. The second being the Booglo of course. 
+		Character_Wizard: My faithful familiar Pimmelstix, my first ever summon. The second being the Booglo of course.
 		jump Others
 	- Skeleton - ???
 		Character_Wizard: I must have summoned so good, a skeleton was raised by all the extra magic floating around. Lucky him!

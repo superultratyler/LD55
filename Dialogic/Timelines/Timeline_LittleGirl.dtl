@@ -1,7 +1,7 @@
 join Character_LittleGirl 1
 Character_LittleGirl: I'm hungry...
 - Tell me about yesterday...
-	Character_LittleGirl: I don't remember a lot. The witch came to see me during the day to help with my nightmares. Then I saw Willard...at night I remember the moon and candles, and a bone...and something smelled like cat pee!
+	Character_LittleGirl: The witch came to see me during the day and gave me a pixie to help me sleep on full moons...at night I had another nightmare because I gave my pixie to Pimmelstix...there was the moon and candles,a bone, three people wearing robes...and one smelled like cat pee!
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -12,13 +12,13 @@ Character_LittleGirl: I'm hungry...
 		Character_LittleGirl: I sleep in his barn on full moons. But not since the witch started helping me.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_LittleGirl: He came to my house and traded me some candy for the pixie the witch brought over, he said he was going to set it free. I thought that was nice. Dad wasn't happy when he found out...
+		Character_LittleGirl: He calls me a cretin...what's a cretin?
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_LittleGirl: Daddy says not to go into his magic shop because it's not magic at all!
 		jump Townsfolk
 	- Guard - Duncan
-		Character_LittleGirl: I've seen him in the town, but I don't go there a lot, he smells like the farmer.
+		Character_LittleGirl: I've seen him in the town, but I don't go there a lot, he smells like cat pee! But dad says not to tell him that.
 		jump Townsfolk
 	- Princess - Primrose
 		Character_LittleGirl: She's so pretty!
@@ -38,16 +38,16 @@ Character_LittleGirl: I'm hungry...
 		Character_LittleGirl: Daddy said to stay away from him but I like his [i]fancy[/i] hair.
 		jump Others
 	- Imp - Pimmelstix
-		Character_LittleGirl: EW!
+		Character_LittleGirl: Pimmelstix asked to have my bottled pixie, he said he needed to set her free. I thought that sounded nice so I gave it to him...daddy wasn't happy...
 		jump Others
 	- Skeleton - ???
 		The girl looks afraid.
 		jump Others
 	- Wildman - Doohk
-		Character_LittleGirl: That's my Dad! 
+		Character_LittleGirl: That's my Dad!
 		jump Others
 	- Witch - Rosina
-		Character_LittleGirl: Daddy finds flowers for her and she makes medicine for me. She brought my a pixie to help me sleep...but I traded it to Willard...
+		Character_LittleGirl: Daddy brings her flowers all the time, probably cause she makes medicine. She brought me a pixie to help me sleep...but I gave it to Pimmelstix...
 		jump Others
 	- Cat - Bramble
 		Character_LittleGirl: I like chasing the cat!

@@ -1,13 +1,44 @@
 join evidence_pixiebottle 1
-The label reads - Sprinkle one pinch pixie dust on head and whisper desired dream into ear. Causes magic induced sleep until daylight. [br]Warning: Choose dreams with caution, extremely vivid.  
+The label reads - Sprinkle one pinch pixie dust on head and whisper desired dream into ear. Causes magic induced sleep until daylight. [br]Warning\: Choose dreams with caution, extremely vivid.
 - Hello?
-	evidence_pixiebottle: Hello? Is that it? I was happy to help that little girl, but now you want me to conjure a bunch of wish fullfilment for a middle aged man who thinks he's a wizard!? I'll be reporting this to the fey creatures union! 
+	evidence_pixiebottle: Hello? Is that it? I was happy to help that little girl, but now you want me to conjure a bunch of wish fullfilment for a middle aged man who thinks he's a wizard!? I'll be reporting this to the fey creatures union!
 	jump 
 - What happened yesterday?
 	evidence_pixiebottle: I was ready to perform my monthly task of lulling that little girl to sleep when some ninny with a bad haircut takes me away! [n]Then he loses me in a game of cards! Unacceptable! Worst of all an imp! An IMP! Uses my magic dust on a delusional megalomaniac. This was NOT in the job description!
 	jump 
-- Sorry about all this.
-	evidence_pixiebottle: You had better be!
+- I could use some help.
+	Like what?
+	- I need a hint.
+		Having something stolen from you doesn't
+		make you guilty now does it?
+		jump 
+	- I need another hint.
+		All the facts are on the table, and facts don't lie.
+		And neither does Harriet.
+		jump 
+	- I need a really big hint.
+		That summoning page has a lot of steps, look at all that evidence at the ritual site!
+		At least five people are guilty including that summoner.
+		jump 
+	- Can you just use pixie magic to solve this?
+		Really? I thought you humans liked figuring stuff out.
+		- Yes, I just want to know.
+			Fine, but it'll cost you. Stand up, spin around three times and say "Pipi pipi loo pixies are so cool, pipi pipi moo I wish I was a pixie too.".
+			- Okay, I promise I did that.
+				Good!
+				Now pay attention or I'll make you do it agian.
+				The turnip farmer, Herbert, is guilty.
+				The chandler, Willard, now ghost, is guilty.
+				The skeleton is Willards skeleton! Equally guilty.
+				That menacing Imp Pimmelstix is guilty.
+				The summoner is Princess Primrose of course!
+				Now mark that down on your notes and I'll tell 
+				you the whole story.
+				jump 
+			- Maybe I'll look at the evidence again.
+				jump 
+		- On second thought...
+			jump 
 	jump 
 - Anyways...
 	[end_timeline]
