@@ -11,13 +11,13 @@ Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustriou
 		Character_Hero: I was enjoying an ale at her fine establishment when she ran off in the middle of the night and left her tavern unattended, very strange indeed. As an honorable hero I noted every ale I poured myself in that time and intend to pay it back in full. 
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Hero: He won my dagger from me in a card game. I'd have won if that miserable little imp wasn't flying about distracting me at every moment! That dagger was expensive you know.
+		Character_Hero: He won my dagger from me in a card game at the tavern.    I'd have won if that miserable little imp wasn't flying about distracting me at every moment! That dagger was expensive you know. Then he walked right out, drink in hand. 
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Hero: He came into the tavern with a pixie in a bottle and a bundle of candles, he practically gave the thing away to the wizard and his imp the way he was playing those cards.
+		Character_Hero: He came into the tavern with a bundle of strange candles, he practically gave them away to the wizard and his imp the way he was playing those cards.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Hero: I visited his little shop.  I've been across the land and dealt with my share of magic items. Those are no magic items, and uhhgg what a stench that place had. He tied a porcupine to a stick and tried to sell it as a "magic mace of biting".
+		Character_Hero: I visited his "magic" shop.  I've been across the land and dealt with my share of enchanted items. There aren't any there, and uhhgg what a stench that place had. He tied a porcupine to a stick and tried to sell it as a "magic mace of biting".
 		jump Townsfolk
 	- Guard - Duncan
 		Character_Hero: No need for a guard anymore, the hero is in town.
@@ -50,7 +50,7 @@ Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustriou
 		Character_Hero: I saw that...man...and his daughter going into turnip farm's barn at dusk as I came into town. He was carrying shackles and chain. I'm guessing for the cows? They can be vicious no?
 		jump Others
 	- Witch - Rosina
-		Character_Hero: She was lamenting over stolen something or another at the tavern around dusk. Witches. What is it with witches? Sometimes they just live in a town and sell fruit juice. Sometimes they eat children, it's like-just pick one so it's less confusing for us all.
+		Character_Hero: She was lamenting over stolen something or another at the tavern that night. Witches. What is it with witches? Sometimes they just live in a town and sell fruit juice. Sometimes they eat children, it's like-just pick one so it's less confusing for us all.
 		jump Others
 	- Cat - Bramble
 		Character_Hero: Who doesn't love a *fwuffy wuffy wittle cattsy wattsy*?

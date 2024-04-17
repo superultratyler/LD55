@@ -1,7 +1,7 @@
 join Character_LittleGirl 1
 Character_LittleGirl: I'm hungry...
 - Tell me about yesterday...
-	Character_LittleGirl: The witch came to see me during the day and gave me a pixie to help me sleep on full moons...at night I had another nightmare because I gave my pixie to Pimmelstix...there was the moon and candles,a bone, three people wearing robes...and one smelled like cat pee!
+	Character_LittleGirl: The witch came to see me during the day and gave me a pixie to help me sleep on full moons...at night I had another nightmare...there was the moon and candles,a bone, three people wearing robes...and one smelled like cat pee!
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -9,7 +9,7 @@ Character_LittleGirl: I'm hungry...
 		Character_LittleGirl: Her baked potatoes are really good!
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_LittleGirl: I sleep in his barn on full moons. But not since the witch started helping me.
+		Character_LittleGirl: I used to sleep in his barn on full moons. But not since Rosina gave me a pixie... But I gave it away so I had to sleep in the barn again...
 		jump Townsfolk
 	- Chandler - Willard
 		Character_LittleGirl: He calls me a cretin...what's a cretin?
@@ -47,7 +47,7 @@ Character_LittleGirl: I'm hungry...
 		Character_LittleGirl: That's my Dad!
 		jump Others
 	- Witch - Rosina
-		Character_LittleGirl: Daddy brings her flowers all the time, probably cause she makes medicine. She brought me a pixie to help me sleep...but I gave it to Pimmelstix...
+		Character_LittleGirl: Daddy brings her flowers all the time. She gave me a pixie to help me sleep and comes to check on me sometimes.
 		jump Others
 	- Cat - Bramble
 		Character_LittleGirl: I like chasing the cat!

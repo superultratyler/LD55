@@ -1,9 +1,8 @@
 join Character_Witch 1
-Character_Witch: I'm Rosina the alchemist, but most call me a witch. \
-Witch I am.
+Character_Witch: I'm Rosina the alchemist, but most call me a witch.             Witch I am.
 - Tell me about yesterday...
 	Character_Witch: I was making an out-patient visit during the day. When I returned at dusk I discovered my shop ransacked! The blasted thief made a mess of things but only tore a single page from my magic tome.
-	They dropped a ridiculous love note the fool!
+	Whoever broke in dropped a ridiculous love note the fool!
 	It says they purchsed rings from Wilton but he refuses to give out "cutomer data".
 	Character_Witch: Needed a drink after that, so I went to the tavern.
 	jump 
@@ -16,7 +15,7 @@ Witch I am.
 		Character_Witch: He wanted me to create a potato blight, he thinks I couldn't do it, but it's simply against my morals! Now he's another sucker who falls for Milton's scams.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Witch: I see that sap fawning over the princess every time she would parade around town. Pathetic.
+		Character_Witch: I see that sap fawning over the princess whenever she would parade around town. Pathetic. Now he's a ghost, you don't just become a ghost. That's a magical process.
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Witch: Hah! [i]Wizard?[/i] [b]Him?[/b] There's more magic in Brambles litterbox-which I've seen him digging through.
@@ -26,7 +25,7 @@ Witch I am.
 		Character_Witch: You know they found the kings crown at the ritual site? Who's closer to the king than the guard?
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Witch: A sweet young girl, but she kept her distance from me... I wonder why. The Booglo chased her all the way to the castle, seemed it wanted her most.
+		Character_Witch: She kept her distance from me... even tried to get my shop closed. Not everyone trusts witches but she seemed to have it out for me. But the Booglo had it out for her, chased her all the way to the castle.
 		jump Townsfolk
 	- King - Kurtis
 		Character_Witch: I was in the process of creating a very complicated potion for him, yes. It requires the rarest ingredients only a king could afford. "The Elixir of Obnoxiously Long Life". Guaranteed to outlive your greedy, spoiled children.
@@ -40,13 +39,13 @@ Witch I am.
 		Character_Witch: What a sweet child, poor thing needs a little pixie dust to sleep on full moons. That's all I'll say about that.
 		jump Others
 	- Hero - Alexander
-		Character_Witch: The newcomer? Hopefully he buys some potions.
+		Character_Witch: The newcomer? Rumor has it he brought a silver dagger, quite rare those are. Hopefully he buys some potions.
 		jump Others
 	- Imp - Pimmelstix
 		Character_Witch: What a foul creature. Wilton [i]claims[/i] to have summoned it but I know they've been cursed to be bound to each other. Mark my words that Imp will off Milton the first chance it gets. It wants nothing more than to be free of that so called [i]wizard[/i].
 		jump Others
 	- Skeleton - ???
-		Character_Witch: It's not everyday you see a walking skeleton, they don't just pop out of the ground you know. Someone did that on purpose.
+		Character_Witch: It's not everyday you see a walking skeleton, they don't just pop out of the ground you know. That takes a good bit o' magic.
 		jump Others
 	- Wildman - Doohk
 		Character_Witch: Ah, Doohk, He was helping me gather ingredients in the woods for the "potion of obnoxously long life". I find him quite handsome and well spoken. The fools of this town just don't understand him!  He would do anything for our-err his dear little daughter...
@@ -55,7 +54,7 @@ Witch I am.
 		Character_Witch: Fine, I'm a witch but I'm other things too. I bake delicious pastries, but no one calls me a baker!
 		jump Others
 	- Cat - Bramble
-		Character_Witch: My dear kitty Bramble. She hates all things magic you know. Except me and my potions of course.
+		Character_Witch: My dear kitty Bramble. She hates all things magical you know. Except me and my potions of course.
 		jump Others
 	- On second thought...
 		jump 

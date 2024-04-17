@@ -13,7 +13,7 @@ Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 		Character_Barkeep: Herbert, he farms turnips. Can't say I enjoy his company, he made a big deal a while back about my baked potatoes ruining his turnip business. Your turnips are nasty Herbert, get over it. He walked out with one of my mugs yesterday, I just put it on his tab.
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Barkeep: I buy candles from him, everyone does. Or we did, seems he's going to need a different line of work now. He was in here playing cards with Wilton and that nasty Imp around dusk. Watched him lose a whole bundle o' fancy lookin candles and a sparkly bottle to that Imp, yeup.
+		Character_Barkeep: I buy candles from him, everyone does. Or we did, seems he's going to need a different line of work now. He was in here playing cards with Wilton and that nasty Imp around dusk. Watched him lose a whole bundle o' fancy lookin candles to that Imp, yeup.
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Barkeep: He does call himself a [i]wizard[/i], but I never seen any wizardin' outta him. Unless you count that infernal imp, but I can't imagine why anyone would choose to have that thing around. He passed out in my root cellar last night so I put him to bed in one of the rooms upstairs, I put that on his tab.
@@ -38,13 +38,13 @@ Character_Barkeep: Me? Just a typical barkeep, yeup. Not much more to it.
 		Character_Barkeep: Came round here saying he's gonna help with our werewolf problem. That was before our present situation. Had a silver dagger and he was showing off, can you believe that turnip farmer managed to win it from him in a card game?
 		jump Others
 	- Imp - Pimmelstix
-		Character_Barkeep: Gah I hate that thing! It's always messin' up the chairs or licking the mugs. Miserable little puke. That wizard claims it's his service animal or whats it, but all it does is run amok and cheat at cards.
+		Character_Barkeep: Gah I hate that thing! It's always messin' up the chairs or licking the mugs. He flies around so fast no one can stop him. Miserable little puke. That wizard claims it's his service animal or whats it, but all it does is run amok and cheat at cards. 
 		jump Others
 	- Skeleton - ???
 		Character_Barkeep: Showed up after the summoning, guessing the Booglow got'em, but skeletons don't typically get up and walk around. Can't say I'm surprised considering this town though, yeup.
 		jump Others
 	- Wildman - Doohk
-		Character_Barkeep: Nice guy, doesn't cause trouble. Can't talk so good, but he gets his point across.
+		Character_Barkeep: Nice guy, doesn't cause trouble. Can't talk so good, but he gets his point across. He came in here once with a big scratch on his arm,   wonder what did it.
 		jump Others
 	- Witch - Rosina
 		Character_Barkeep: She was in here yesterday night, none too happy neither. Says her shop had a break in. I poured her one on the house.

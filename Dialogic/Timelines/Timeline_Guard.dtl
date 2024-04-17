@@ -1,13 +1,13 @@
 join Character_Guard 1
 Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 - Tell me about yesterday...
-	Character_Guard: I was looking into a break in at the Rosina the Witches hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there.
-	Character_Guard: At night I heard the signal for "trouble" so I rang the bell twelve times which is the new protocol. Then I noticed three cloaked figures out in the turnip field, up to no good I'm sure. Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
+	Character_Guard: I was looking into a break in at Rosina the Witches hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there.
+	Character_Guard: At night I saw three cloaked figures crossing the bridge. Not long after I heard the signal for "trouble" so I rang the bell twelve times which is the new protocol. Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Guard: I noticed her coming across the bridge at night when she would normally be running the taver. I stop by there after most shifts. You would too if you had my job.  I'd would have after my shift last night but, well you know - giant Booglo got summoned. Been on duty since then, I don't even get overtime for this.
+		Character_Guard: I noticed her coming across the bridge at night when she would normally be running the tavern. I stop by there after most shifts. You would too if you had my job.  I'd would have after my shift last night but, well you know - giant Booglo got summoned. Been on duty since then, I don't even get overtime for this.
 		jump Townsfolk
 	- Farmer - Herbert
 		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern. I think he's jealous. Too bad about his field, that monster trampled it good.

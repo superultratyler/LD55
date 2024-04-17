@@ -14,7 +14,7 @@ Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have 
 		Character_Wizard: He asked me for a spell to turn potatoes into turnips. I've better use of my talent. Still he buys my Wonder Wax bwaha!
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Wizard: Ah yes. He bought my rings of everlasting love! I made a fortune off those...
+		Character_Wizard: He bought my rings of everlasting love! I made a fortune off those...Oh. That was meant to be confidential. Eh what do I care anymore!?    I'm the most powerful wizard in the world!
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Wizard: All my life I've strived to be recognized for my talents. Behold my awesome power! Throw me in jail if you dare! Bwahahahaha!

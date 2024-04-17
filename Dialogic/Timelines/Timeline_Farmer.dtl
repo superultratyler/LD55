@@ -33,7 +33,7 @@ Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't yo
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Farmer: Lives out in the wilds with her father, they're a wild bunch. I let them use my barn...when the [i]weather[/i] turns bad. But that hasn't happened for a long time.
+		Character_Farmer: Lives out in the woods with her father, they're a wild bunch. I let them use my barn...when the [i]weather[/i] turns bad... They haven't needed it for some time...until last night...
 		jump Others
 	- Hero - Alexander
 		Character_Farmer: Another fool to go along with the rest in this town. He came here to slay the beast werewolf. The werewolf never did harm my turnips, and it ate plenty of rabbits. You know what those rabbits eat? That's right, my turnips. I say leave it alone.

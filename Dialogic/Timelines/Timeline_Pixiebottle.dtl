@@ -9,8 +9,8 @@ The label reads - Sprinkle one pinch pixie dust on head and whisper desired drea
 - I could use some help.
 	Like what?
 	- I need a hint.
-		Having something stolen from you doesn't
-		make you guilty now does it?
+		Having something stolen from you doesn't make you guilty now does it?
+		But participating in the ritual or unbinding the Booglo makes you an "Unwitting Accomplice".
 		jump 
 	- I need another hint.
 		All the facts are on the table, and facts don't lie.
@@ -18,7 +18,7 @@ The label reads - Sprinkle one pinch pixie dust on head and whisper desired drea
 		jump 
 	- I need a really big hint.
 		That summoning page has a lot of steps, look at all that evidence at the ritual site!
-		At least five people are guilty including that summoner.
+		Five people are guilty including that summoner. With two unwitting accomplices.
 		jump 
 	- Can you just use pixie magic to solve this?
 		Really? I thought you humans liked figuring stuff out.
@@ -26,19 +26,20 @@ The label reads - Sprinkle one pinch pixie dust on head and whisper desired drea
 			Fine, but it'll cost you. Stand up, spin around three times and say "Pipi pipi loo pixies are so cool, pipi pipi moo I wish I was a pixie too.".
 			- Okay, I promise I did that.
 				Good!
+				The guard Duncan and little girl June, are unwitting accomplices.
 				Now pay attention or I'll make you do it agian.
-				The turnip farmer, Herbert, is guilty.
+				The turnip farmer, Herbert, is guilty. 
 				The chandler, Willard, now ghost, is guilty.
 				The skeleton is Willards skeleton! Equally guilty.
 				That menacing Imp Pimmelstix is guilty.
 				The summoner is Princess Primrose of course!
-				Now mark that down on your notes and I'll tell 
-				you the whole story.
+				Now mark that down on your notes and I'll tell you the whole story.
 				jump 
 			- Maybe I'll look at the evidence again.
 				jump 
 		- On second thought...
 			jump 
-	jump 
+	- Nay, I shall help myself!
+		jump 
 - Anyways...
 	[end_timeline]
