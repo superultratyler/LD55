@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=3 uid="uid://cjolu2iimnl7n"]
+[gd_scene load_steps=112 format=3 uid="uid://cjolu2iimnl7n"]
 
 [ext_resource type="Script" path="res://Scripts/Screens/SuspectsScreen.gd" id="1_xsddm"]
 [ext_resource type="Texture2D" uid="uid://cakuxst4xhep5" path="res://Art/MISC/holebackround.png" id="2_juilj"]
@@ -242,7 +242,6 @@ packet_sequence = SubResource("OggPacketSequence_6gurq")
 [sub_resource type="Theme" id="Theme_jc6nn"]
 
 [node name="SuspectsScreen" type="Control" node_paths=PackedStringArray("button_suspects_list", "screen_transition_animations")]
-modulate = Color(1, 1, 1, 0)
 clip_contents = true
 layout_mode = 3
 anchors_preset = 15
