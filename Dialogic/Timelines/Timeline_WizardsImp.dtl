@@ -1,7 +1,7 @@
 join Character_WizardsImp 1
 Character_WizardsImp: Pimmelstix!
 - Tell me about yesterday...
-	Character_WizardsImp: I was with the wizard yes yes yes! He summoned the Bloogo! YES YES! IT WAS HIM!
+	Character_WizardsImp: I was with the wizard yes yes yes! He summoned the Booglo! YES YES! IT WAS HIM!
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -15,7 +15,7 @@ Character_WizardsImp: Pimmelstix!
 		Character_WizardsImp: Candle maker! Candle maker! I can light candles without any flame! Now he's a ghost but who's to blame? Wilton that's who!
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_WizardsImp: Dream dream dream of the Bloogo! No master of Pimmelstix! NO! Each others curse...take him away! TAKE HIM AWAY!
+		Character_WizardsImp: Dream dream dream of the Booglo! No master of Pimmelstix! NO! Each other's curse...take him away! TAKE HIM AWAY!
 		jump Townsfolk
 	- Guard - Duncan
 		Character_WizardsImp: He chases Pimmelstix but is too slow! Not like Pimmelstix! No one is faster than Pimmelstix!
@@ -31,9 +31,8 @@ Character_WizardsImp: Pimmelstix!
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_WizardsImp: Little girl with secrets secrets! Ruined EVERYTHING! \
-HOW COULD PIMMELSTIX KNOW WHY SHE NEEDED PIXIE DUST?!\
-HER FAULT! HER FAULT!
+		Character_WizardsImp: Little girl with secrets secrets! Ruined EVERYTHING!
+		Character_WizardsImp: HOW COULD PIMMELSTIX KNOW WHY SHE NEEDED PIXIE DUST?![br]HER FAULT! HER FAULT!
 		jump Others
 	- Hero - Alexander
 		Character_WizardsImp: BLAH! Hero's unwelcome. He'll never slay the Booglo! Teehee!

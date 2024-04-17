@@ -7,32 +7,32 @@ The label reads - Sprinkle one pinch pixie dust on head and whisper desired drea
 	evidence_pixiebottle: I was ready to perform my monthly task of lulling that little girl to sleep when some ninny with a bad haircut takes me away! [n]Then he loses me in a game of cards! Unacceptable! Worst of all an imp! An IMP! Uses my magic dust on a delusional megalomaniac. This was NOT in the job description!
 	jump 
 - I could use some help.
-	Like what?
+	evidence_pixiebottle: Like what?
 	- I need a hint.
-		Having something stolen from you doesn't make you guilty now does it?
-		But participating in the ritual or unbinding the Booglo makes you an "Unwitting Accomplice".
+		evidence_pixiebottle: Having something stolen from you doesn't make you guilty now does it?
+		evidence_pixiebottle: But participating in the ritual or unbinding the Booglo makes you an "Unwitting Accomplice".
 		jump 
 	- I need another hint.
-		All the facts are on the table, and facts don't lie.
-		And neither does Harriet.
+		evidence_pixiebottle: All the facts are on the table, and facts don't lie.
+		evidence_pixiebottle: And neither does Harriet.
 		jump 
 	- I need a really big hint.
-		That summoning page has a lot of steps, look at all that evidence at the ritual site!
-		Five people are guilty including that summoner. With two unwitting accomplices.
+		evidence_pixiebottle: That summoning page has a lot of steps, look at all that evidence at the ritual site!
+		evidence_pixiebottle: Five people are guilty including that summoner. With two unwitting accomplices.
 		jump 
 	- Can you just use pixie magic to solve this?
-		Really? I thought you humans liked figuring stuff out.
+		evidence_pixiebottle: Really? I thought you humans liked figuring stuff out.
 		- Yes, I just want to know.
-			Fine, but it'll cost you. Stand up, spin around three times and say "Pipi pipi loo pixies are so cool, pipi pipi moo I wish I was a pixie too.".
+			evidence_pixiebottle: Fine, but it'll cost you. Stand up, spin around three times and say "Pipi pipi loo pixies are so cool, pipi pipi moo I wish I was a pixie too.".
 			- Okay, I promise I did that.
-				Good! Now pay attention or I'll make you do it agian.
-				The guard Duncan and little girl June, are unwitting accomplices.
-				The turnip farmer, Herbert, is guilty.
-				The chandler, Willard, now ghost, is guilty.
-				The skeleton is Willards skeleton! Equally guilty.
-				That menacing Imp Pimmelstix is guilty.
-				The summoner is Princess Primrose of course!
-				Now mark that down on your notes and I'll tell you the whole story.
+				evidence_pixiebottle: Good! Now pay attention or I'll make you do it agian.
+				evidence_pixiebottle: The guard Duncan and little girl June, are unwitting accomplices.
+				evidence_pixiebottle: The turnip farmer, Herbert, is guilty.
+				evidence_pixiebottle: The chandler, Willard, now ghost, is guilty.
+				evidence_pixiebottle: The skeleton is Willards skeleton! Equally guilty.
+				evidence_pixiebottle: That menacing Imp Pimmelstix is guilty.
+				evidence_pixiebottle: The summoner is Princess Primrose of course!
+				evidence_pixiebottle: Now mark that down on your notes and I'll tell you the whole story.
 				jump 
 			- Maybe I'll look at the evidence again.
 				jump 

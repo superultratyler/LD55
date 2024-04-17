@@ -1,10 +1,9 @@
 join Character_Witch 1
-Character_Witch: I'm Rosina the alchemist, but most call me a witch.             Witch I am.
+Character_Witch: I'm Rosina the alchemist, but most call me a witch.[br][br]Witch I am.
 - Tell me about yesterday...
 	Character_Witch: I was making an out-patient visit during the day. When I returned at dusk I discovered my shop ransacked! The blasted thief made a mess of things but only tore a single page from my magic tome.
-	Whoever broke in dropped a ridiculous love note the fool!
-	It says they purchsed rings from Wilton but he refuses to give out "cutomer data".
-	Character_Witch: Needed a drink after that, so I went to the tavern.
+	Character_Witch: Whoever broke in dropped a ridiculous love note, the fool! It says they purchased rings from Wilton but he refuses to give out "confidential customer information".
+	Character_Witch: I needed a drink after that, so I went to the tavern.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
@@ -42,13 +41,13 @@ Character_Witch: I'm Rosina the alchemist, but most call me a witch.            
 		Character_Witch: The newcomer? Rumor has it he brought a silver dagger, quite rare those are. Hopefully he buys some potions.
 		jump Others
 	- Imp - Pimmelstix
-		Character_Witch: What a foul creature. Wilton [i]claims[/i] to have summoned it but I know they've been cursed to be bound to each other. Mark my words that Imp will off Milton the first chance it gets. It wants nothing more than to be free of that so called [i]wizard[/i].
+		Character_Witch: What a foul creature. Wilton [i]claims[/i] to have summoned it but I know they've been cursed to be bound to each other. [n]Mark my words that Imp will off Milton the first chance it gets. It wants nothing more than to be free of that [i]so called wizard[/i].
 		jump Others
 	- Skeleton - ???
 		Character_Witch: It's not everyday you see a walking skeleton, they don't just pop out of the ground you know. That takes a good bit o' magic.
 		jump Others
 	- Wildman - Doohk
-		Character_Witch: Ah, Doohk, He was helping me gather ingredients in the woods for the "potion of obnoxously long life". I find him quite handsome and well spoken. The fools of this town just don't understand him!  He would do anything for our-err his dear little daughter...
+		Character_Witch: Ah, Doohk, He was helping me gather ingredients in the woods for the "potion of obnoxously long life". I find him quite handsome and well spoken. [n]The fools of this town just don't understand him!  He would do anything for our-err his dear little daughter...
 		jump Others
 	- Witch - Rosina
 		Character_Witch: Fine, I'm a witch but I'm other things too. I bake delicious pastries, but no one calls me a baker!

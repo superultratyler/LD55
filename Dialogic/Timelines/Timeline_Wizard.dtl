@@ -1,7 +1,7 @@
 join Character_Wizard 1
 Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have summoned the Booglo yes! All me! It was like a dream, a dream come true...
 - Tell me about yesterday...
-	Character_Wizard: I was playing cards during the day, and gambling is considered evil by some mind you! I don't remember much after that...until I summoned the Booglo that night!
+	Character_Wizard: I was playing cards during the day, and gambling is considered evil sorcery by some mind you! I don't remember much after that...until I summoned the Booglo that night!
 	Character_Wizard: I was flying and my third grade teacher was there...at one point I realized I forgot to wear pants - wait no...that can't be right.
 	Character_Wizard: The point is I summoned the Booglo and I vividly remember doing it.
 	jump 
@@ -14,7 +14,7 @@ Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have 
 		Character_Wizard: He asked me for a spell to turn potatoes into turnips. I've better use of my talent. Still he buys my Wonder Wax bwaha!
 		jump Townsfolk
 	- Chandler - Willard
-		Character_Wizard: He bought my rings of everlasting love! I made a fortune off those...Oh. That was meant to be confidential. Eh what do I care anymore!?    I'm the most powerful wizard in the world!
+		Character_Wizard: He bought my rings of everlasting love! I made a fortune off those...Oh. That was meant to be confidential. Eh what do I care anymore!? I'm the most powerful wizard in the world!
 		jump Townsfolk
 	- Wizard - Wilton
 		Character_Wizard: All my life I've strived to be recognized for my talents. Behold my awesome power! Throw me in jail if you dare! Bwahahahaha!
@@ -23,7 +23,7 @@ Character_Wizard: I am the evil dread wizard Wilton! [b]Fear me![/b] For I have 
 		Character_Wizard: A loyal customer who buys my Wonder Wax, he at least has the good sense to recognize value!
 		jump Townsfolk
 	- Princess - Primrose
-		Character_Wizard: I've seen her practice magic in secret when I was digging through the royal dumpster. You woulden't beleive what they throw out!
+		Character_Wizard: I've seen her practice magic in secret when I was digging through the royal dumpster. You wouldn't believe what they throw out!
 		jump Townsfolk
 	- King - Kurtis
 		Character_Wizard: It all could have been avoided if they had recognized me as grand supreme wizard of the realm! So I had to show them!

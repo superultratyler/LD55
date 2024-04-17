@@ -1,13 +1,15 @@
 join Character_Guard 1
 Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 - Tell me about yesterday...
-	Character_Guard: I was looking into a break in at Rosina the Witches hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there.
-	Character_Guard: At night I saw three cloaked figures crossing the bridge. Not long after I heard the signal for "trouble" so I rang the bell twelve times which is the new protocol. Soon after, that giant monster was summoned. Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
+	Character_Guard: I was looking into a break in at Rosina the Witch's hut during the day. At dusk I went to the bell tower to keep watch, you can see most of the town from up there.
+	Character_Guard: At night I saw three cloaked figures crossing the bridge. Not long after I heard the signal for "trouble" so I rang the bell twelve times which is the new protocol. Soon after, that giant monster was summoned. 
+	Character_Guard: Good thing I rang the bell, if I hadn't woken everyone up that monster would have hurt a lot more people.
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Guard: I noticed her coming across the bridge at night when she would normally be running the tavern. I stop by there after most shifts. You would too if you had my job.  I'd would have after my shift last night but, well you know - giant Booglo got summoned. Been on duty since then, I don't even get overtime for this.
+		Character_Guard: I noticed her coming across the bridge at night when she would normally be running the tavern. I was going to stop by the tavern after my shift, I do most nights. You would too if you had my job.
+		Character_Guard: I didn't make it last night because - well you know - giant Booglo got summoned. Been on duty since then, I don't even get overtime for this.
 		jump Townsfolk
 	- Farmer - Herbert
 		Character_Guard: The turnip farmer? It's an honest living. He really should have chosen potatoes though, Harriet makes a killing selling those from her tavern. I think he's jealous. Too bad about his field, that monster trampled it good.
@@ -26,20 +28,23 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 		Character_Guard: Poor thing. She was next in line to rule too. She died with her father in their royal castle. On the bright side I can stop swapping out all the old diamond insignias for the princesses new heart insignia.
 		jump Townsfolk
 	- King - Kurtis
-		Character_Guard: He had plans to rule forever, don't know how but he said with the witches help his reign would last five hundred years. I'd have given my life to protect the King...yes I saw the Booglo step on him. I'd have tried to save him but then we'd both be stepped on, what's the sense in that?
+		Character_Guard: He had plans to rule forever, don't know how but he said with the witches help his reign would last five hundred years. I'd have given my life to protect the King...yes I saw the Booglo step on him. 
+		Character_Guard: I'd have tried to save him but then we'd both be stepped on, what's the sense in that?
 		jump Townsfolk
 	- On second thought...
 		jump 
 - Anyone else around here?
 	label Others
 	- Girl - June
-		Character_Guard: She lives out in the woods I'd be afraid to be out there with that werewolf running around, and I'm so big and strong!
+		Character_Guard: She lives out in the woods. I'd be afraid to be out there with that werewolf running around, and I'm so big and strong!
 		jump Others
 	- Hero - Alexander
-		Character_Guard: We've had a werewolf problem in the woods lately, doesn't seem so bad compared to the Booglo. Anyway this guy comes out of nowhere saying he's going to slay the werewolf with a silver dagger and become famous, the timing is strange don't you think?
+		Character_Guard: We've had a werewolf problem in the woods lately, which doesn't seem so bad now - compared to the Booglo.
+		Character_Guard: Anyway this guy comes out of nowhere saying he's going to slay the werewolf with a silver dagger and become famous, the timing is strange don't you think?
 		jump Others
 	- Imp - Pimmelstix
-		Character_Guard: I guess you can summon an imp to hang around and pester everyone. Apparently that's legal, I don't make the rules. If there's trouble that imp is usually involved. However... Sometimes it lights all the torches in town all at once, which is helpful but I don't tell it that or it might stop doing it.
+		Character_Guard: I guess you can summon an imp to hang around and pester everyone. Apparently that's legal, I don't make the rules. 
+		Character_Guard: If there's trouble that imp is usually involved. However... Sometimes it lights all the torches in town all at once, which is helpful but I don't tell it that or it might stop doing it.
 		jump Others
 	- Skeleton - ???
 		Character_Guard: Normally I'm supposed to fight a walking skeleton but given the circumstances I'll reconsider for now.
@@ -48,7 +53,8 @@ Character_Guard: My name is Duncan, I'm the guard. Yes, the *only* guard.
 		Character_Guard: He's more animal than man, growls every word he says. The princess instructed me to no longer allow him to gather herbs in the royal forest. But you try telling a guy like that what to do.
 		jump Others
 	- Witch - Rosina
-		Character_Guard: She makes potions and elixirs, that sort of stuff. I'll stick to Wilton's wonder wax thank you very much, smells like cat pee but it helps my aching back. Come to think of it she's got all those magic books, they found a page from a magic book didn't they?
+		Character_Guard: She makes potions and elixirs, that sort of stuff. I'll stick to Wilton's wonder wax thank you very much, smells like cat pee but it helps my aching back.
+		Character_Guard: Come to think of it she's got all those magic books, they found a page from a magic book didn't they?
 		jump Others
 	- Cat - Bramble
 		Character_Guard: I'm more of a dog person.

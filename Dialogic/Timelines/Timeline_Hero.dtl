@@ -2,22 +2,23 @@ join Character_Hero 1
 Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustrious adventurer and slayer of evil!
 - Tell me about yesterday...
 	Character_Hero: [b]*Ahem*[/b] I arrived at dusk. The princess had sent notice of a werewolf terrorizing these... [i]fine[/i] people. I brought my finest silver dagger to slay the beast...annnnd...lost it in a card game to that turnip farmer. 
-	Character_Hero: It's not fair really! Years of turnip farming had honed his strategic mind to a deadly point. I could hardly think with his foul ador and that imp there messing everything up! Hold on...how many aces are in a deck of cards anyway, less than seven right?
+	Character_Hero: It's not fair really! Years of turnip farming had honed his strategic mind to a deadly point. I could hardly think with his foul odor and that imp there messing everything up! 
+	Character_Hero: Hold on...how many aces are in a deck of cards anyway, less than seven right?
 	Character_Hero: Now you say my dagger was found at the ritual site? Well, it isn't [i]my[/i] dagger anymore, now is it?
 	jump 
 - Tell me about the townsfolk...
 	label Townsfolk
 	- Tavern Keeper - Harriet
-		Character_Hero: I was enjoying an ale at her fine establishment when she ran off in the middle of the night and left her tavern unattended, very strange indeed. As an honorable hero I noted every ale I poured myself in that time and intend to pay it back in full. 
+		Character_Hero: I was enjoying an ale at her fine establishment when she ran off in the middle of the night and left her tavern unattended, very strange indeed. [n]As an honorable hero I noted every ale I poured myself in that time and intend to pay it back in full. 
 		jump Townsfolk
 	- Farmer - Herbert
-		Character_Hero: He won my dagger from me in a card game at the tavern.    I'd have won if that miserable little imp wasn't flying about distracting me at every moment! That dagger was expensive you know. Then he walked right out, drink in hand. 
+		Character_Hero: He won my dagger from me in a card game at the tavern. Then he walked right out, drink in hand. [n]I'd have won if that miserable little imp wasn't flying about distracting me at every moment! That dagger was expensive you know.
 		jump Townsfolk
 	- Chandler - Willard
 		Character_Hero: He came into the tavern with a bundle of strange candles, he practically gave them away to the wizard and his imp the way he was playing those cards.
 		jump Townsfolk
 	- Wizard - Wilton
-		Character_Hero: I visited his "magic" shop.  I've been across the land and dealt with my share of enchanted items. There aren't any there, and uhhgg what a stench that place had. He tied a porcupine to a stick and tried to sell it as a "magic mace of biting".
+		Character_Hero: I visited his "magic" shop.  I've been across the land and dealt with my share of enchanted items. [n]There aren't any there, and [i]*uhhgg*[/i] what a stench that place had. He tied a porcupine to a stick and tried to sell it as a "magic mace of biting".
 		jump Townsfolk
 	- Guard - Duncan
 		Character_Hero: No need for a guard anymore, the hero is in town.
@@ -28,7 +29,7 @@ Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustriou
 		jump Townsfolk
 	- King - Kurtis
 		Character_Hero: Squashed by the Booglo I hear. What? You think I should slay the Booglo?
-		Character_Hero: Well certainly I can, but that would require a certain sword in a certain cave and at least a few months of adventuring and self discovery where I'd learn something about myself and overcome my personal flaws. Frankly I'm enjoying this whole arrogance thing and I'd rather not give it up.
+		Character_Hero: Well certainly I can, but that would require a certain sword in a certain cave and at least a few months of adventuring and self discovery where I'd learn something about myself and overcome my personal flaws. [n]Frankly I'm enjoying this whole arrogance thing and I'd rather not give it up.
 		jump Townsfolk
 	- On second thought...
 		jump 
@@ -41,7 +42,7 @@ Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustriou
 		Character_Hero: Yes, I'm Alexander. I do love hearing that name.
 		jump Others
 	- Imp - Pimmelstix
-		Character_Hero: [i]Ghastly[/i] little thing. Snapped it's fingers and every candle in the tavern went out all at once, then it threw that pixie dust all over. I kept my distance. Snapped it's fingers again and all the candles were lit again. A fire hazard if you ask me.
+		Character_Hero: [i]Ghastly[/i] little thing. Snapped its fingers and every candle in the tavern went out all at once, then it threw that pixie dust all over. I kept my distance. Snapped its fingers again and all the candles were lit again. [n]A fire hazard if you ask me.
 		jump Others
 	- Skeleton - ???
 		Character_Hero: Yawn. Slaying a single [i]armless[/i] skeleton? You think a bard is going to write any songs about THAT?
@@ -50,11 +51,11 @@ Character_Hero: Hohoo! ...Wait, you really don't know? I'm Alexander! Illustriou
 		Character_Hero: I saw that...man...and his daughter going into turnip farm's barn at dusk as I came into town. He was carrying shackles and chain. I'm guessing for the cows? They can be vicious no?
 		jump Others
 	- Witch - Rosina
-		Character_Hero: She was lamenting over stolen something or another at the tavern that night. Witches. What is it with witches? Sometimes they just live in a town and sell fruit juice. Sometimes they eat children, it's like-just pick one so it's less confusing for us all.
+		Character_Hero: She was lamenting over stolen something or another at the tavern that night. Witches. What is it with witches? Sometimes they just live in a town and sell fruit juice. Sometimes they eat children. [n]It's like-just pick one so it's less confusing for us all.
 		jump Others
 	- Cat - Bramble
-		Character_Hero: Who doesn't love a *fwuffy wuffy wittle cattsy wattsy*?
-		Character_Hero: ...What? Why are you looking at me like that?
+		Character_Hero: Who doesn't love a *fwuffy wuffy wittle cattsy wattsy*?[n]...
+		Character_Hero: What? Why are you looking at me like that?
 		jump Others
 	- On second thought...
 		jump 

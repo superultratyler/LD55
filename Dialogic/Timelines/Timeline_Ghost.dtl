@@ -18,7 +18,8 @@ Character_Ghost: I'm Willard the chandler - [i]that's a candlestick maker for th
 		Character_Ghost: He says he did it. Makes sense to me, wizards love summoning, they do it all the time. Look at his imp, for instance, he probably summoned that! Even the imp says he did it!
 		jump Townsfolk
 	- Guard - Duncan
-		Character_Ghost: That's my brother, a fine job he did! He should have gone into the family business and made candles with me. If we had proper security in this town perhaps I'd still be alive! And...our sweet, dear princess would be too...Where was he during all of this anyway?
+		Character_Ghost: That's my brother, a fine job he did! He should have gone into the family business and made candles with me. If we had proper security in this town perhaps I'd still be alive! 
+		Character_Ghost: And...our sweet, dear princess would be too...Where was he during all of this anyway?
 		jump Townsfolk
 	- Princess - Primrose
 		Character_Ghost: A tragedy of the highest magnitude... Ohhh fairest maiden, the shining example of a princess. The ruins of the castle will be her final resting place...

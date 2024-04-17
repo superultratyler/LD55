@@ -36,7 +36,8 @@ Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't yo
 		Character_Farmer: Lives out in the woods with her father, they're a wild bunch. I let them use my barn...when the [i]weather[/i] turns bad... They haven't needed it for some time...until last night...
 		jump Others
 	- Hero - Alexander
-		Character_Farmer: Another fool to go along with the rest in this town. He came here to slay the beast werewolf. The werewolf never did harm my turnips, and it ate plenty of rabbits. You know what those rabbits eat? That's right, my turnips. I say leave it alone.
+		Character_Farmer: Another fool to go along with the rest in this town. He came here to slay the beast werewolf. 
+		Character_Farmer: The werewolf never did harm my turnips, and it ate plenty of rabbits. You know what those rabbits eat? That's right, my turnips. I say leave it alone.
 		jump Others
 	- Imp - Pimmelstix
 		Character_Farmer: Lying little bugger. All day long it's flying around pranking and prodding and picking on everyone.
@@ -45,7 +46,8 @@ Character_Farmer: Welp. The name's Herbert. I farm the best turnips and don't yo
 		Character_Farmer: Does he look sorta familiar to you?
 		jump Others
 	- Wildman - Doohk
-		Character_Farmer: He loves my turnips. He's the only person besides myself who knows where I hide my barn key. I let him use it for shelter sometimes. I didn't think he needed to anymore since that witch has been around, but of course the one night...nevermind, it doesnt matter.
+		Character_Farmer: He loves my turnips. He's the only person besides myself who knows where I hide my barn key. I let him use it for shelter sometimes. 
+		Character_Farmer: I didn't think he needed to anymore since that witch has been around, but of course the one night...nevermind, it doesnt matter.
 		jump Others
 	- Witch - Rosina
 		Character_Farmer: Couldn't help me at all, what are those potions even good for?

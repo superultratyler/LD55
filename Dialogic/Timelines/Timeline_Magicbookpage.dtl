@@ -1,9 +1,8 @@
 join evidence_magicbookpage 1
-evidence_magicbookpage: A torn page from a magical tome found at the ritual site.\
-It reads-
+A torn page from a magical tome found at the ritual site.
 evidence_magicbookpage: [i]Summon the Booglo as the full moon wakes[br][br]Alight fives candles inscribed with the summoners mark at precisely the same moment[/i]
-evidence_magicbookpage: [i]A soul must forfeit, a loving heart taken by the summoners silver blade.[br][br]Body and soul severe, the bones bind the beast[/i]
+evidence_magicbookpage: [i]A soul must forfeit, a loving heart taken by the summoners silver blade.[br][br]Body and soul severed, the bones bind the beast[/i]
 evidence_magicbookpage: [i]Place tokens bearing the mark of their prey in the circle[br][br]All must resolve within twelve tolls of the bell[/i]
-evidence_magicbookpage: [i]In the center of flames The booglo will wake and seek it's feast lead by relics of the prey[/i]
+evidence_magicbookpage: [i]In the center of flames the Booglo will wake and seek its feast led by relics of the prey[/i]
 evidence_magicbookpage: [i]Note\: If you did not summon the Booglo it is advised to take shelter as it begins its path of destruction. Only those with inherent magical ability should attempt this summoning.[/i]
 [end_timeline]
